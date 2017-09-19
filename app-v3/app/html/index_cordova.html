@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, target-densitydpi=medium-dpi, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <title>mWater</title>
+    <link rel="stylesheet" type="text/css" href="css/libs.css?_=timestamp">
+    <link rel="stylesheet" type="text/css" href="css/app.css?_=timestamp">
+    <script src="file:///android_asset/www/cordova.js"></script>
+    <script src="js/preload.js?_=timestamp"></script>
+    <script src="js/libs.js?_=timestamp"></script>
+    <script src="js/seeds.js?_=timestamp"></script>
+</head>
+<body>
+    <!-- Must be run before body is entirely loaded to prevent browser quirks in mobile -->
+    <script src="js/app.js?_=timestamp"></script>
+    <script>
+        require("run").start({cordova:true});
+    </script>
+</body>
+</html>

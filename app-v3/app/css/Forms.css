@@ -1,0 +1,52 @@
+.btn-group > .btn {
+  min-width: 80px;
+}
+.section {
+  margin-bottom: 15px;
+}
+
+.question {
+  padding: 5px 5px 5px 5px;
+}
+
+.question.invalid {
+    border: #C43B1D 2px solid;
+    background-color: #FFE6CC;
+}
+
+.question-default {
+  margin-bottom: 20px;
+}
+
+.question-tabular  {
+  display:table-row;
+}
+.question-tabular > .prompt {
+  padding-right: 2px;
+  display:table-cell;
+}
+.question-tabular  > .answer {
+  display:table-cell;
+}
+
+.prompt {
+  margin-bottom: 10px;
+}
+
+.question-default  > .prompt {
+  font-weight: bold;
+}
+
+.required {
+    color: Red;
+    margin-left: 2px;
+}
+
+select {
+  width: 300px;
+}
+
+.check-section {
+  font-weight: bold;
+  color: #999999;
+}
