@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ..
 cd testCasesExecutables
-for d in testCasesExecutables/*/all; do
+for d in testCasesExecutables; do
   python *.py "$d"
 done
