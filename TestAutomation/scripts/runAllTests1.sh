@@ -6,22 +6,37 @@ for currentFile in *; do
 	if [ $(eval "pwd") != "/home/austinhunt/Desktop/TestAutomation/testCases" ]; then
 		cd ../testCases
 	fi 
-
+	printf "\n"
 	while IFS= read -r line
 	do
 		
 		if [ "$COUNTER" -eq 1 ]; then
 			testCaseNum=$line
 			echo TEST CASE $testCaseNum
+	
 		fi	
-
-		if [ "$COUNTER" -eq 5 ]; then
 			
-			
-			cd ../testCasesExecutables
-			python testCase$testCaseNum.py $line
+		if [ "$COUNTER" -eq 2 ]; then
+			reqToTest=$line
+			echo $reqToTest
+		
 		fi
 
+	
+		if [ "$COUNTER" -eq 5 ]; then
+			
+			args=$line
+		fi
+		
+		if [ "$COUNTER" -eq 6 ]; then 
+			
+			oracle=$line
+			echo Oracle: $oracle
+			cd ../testCasesExecutables
+			python testCase$testCaseNum.py $args "$oracle"
+
+
+		fi
 		COUNTER=$((COUNTER+1))
  
 	done < "$currentFile"
