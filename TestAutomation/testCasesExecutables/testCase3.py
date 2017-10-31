@@ -2,18 +2,25 @@
 import sys
 
 
-def addTwoBinaries(binary1, binary2, result_length):
-    value1_int = int(binary1[2:], 2)
-    value2_int = int(binary2[2:], 2)
-    ans = value1_int + value2_int
-    ans_binary = bin(ans)
+
+def checkIfOverflow(value1,value2):
+    
+    ans = int(value1, 2) + int(value2, 2)
     if ans > 31:
-        ans_binary = ans_binary[:2] + ans_binary[3:]
+        return ("Yes (an overflow will occur)")
+    else:
+        return ("No overflow")
 
-    while len(ans_binary) != (result_length + 2):
-        ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
 
-    return ans_binary
 
-if __name__ == "__main__":
-    addTwoBinaries(0011, 0001, 4)
+def main(argv): 
+	values=sys.argv[1].split(",")
+	oracle=sys.argv[2]
+	assert checkIfOverflow(values[0],values[1])==oracle,"Error: 01111 + 01000 returned overflow"
+	print("Test Case 3 Passed")
+
+if __name__ == '__main__':
+	import sys
+	i = 0
+	main(sys.argv[1:])
+

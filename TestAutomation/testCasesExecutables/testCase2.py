@@ -14,10 +14,11 @@ def checkIfOverflow(value1,value2):
 
 def main(argv): 
 	values=sys.argv[1].split(",")
-	
-	assert checkIfOverflow(values[0],values[1])=="No overflow","Error: 11111 + 00000 returned overflow"
-	print("testCase2 passed")
+	oracle = sys.argv[2]
+	assert checkIfOverflow(values[0],values[1])==oracle,"Error: 11110 + 00001 returned overflow"
+	print("Test Case 2 Passed")
 
 if __name__ == '__main__':
 	import sys
+
 	main(sys.argv[1:])
