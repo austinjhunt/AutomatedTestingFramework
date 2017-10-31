@@ -27,6 +27,12 @@ for currentFile in *; do
 			echo Component: $line
 
 		fi
+
+		if [ "$COUNTER" -eq 4 ]; then
+
+			unit=$line
+
+		fi
 			
 		if [ "$COUNTER" -eq 5 ]; then
 			
@@ -38,8 +44,10 @@ for currentFile in *; do
 			oracle=$line
 			echo Oracle: $oracle
 			cd ../testCasesExecutables
-			python testCase$testCaseNum.py $args "$oracle"
+			python $unit.py $args "$oracle"
+			
 
+	
 
 		fi
 		COUNTER=$((COUNTER+1))
