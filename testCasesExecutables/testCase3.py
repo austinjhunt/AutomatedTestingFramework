@@ -1,4 +1,5 @@
-
+#!/bin/python
+import sys
 
 
 def addTwoBinaries(binary1, binary2, result_length):
@@ -12,12 +13,7 @@ def addTwoBinaries(binary1, binary2, result_length):
     while len(ans_binary) != (result_length + 2):
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
 
-    print (ans_binary)
     return ans_binary
 
-def main():
-    value = addTwoBinaries(0001, 0011, 4)
-    print(value)
-
 if __name__ == "__main__":
-    main()
+    addTwoBinaries(0011, 0001, 4)
