@@ -22,7 +22,12 @@ for currentFile in *; do
 		
 		fi
 
-	
+		if [ "$COUNTER" -eq 3 ]; then 
+
+			echo Component: $line
+
+		fi
+			
 		if [ "$COUNTER" -eq 5 ]; then
 			
 			args=$line
