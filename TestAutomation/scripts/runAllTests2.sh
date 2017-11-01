@@ -54,13 +54,13 @@ for currentFile in *; do
 			
 			
 			echo "<tr>" >> $appendHTML
-			echo "<td class=\"medium\">$testCaseNum</td>" >> $appendHTML
-			echo "<td class=\"large\">$reqToTest</td>" >> $appendHTML
-			echo "<td class=\"large\">$component</td>" >> $appendHTML
-			echo "<td class=\"medium\">$unit</td>" >> $appendHTML
-			echo "<td class=\"medium\">$args</td>" >> $appendHTML
-			echo "<td class=\"large\">$oracle</td>" >> $appendHTML
-			echo "<td class=\"large\">$testOutput</td>" >> $appendHTML
+			echo "<td style=\"width: 7%\">$testCaseNum</td>" >> $appendHTML
+			echo "<td style=\"width: 15%\">$reqToTest</td>" >> $appendHTML
+			echo "<td style=\"width: 15%\">$component</td>" >> $appendHTML
+			echo "<td style=\"width: 16%\">$unit</td>" >> $appendHTML
+			echo "<td style=\"width: 14%\">$args</td>" >> $appendHTML
+			echo "<td style=\"width: 9%\">$oracle</td>" >> $appendHTML
+			echo "<td style=\"width: 10%\">$testOutput</td>" >> $appendHTML
 			
 			if [ "$testOutput" == "$oracle" ]; then
 				echo "<td class=\"reallysmall\">Pass!</td>" >> $appendHTML

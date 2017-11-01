@@ -5,18 +5,21 @@ h1{
   text-transform: uppercase;
   font-weight: 300;
   text-align: middle;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
 }
 table{
   height:100%;
   table-layout: auto;
+  border: 4px;
 }
 .tbl-header{
   background-color: rgba(255,255,255,0.3);
+  height: 11px;
+  text-align: middle;
  }
 .tbl-content{
   height:350px;
-  width: 1250px;
+  width: 1190px;
   overflow-x:auto;
   overflow-y:auto;
   margin-top: 0px;
@@ -24,16 +27,14 @@ table{
   border-collapse: collapsed;
 }
 th{
-  padding: 10px;
-  width: 1200px;
-  height: 15px;
+  padding: 1px;
   text-align: middle;
   font-weight: 450;
   font-size: 17px;
   color: #fff;
   text-transform: uppercase;
-  overflow-x: auto;
-  border: 30px solid rgba (250,250,250,0.3);
+  overflow-x: auto
+  border: 20px solid rgba (250,250,250,0.3);
   
 }
 td{
@@ -92,7 +93,7 @@ section{
 /* for custom scrollbar for webkit browser*/
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
 } 
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
