@@ -96,4 +96,4 @@ testReport=$reportsPath/testReport.html
 cat $firstHalfHTML $appendHTML > $testReport
 cd ../reports
 rm $appendHTML
-xdg-open testReport.html
+open testReport.html
