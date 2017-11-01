@@ -1,17 +1,22 @@
 #!/usr/bin/env python
 import subprocess
 cd ../reports
-reportsPath= "$(pwd)"
+
+reportsPath="$(eval pwd)"
 
 firstHalfHTML=$reportsPath/reportPartOne.html
 appendHTML=$reportsPath/reportPartTwo.html
+touch $appendHTML
 echo "" > $appendHTML
 
 cd ../testCases
 for currentFile in *; do 
 	COUNTER=1
-	if [ $(eval "pwd") != "/home/austinhunt/Desktop/TestAutomation/testCases" ]; then
+	if ! echo "$PWD" | grep "testCases" ; then
 		cd ../testCases
+	
+	#if [[ $(eval "pwd") != *"testCases"* ]]; then
+	#	cd ../testCases
 	fi 
 	printf "\n"
 	while IFS= read -r line
@@ -50,7 +55,7 @@ for currentFile in *; do
 		
 			oracle=$line
 			echo Oracle: $oracle
-			cd ../testCasesExecutables
+			cd ../testCaseExecutables
 			python $unit.py $args "$oracle" > $reportsPath/tempTestOutput.txt	
 			testOutput="$(cat $reportsPath/tempTestOutput.txt)"
 			
@@ -90,4 +95,5 @@ echo "</tbody> </table> </div> </section> </body> </html>" >> $appendHTML
 testReport=$reportsPath/testReport.html
 cat $firstHalfHTML $appendHTML > $testReport
 cd ../reports
+rm $appendHTML
 open testReport.html
