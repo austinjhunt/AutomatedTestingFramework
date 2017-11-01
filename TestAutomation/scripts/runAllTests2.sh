@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+import subprocess
+reportsPath="/Users/austinhunt/Desktop/YEET/TestAutomation/reports"
+firstHalfHTML=$reportsPath/reportPartOne.html
+appendHTML=$reportsPath/reportPartTwo.html
+echo "" > $appendHTML
 
 cd ../testCases
 for currentFile in *; do 
@@ -24,7 +29,7 @@ for currentFile in *; do
 
 		if [ "$COUNTER" -eq 3 ]; then 
 
-			echo Component: $line
+			component=$line
 
 		fi
 
@@ -40,18 +45,47 @@ for currentFile in *; do
 		fi
 		
 		if [ "$COUNTER" -eq 6 ]; then 
-			
+		
 			oracle=$line
 			echo Oracle: $oracle
 			cd ../testCasesExecutables
-			python $unit.py $args "$oracle"
+			python $unit.py $args "$oracle" > $reportsPath/tempTestOutput.txt	
+			testOutput="$(cat $reportsPath/tempTestOutput.txt)"
 			
-
-	
-
+			
+			echo "<tr>" >> $appendHTML
+			echo "<td class=\"medium\">$testCaseNum</td>" >> $appendHTML
+			echo "<td class=\"large\">$reqToTest</td>" >> $appendHTML
+			echo "<td class=\"large\">$component</td>" >> $appendHTML
+			echo "<td class=\"medium\">$unit</td>" >> $appendHTML
+			echo "<td class=\"medium\">$args</td>" >> $appendHTML
+			echo "<td class=\"large\">$oracle</td>" >> $appendHTML
+			echo "<td class=\"large\">$testOutput</td>" >> $appendHTML
+			
+			if [ "$testOutput" == "$oracle" ]; then
+				echo "<td class=\"reallysmall\">Pass!</td>" >> $appendHTML
+			fi
+			
+			if [ "$testOutput" != "$oracle" ]; then
+				echo "<td class=\"reallysmall\">Fail!</td>" >> $appendHTML
+			fi
+			
+			
+			echo "</tr>" >> $appendHTML			
+			
+			
 		fi
 		COUNTER=$((COUNTER+1))
  
 	done < "$currentFile"
-
+	
 done
+rm $reportsPath/tempTestOutput.txt
+
+
+echo "</tbody> </table> </div> </section> </body> </html>" >> $appendHTML
+
+testReport=$reportsPath/testReport.html
+cat $firstHalfHTML $appendHTML > $testReport
+cd ../reports
+open testReport.html
