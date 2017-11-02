@@ -96,4 +96,14 @@ testReport=$reportsPath/testReport.html
 cat $firstHalfHTML $appendHTML > $testReport
 cd ../reports
 rm $appendHTML
-xdg-open testReport.html
+opSystem=$(eval 'uname')
+
+if [ "$opSystem" == "Linux" ]; then 
+	xdg-open $testReport
+	echo THIS IS LINUX
+fi
+if [ "$opSystem" == "Darwin" ]; then 
+	open $testReport
+	echo THIS IS DARWIN
+fi
+
