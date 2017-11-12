@@ -4,11 +4,9 @@ def checkIfOverflow(value1,value2):
     
     ans = int(value1, 2) + int(value2, 2)
     if ans > 31:
-	message = "Yes (an overflow will occur)"
-        return message
+	return ("Yes (an overflow will occur)")
     else:
-	message = "No overflow"
-        return message
+	return ("No overflow")
 
 
 
