@@ -1,10 +1,13 @@
 #!/usr/bin/env python
+
 cd ../reports
 
 reportsPath="$(eval pwd)"
 
 firstHalfHTML=$reportsPath/reportPartOne.html
 appendHTML=$reportsPath/reportPartTwo.html
+
+
 touch $appendHTML
 echo "" > $appendHTML
 
@@ -14,9 +17,8 @@ for currentFile in *; do
 	if ! echo "$PWD" | grep "testCases" ; then
 		cd ../testCases
 	
-	#if [[ $(eval "pwd") != *"testCases"* ]]; then
-	#	cd ../testCases
-	fi 
+	fi
+ 
 	printf "\n"
 	while IFS= read -r line
 	do
@@ -54,7 +56,10 @@ for currentFile in *; do
 		
 			oracle=$line
 			echo Oracle: $oracle
+			
 			cd ../testCaseExecutables
+
+
 			python $unit.py $args "$oracle" > $reportsPath/tempTestOutput.txt	
 			testOutput="$(cat $reportsPath/tempTestOutput.txt)"
 			
