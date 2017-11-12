@@ -1,0 +1,111 @@
+﻿{% extends 'main/master_page_in.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+<!-- Preloader -->
+<section id="preloader">
+    <div class="loader" id="loader">
+        <div class="loader-img"></div>
+    </div>
+</section>
+<!-- End Preloader -->
+
+
+<!-- Site Wraper -->
+<div class="wrapper">
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container header-inner">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#" style="font-weight: normal; font-family: 'Lane - Narrow'; font-size: 24px; line-height: 1; letter-spacing: 2px; text-transform: uppercase;">
+                    {{ full_name }}.
+                </a>
+            </div>
+            <!-- End Logo -->
+
+            <!-- Navbar Navigation -->
+            <div class="nav-menu">
+                <ul class="nav-menu-inner">
+                    <li>
+                        <a href="/" style="font-family: 'Lane - Narrow'; font-weight: normal;">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- CONTENT --------------------------------------------------------------------------------->
+    <!-- Intro Section -->
+    <section id="intro" class="dark-bg">
+
+        <!-- Hero Slider Section -->
+        <div class="owl-carousel fullwidth-slider white o-flow-hidden">
+            <!--Slide-->
+            <div class="item bg-img slide-bg-image parallax parallax-section1" data-background-img="{% static 'main/img/full/22.jpg' %}">
+                <!-- Content -->
+                <div class="full-cap-wraper overlay-dark80 light-color">
+                    <div class="content-caption light-color">
+                        <div class="container" style="width: 50%; margin: 0 auto;">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="border-box" style="background-color: white; opacity: .7; border: 1px grey solid;">
+                                        <h4 style="color: #000; font-weight: normal;">Change Password</h4>
+                                            <div class="form-field-wrapper">
+                                                <label for="login-pass-1" style="font-size: larger; font-weight: normal;">Enter New Password</label>
+                                                <input type="password" required="" placeholder="Enter your new password here" name="login-pass-1" id="login-pass-1" class="input-sm form-full" aria-required="true">
+                                            </div>
+                                            <button class="btn btn-md btn-black" onclick="update_password();" style="font-family: 'Lane - Narrow'; font-weight: normal;">Update Password</button>
+                                            <!--a class="float-right">Forgot password?</a-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Content -->
+            </div>
+
+        </div>
+        <!-- End Hero Slider Section -->
+    </section>
+    <!-- End Intro Section -->
+
+    <!-- End CONTENT ------------------------------------------------------------------------------>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <!-- Copyright Bar -->
+        <section class="copyright ptb-60">
+            <div class="container">
+                <p class="" style="font-family: 'Lane - Narrow'; font-size: 16px; text-transform: uppercase;">
+                    © 2017 <b>Crafted lovingly in Charleston SC</b>. All Rights Reserved.
+                    <br />
+                    Built  by <b>Ayman Hajja, PhD</b>
+                </p>
+            </div>
+        </section>
+        <!-- End Copyright Bar -->
+
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Scroll Top -->
+    <a class="scroll-top">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+    <!-- End Scroll Top -->
+
+</div>
+<!-- Site Wraper End -->
+
+<form>{% csrf_token %}</form>
+
+{% endblock %}
