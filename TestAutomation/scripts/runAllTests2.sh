@@ -97,12 +97,5 @@ cd ../reports
 rm $appendHTML
 opSystem=$(eval 'uname')
 
-if [ "$opSystem" == "Linux" ]; then 
-	xdg-open $testReport
-	echo THIS IS LINUX
-fi
-if [ "$opSystem" == "Darwin" ]; then 
-	open $testReport
-	echo THIS IS DARWIN
-fi
+xdg-open $testReport
 
