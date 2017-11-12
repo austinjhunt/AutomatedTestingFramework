@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import subprocess
 cd ../reports
 
 reportsPath="$(eval pwd)"
@@ -96,4 +95,7 @@ testReport=$reportsPath/testReport.html
 cat $firstHalfHTML $appendHTML > $testReport
 cd ../reports
 rm $appendHTML
-xdg-open testReport.html
+opSystem=$(eval 'uname')
+
+xdg-open $testReport
+
