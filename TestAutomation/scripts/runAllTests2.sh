@@ -104,5 +104,5 @@ cd ../reports
 rm $appendHTML
 opSystem=$(eval 'uname')
 
-xdg-open $testReport
+open $testReport
 
