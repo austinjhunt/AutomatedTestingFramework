@@ -23,8 +23,10 @@ def convert_simple_line_c_to_mips(_one_line):
 def main(argv): 
 	#values=sys.argv[1].split(",")
 	oracle = sys.argv[2]
-	assert convert_simple_line_c_to_mips(argv[1])==oracle,"Error: " + argv[1] + " did not return '" + oracle + "'"
-	print(oracle)	
+	cToMips = convert_simple_line_c_to_mips(argv[1])
+	print(cToMips)
+	#assert cToMips==oracle,"Error: " + argv[1] + " did not return '" + oracle + "'"
+	
 	
 if __name__ == '__main__':
 	import sys
