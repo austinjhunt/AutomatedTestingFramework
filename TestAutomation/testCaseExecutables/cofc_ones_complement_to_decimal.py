@@ -1,6 +1,7 @@
 def cofc_ones_complement_to_decimal(_ones_complement_binary):
     # First we check if it's positive; if it is, we simply convert to decimal
     #
+    _ones_complement_binary = int(_ones_complement_binary)
     if _ones_complement_binary[2] == '0':
         ans_decimal = int(_ones_complement_binary[2:], 2)
     else:

@@ -2,6 +2,8 @@
 #!/bin/python
 
 def cofc_convert_decimal_to_unsigned_binary_with_length(_decimal_value, _length_of_binary):
+    _decimal_value = int(_decimal_value)
+    _length_of_binary = int(_length_of_binary)
     ans_binary = bin(_decimal_value)
     while len(ans_binary) < (_length_of_binary + 2):
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
