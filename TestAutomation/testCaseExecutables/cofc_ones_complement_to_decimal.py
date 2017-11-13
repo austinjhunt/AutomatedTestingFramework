@@ -21,7 +21,7 @@ def cofc_ones_complement_to_decimal(_ones_complement_binary):
 def main(argv): 
 	#values=sys.argv[1].split(",")
 	oracle = sys.argv[2]
-	assert cofc_ones_complement_to_decimal(argv[1])==oracle,"Error: " + argv[1] + "did not return '" + oracle + "'"
+	assert cofc_ones_complement_to_decimal(argv[1])==oracle,"Error: " + argv[1] + " did not return '" + oracle + "'"
 	print(oracle)	
 	
 if __name__ == '__main__':

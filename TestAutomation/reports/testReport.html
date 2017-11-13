@@ -1,90 +1,146 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Fixed table header</title>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  
-  
-      <link rel="stylesheet" href="css/style.css">
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>YEET: THE FINAL REPORT</title>
 
-  
-</head>
-
-<body>
-  <section>
-  <!--for demo wrap-->
-  <h1 style="text-align: center; width= 4px; font-family= 'Courier'"> YEET: The Final Test Report</h1>
-  <div class="tbl-header">
-    <table cellpadding="1" cellspacing="0" border="1">
-      <thead>
-        <tr>
-          <th style="width: 11%">Test ID</th>
-          <th style="width: 16%">Requirement</th>
-          <th style="width: 20">Component Tested</th>
-          <th style="width: 26%">Method Tested</th>
-          <th style="width: 7.3%">Test Inputs</th>
-	  	  <th style="width: 10%">Oracle</th> 
-	      <th style="width: 10%">Actual Outcome</th>
-	      <th style="width: 21%">Test Result</th>
-        </tr>
-      </thead>
-    </table>
-  </div>
-  <div class="tbl-content">
-    <table cellpadding="1" cellspacing="0" border="1">
-      <tbody>
-
-
+		<meta name="author" content="YEET" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/ShapeHoverEffectSVG/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=18116"><span>Back to the Codrops Article</span></a></span>
+			</div>
+			<header>
+				<h1>YEET: <em>The Final Test Report</em> <span>Testing an Interactive Web Platform for Enhancing CSCI Education</span></h1>	
+				
+			</header>
+			<div class="component">
+			
+				<table>
+					<thead>
+						<tr>
+							<th>Test ID</th>
+							<th>Requirement</th>
+							<th>Component Tested</th>
+							<th>Method Tested</th>
+							<th>Test Inputs</th>
+							<th>Oracle</th>
+							<th>Actual Outcome</th>
+							<th>Test Results</th>
+						</tr>
+					</thead>
+					<tbody>
+						
 <tr>
-<td style="width: 7%">1</td>
-<td style="width: 15%">check if adding 11111 and 00000 will overflow</td>
-<td style="width: 15%">views</td>
-<td style="width: 16%">checkIfOverflow</td>
-<td style="width: 14%">11111,00000</td>
-<td style="width: 9%">No overflow</td>
-<td style="width: 10%">No overflow</td>
-<td class="reallysmall">Pass!</td>
+<td>1</td>
+<td>check if adding 11111 and 00000 will overflow</td>
+<td>views</td>
+<td>checkIfOverflow</td>
+<td>11111,00000</td>
+<td>No overflow</td>
+<td>No overflow</td>
+<td>Pass!</td>
 </tr>
 <tr>
-<td style="width: 7%">2</td>
-<td style="width: 15%">check if adding 11110 and 00001 will overflow</td>
-<td style="width: 15%">views</td>
-<td style="width: 16%">checkIfOverflow</td>
-<td style="width: 14%">11110,00001</td>
-<td style="width: 9%">No overflow</td>
-<td style="width: 10%">No overflow</td>
-<td class="reallysmall">Pass!</td>
+<td>2</td>
+<td>check if adding 11110 and 00001 will overflow</td>
+<td>views</td>
+<td>checkIfOverflow</td>
+<td>11110,00001</td>
+<td>No overflow</td>
+<td>No overflow</td>
+<td>Pass!</td>
 </tr>
 <tr>
-<td style="width: 7%">3</td>
-<td style="width: 15%">check if adding 01111 and 1000 will overflow</td>
-<td style="width: 15%">views</td>
-<td style="width: 16%">checkIfOverflow</td>
-<td style="width: 14%">01111,01000</td>
-<td style="width: 9%">No overflow</td>
-<td style="width: 10%">No overflow</td>
-<td class="reallysmall">Pass!</td>
+<td>3</td>
+<td>check if adding 01111 and 1000 will overflow</td>
+<td>views</td>
+<td>checkIfOverflow</td>
+<td>01111,01000</td>
+<td>No overflow</td>
+<td>No overflow</td>
+<td>Pass!</td>
 </tr>
 <tr>
-<td style="width: 7%">4</td>
-<td style="width: 15%">check if adding 11111 and 11111 will overflow</td>
-<td style="width: 15%">views</td>
-<td style="width: 16%">checkIfOverflow</td>
-<td style="width: 14%">11111,11111</td>
-<td style="width: 9%">Yes (an overflow will occur)</td>
-<td style="width: 10%">Yes (an overflow will occur)</td>
-<td class="reallysmall">Pass!</td>
+<td>4</td>
+<td>check if adding 11111 and 11111 will overflow</td>
+<td>views</td>
+<td>checkIfOverflow</td>
+<td>11111,11111</td>
+<td>Yes (an overflow will occur)</td>
+<td>Yes (an overflow will occur)</td>
+<td>Pass!</td>
 </tr>
 <tr>
-<td style="width: 7%">5</td>
-<td style="width: 15%">check if adding 11111 and 00001 will overflow</td>
-<td style="width: 15%">views</td>
-<td style="width: 16%">checkIfOverflow</td>
-<td style="width: 14%">11111,00001</td>
-<td style="width: 9%">Yes (an overflow will occur)</td>
-<td style="width: 10%">Yes (an overflow will occur)</td>
-<td class="reallysmall">Pass!</td>
+<td>5</td>
+<td>check if adding 11111 and 00001 will overflow</td>
+<td>views</td>
+<td>checkIfOverflow</td>
+<td>11111,00001</td>
+<td>Yes (an overflow will occur)</td>
+<td>Yes (an overflow will occur)</td>
+<td>Pass!</td>
+</tr>
+<tr>
+<td>6</td>
+<td>convert -10 to sign magnitude</td>
+<td>views</td>
+<td>cofc_convert_decimal_to_sign_magnitude</td>
+<td>-10,5</td>
+<td>0b11010</td>
+<td>0b11010</td>
+<td>Pass!</td>
+</tr>
+<tr>
+<td>7</td>
+<td>convert 10 to sign magnitude</td>
+<td>views</td>
+<td>cofc_convert_decimal_to_sign_magnitude</td>
+<td>10,5</td>
+<td>0b01010</td>
+<td>0b01010</td>
+<td>Pass!</td>
+</tr>
+<tr>
+<td>8</td>
+<td>convert positive 0 to sign magnitude</td>
+<td>views</td>
+<td>cofc_convert_decimal_to_sign_magnitude</td>
+<td>0,5</td>
+<td>0b00000</td>
+<td>0b00000</td>
+<td>Pass!</td>
+</tr>
+<tr>
+<td>9</td>
+<td>convert -0 to sign magnitude</td>
+<td>views</td>
+<td>cofc_convert_decimal_to_sign_magnitude</td>
+<td>-0,5</td>
+<td>0b10000</td>
+<td>0b00000</td>
+<td>Fail!</td>
+</tr>
+<tr>
+<td>10</td>
+<td>convert -10 to sign magnitude with 4 bits</td>
+<td>views</td>
+<td>cofc_convert_decimal_to_sign_magnitude</td>
+<td>-10,4</td>
+<td>0b11010</td>
+<td>0b1010</td>
+<td>Fail!</td>
 </tr>
 </tbody> </table> </div> </section> </body> </html>
