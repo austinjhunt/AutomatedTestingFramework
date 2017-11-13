@@ -1,22 +1,25 @@
 #!/usr/bin/env python
+
 cd ../reports
 
 reportsPath="$(eval pwd)"
 
 firstHalfHTML=$reportsPath/reportPartOne.html
 appendHTML=$reportsPath/reportPartTwo.html
+
+
 touch $appendHTML
 echo "" > $appendHTML
 
 cd ../testCases
+
 for currentFile in *; do 
 	COUNTER=1
 	if ! echo "$PWD" | grep "testCases" ; then
 		cd ../testCases
 	
-	#if [[ $(eval "pwd") != *"testCases"* ]]; then
-	#	cd ../testCases
-	fi 
+	fi
+ 
 	printf "\n"
 	while IFS= read -r line
 	do
@@ -54,10 +57,14 @@ for currentFile in *; do
 		
 			oracle=$line
 			echo Oracle: $oracle
-			cd ../testCaseExecutables
-			python $unit.py $args "$oracle" > $reportsPath/tempTestOutput.txt	
-			testOutput="$(cat $reportsPath/tempTestOutput.txt)"
 			
+			cd ../testCaseExecutables
+
+
+			python $unit.py $args "$oracle" > $reportsPath/tempTestOutput.txt	
+			
+			testOutput="$(cat $reportsPath/tempTestOutput.txt)"
+			echo Test Output: $testOutput
 			
 			echo "<tr>" >> $appendHTML
 			echo "<td style=\"width: 7%\">$testCaseNum</td>" >> $appendHTML
@@ -68,7 +75,7 @@ for currentFile in *; do
 			echo "<td style=\"width: 9%\">$oracle</td>" >> $appendHTML
 			echo "<td style=\"width: 10%\">$testOutput</td>" >> $appendHTML
 			
-			if [ "$testOutput" == "$oracle" ]; then
+			if [ "$testOutput" = "$oracle" ]; then
 				echo "<td class=\"reallysmall\">Pass!</td>" >> $appendHTML
 			fi
 			
