@@ -1,3 +1,6 @@
+
+#!/bin/python
+
 def cofc_convert_decimal_to_unsigned_binary_with_length(_decimal_value, _length_of_binary):
     ans_binary = bin(_decimal_value)
     while len(ans_binary) < (_length_of_binary + 2):
@@ -8,6 +11,7 @@ def cofc_convert_decimal_to_unsigned_binary_with_length(_decimal_value, _length_
         ans_binary = ans_binary[0:2] + ans_binary[3:]
 
     return ans_binary
+
     
 def main(argv): 
 	values=sys.argv[1].split(",")
@@ -18,3 +22,4 @@ def main(argv):
 if __name__ == '__main__':
 	import sys
 	main(sys.argv[1:])
+
