@@ -2,13 +2,740 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45c22786-085a-4730-865f-d09e26e7f155" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testCasesExecutables/testCase3.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testCases/testCase1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testCases/testCase2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testCasesExecutables/AnotherHello.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testCasesExecutables/helloWorld.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/src/addTwoBinaries.py" afterPath="$PROJECT_DIR$/project/src/addTwoBinaries.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HFOSSTestProgress.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Improvements Needed.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ReportOct31.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screen Shot 2017-11-01 at 11.27.04 PM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/oracles/testCase1Oracle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/oracles/testCase2Oracle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/oracles/testCase3Oracle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/oracles/testCase4Oracle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/oracles/testCase5Oracle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/root.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/Icon&#13;" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/csci250/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/csci250/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/csci250/testReport.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/csci250/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/csci250/wsgi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/csci250Database.spf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/functionsFromDB.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0002_pimsleur_lesson.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0003_auto_20160724_1743.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0004_week.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0005_delete_week.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0006_week.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0007_topic.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0008_auto_20160725_1719.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0009_item.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0010_auto_20160728_1812.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0011_subitem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0012_delete_subitem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0013_subitem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0014_subitem_subitem_category.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0015_quizquestion.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0016_quizquestion_repeat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0017_quizquestion_quiztype.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0018_quizquestion_python_code.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0019_item_expand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0020_subitem_show.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0021_quizquestion_author_id.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0022_item_type.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0023_lesson_items.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0024_auto_20170316_1742.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0025_auto_20170317_1649.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0026_assignment_question_mltiple4_assignment_question_id.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0027_week_semester.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0028_final_exam.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0029_auto_20170703_1205.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0030_assignment_question_python_code.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0031_assignment_question_is_answer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0032_auto_20170704_0022.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0033_assignment_question_element_style.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0034_auto_20170704_1032.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0035_auto_20170704_1034.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0036_auto_20170704_1040.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0037_assignment_question_repeat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0038_assignment_answer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0039_student_assignment_answers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0040_assignments_assignment_short_title.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0041_assignments_assignment_date_tbd.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0042_audio_play_history.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0043_audio_play_history_date_time.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0044_assignment_answer_placeholder.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0045_student_assignment_answers_last_submit_date_time.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0046_my_user.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0047_auto_20170812_1432.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0048_week_week_level_of_difficulty.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0049_remove_week_week_level_of_difficulty.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0050_section.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0051_auto_20171012_1329.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0052_auto_20171012_1351.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0053_saved_questions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0054_saved_questions_time_stamp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0055_auto_20171020_1304.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0056_saved_questions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/0057_auto_20171023_1258.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/audio/Assignment02_Ayman_Hajja.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/audio/PP3692963319_ep4.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/audio/PP3941264909_ep5.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/audio/PP7918990166_ep6.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/audio/aaa.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/audio/correct_sound.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/audio/incorrect_sound.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/audio/success_sound.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/0116C3A4-C7A4-4AB8-AEA9-6646B6DF6CF9/0116C3A4-C7A4-4AB8-AEA9-6646B6DF6CF9.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/0116C3A4-C7A4-4AB8-AEA9-6646B6DF6CF9/0116C3A4-C7A4-4AB8-AEA9-6646B6DF6CF9.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/0116C3A4-C7A4-4AB8-AEA9-6646B6DF6CF9/assets/0116C3A4-C7A4-4AB8-AEA9-6646B6DF6CF9.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/0116C3A4-C7A4-4AB8-AEA9-6646B6DF6CF9/assets/0116C3A4-C7A4-4AB8-AEA9-6646B6DF6CF9.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/0116C3A4-C7A4-4AB8-AEA9-6646B6DF6CF9/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/04BDB1BC-B346-47D4-9A70-0B1E4E6427FC/04BDB1BC-B346-47D4-9A70-0B1E4E6427FC.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/04BDB1BC-B346-47D4-9A70-0B1E4E6427FC/04BDB1BC-B346-47D4-9A70-0B1E4E6427FC.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/04BDB1BC-B346-47D4-9A70-0B1E4E6427FC/assets/04BDB1BC-B346-47D4-9A70-0B1E4E6427FC.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/04BDB1BC-B346-47D4-9A70-0B1E4E6427FC/assets/04BDB1BC-B346-47D4-9A70-0B1E4E6427FC.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/04BDB1BC-B346-47D4-9A70-0B1E4E6427FC/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/04FA761C-9C7D-4E51-8867-557BAE7A4FA6/04FA761C-9C7D-4E51-8867-557BAE7A4FA6.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/04FA761C-9C7D-4E51-8867-557BAE7A4FA6/04FA761C-9C7D-4E51-8867-557BAE7A4FA6.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/04FA761C-9C7D-4E51-8867-557BAE7A4FA6/assets/04FA761C-9C7D-4E51-8867-557BAE7A4FA6.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/04FA761C-9C7D-4E51-8867-557BAE7A4FA6/assets/04FA761C-9C7D-4E51-8867-557BAE7A4FA6.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/04FA761C-9C7D-4E51-8867-557BAE7A4FA6/assets/34663F48B6041E854F2230157C3A76A4.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/04FA761C-9C7D-4E51-8867-557BAE7A4FA6/assets/C1D499D2338768D7D1FC44DC0301242D.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/04FA761C-9C7D-4E51-8867-557BAE7A4FA6/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/1C9271FD-469C-493F-892B-DE3F758F2469/1C9271FD-469C-493F-892B-DE3F758F2469.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/1C9271FD-469C-493F-892B-DE3F758F2469/1C9271FD-469C-493F-892B-DE3F758F2469.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/1C9271FD-469C-493F-892B-DE3F758F2469/assets/1C9271FD-469C-493F-892B-DE3F758F2469.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/1C9271FD-469C-493F-892B-DE3F758F2469/assets/1C9271FD-469C-493F-892B-DE3F758F2469.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/1C9271FD-469C-493F-892B-DE3F758F2469/assets/49CDD71D7EC6C48DB22C05F335A1AD5C.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/1C9271FD-469C-493F-892B-DE3F758F2469/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/237CEB71-51F5-4AB2-881C-2C7B84DA5050/237CEB71-51F5-4AB2-881C-2C7B84DA5050.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/237CEB71-51F5-4AB2-881C-2C7B84DA5050/237CEB71-51F5-4AB2-881C-2C7B84DA5050.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/237CEB71-51F5-4AB2-881C-2C7B84DA5050/assets/237CEB71-51F5-4AB2-881C-2C7B84DA5050.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/237CEB71-51F5-4AB2-881C-2C7B84DA5050/assets/237CEB71-51F5-4AB2-881C-2C7B84DA5050.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/237CEB71-51F5-4AB2-881C-2C7B84DA5050/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA/assets/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA/assets/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA/assets/31995231A35DC4B6023C0BB6F2FBA18B.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA/assets/3F66DBCB66438C6F23670B881FCA3EAC.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA/assets/7A08D96085D3F0A7A07A2A9261FB8D09.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA/assets/81B8B176357E20708BEB03FA81D463E0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA/assets/E55A9BD08BB47C83471785257B43C338.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/2A45C8B0-7EFD-4835-8F14-EFE2E79AFBAA/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/3287EEED-823C-48A9-B2DB-CF5E551AB114/3287EEED-823C-48A9-B2DB-CF5E551AB114.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/3287EEED-823C-48A9-B2DB-CF5E551AB114/3287EEED-823C-48A9-B2DB-CF5E551AB114.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/3287EEED-823C-48A9-B2DB-CF5E551AB114/assets/3287EEED-823C-48A9-B2DB-CF5E551AB114.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/3287EEED-823C-48A9-B2DB-CF5E551AB114/assets/3287EEED-823C-48A9-B2DB-CF5E551AB114.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/3287EEED-823C-48A9-B2DB-CF5E551AB114/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/40789BEE-290E-45A4-82B0-10A75EB8240B/40789BEE-290E-45A4-82B0-10A75EB8240B.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/40789BEE-290E-45A4-82B0-10A75EB8240B/40789BEE-290E-45A4-82B0-10A75EB8240B.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/40789BEE-290E-45A4-82B0-10A75EB8240B/assets/40789BEE-290E-45A4-82B0-10A75EB8240B.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/40789BEE-290E-45A4-82B0-10A75EB8240B/assets/40789BEE-290E-45A4-82B0-10A75EB8240B.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/40789BEE-290E-45A4-82B0-10A75EB8240B/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/57ACAEB8-8412-4D3B-8DBF-A665DFD28750/57ACAEB8-8412-4D3B-8DBF-A665DFD28750.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/57ACAEB8-8412-4D3B-8DBF-A665DFD28750/57ACAEB8-8412-4D3B-8DBF-A665DFD28750.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/57ACAEB8-8412-4D3B-8DBF-A665DFD28750/assets/57ACAEB8-8412-4D3B-8DBF-A665DFD28750.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/57ACAEB8-8412-4D3B-8DBF-A665DFD28750/assets/57ACAEB8-8412-4D3B-8DBF-A665DFD28750.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/57ACAEB8-8412-4D3B-8DBF-A665DFD28750/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/5856F2F7-6E8E-45E0-83CC-24ABDBDB5563/5856F2F7-6E8E-45E0-83CC-24ABDBDB5563.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/5856F2F7-6E8E-45E0-83CC-24ABDBDB5563/5856F2F7-6E8E-45E0-83CC-24ABDBDB5563.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/5856F2F7-6E8E-45E0-83CC-24ABDBDB5563/assets/5856F2F7-6E8E-45E0-83CC-24ABDBDB5563.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/5856F2F7-6E8E-45E0-83CC-24ABDBDB5563/assets/5856F2F7-6E8E-45E0-83CC-24ABDBDB5563.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/5856F2F7-6E8E-45E0-83CC-24ABDBDB5563/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/59693FE5-FB35-4E2B-A023-2759831651B8/59693FE5-FB35-4E2B-A023-2759831651B8.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/59693FE5-FB35-4E2B-A023-2759831651B8/59693FE5-FB35-4E2B-A023-2759831651B8.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/59693FE5-FB35-4E2B-A023-2759831651B8/assets/59693FE5-FB35-4E2B-A023-2759831651B8.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/59693FE5-FB35-4E2B-A023-2759831651B8/assets/59693FE5-FB35-4E2B-A023-2759831651B8.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/59693FE5-FB35-4E2B-A023-2759831651B8/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/5A67DBA7-8CC6-42C2-B555-BBC9536A445B/5A67DBA7-8CC6-42C2-B555-BBC9536A445B.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/5A67DBA7-8CC6-42C2-B555-BBC9536A445B/5A67DBA7-8CC6-42C2-B555-BBC9536A445B.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/5A67DBA7-8CC6-42C2-B555-BBC9536A445B/assets/5A67DBA7-8CC6-42C2-B555-BBC9536A445B.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/5A67DBA7-8CC6-42C2-B555-BBC9536A445B/assets/5A67DBA7-8CC6-42C2-B555-BBC9536A445B.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/5A67DBA7-8CC6-42C2-B555-BBC9536A445B/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6224496A-A687-4B5B-8255-5AF256F3CEC4/6224496A-A687-4B5B-8255-5AF256F3CEC4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6224496A-A687-4B5B-8255-5AF256F3CEC4/6224496A-A687-4B5B-8255-5AF256F3CEC4.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6224496A-A687-4B5B-8255-5AF256F3CEC4/assets/17043607E64B3242B087F6EC001C8D0F.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6224496A-A687-4B5B-8255-5AF256F3CEC4/assets/355BF32FF5AC5780F181596567D412BA.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6224496A-A687-4B5B-8255-5AF256F3CEC4/assets/6224496A-A687-4B5B-8255-5AF256F3CEC4.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6224496A-A687-4B5B-8255-5AF256F3CEC4/assets/6224496A-A687-4B5B-8255-5AF256F3CEC4.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6224496A-A687-4B5B-8255-5AF256F3CEC4/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/62E9C9EB-5047-4ED7-8292-8DB954E22DEE/62E9C9EB-5047-4ED7-8292-8DB954E22DEE.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/62E9C9EB-5047-4ED7-8292-8DB954E22DEE/62E9C9EB-5047-4ED7-8292-8DB954E22DEE.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/62E9C9EB-5047-4ED7-8292-8DB954E22DEE/assets/05AE4274DA15E139BBD408D22579ED90.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/62E9C9EB-5047-4ED7-8292-8DB954E22DEE/assets/520789F8766CD7F0618EDEE4B5C6B7F2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/62E9C9EB-5047-4ED7-8292-8DB954E22DEE/assets/62E9C9EB-5047-4ED7-8292-8DB954E22DEE.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/62E9C9EB-5047-4ED7-8292-8DB954E22DEE/assets/62E9C9EB-5047-4ED7-8292-8DB954E22DEE.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/62E9C9EB-5047-4ED7-8292-8DB954E22DEE/assets/FB6D03CCC788A7589C4DE22F51ABA4AF.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/62E9C9EB-5047-4ED7-8292-8DB954E22DEE/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/6408CB95-2704-41D4-B5AC-6AC0389EACC0.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/6408CB95-2704-41D4-B5AC-6AC0389EACC0.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/02C612653211B3B1C40C1F32C8DD5903.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/082436C666994AEFD707153C1E66D2B9.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/27A71C7937C1C9A091BB665E3EEA9F1D.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/3F561F74634EAB6E3E584C4210486FE4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/4FF5DCDFF5BBEF9D7EA86C37B12B8FE7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/79E92003F74497EEC543E112AB56E807.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/8301C42B47DBD0B7AD18FF38971AFC70.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/84F47A3CBFF12C1BA065CA352584F877.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/8ABEBED6CB736F537CB07FDEFC7783E9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/9AFD2DA2C3B0D4AFCC0BE20B765222F0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/B61D378AF15556C415131845DEADCF42.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/B9E4BB4A0C1791BE473114192B61D73E.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/BF42AA95732D8BC35AF2FB3B11B0BC44.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/C5C0069B28D6F4BE561BCE25B26EEEA8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/DF8E4C05E12EABBD2AB5135DD675CB6C.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/E0BA9A9DBA33EC213D03EF1EF57B05A3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/assets/EF76729975E67BD1A0C35C1EE5F89885.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6408CB95-2704-41D4-B5AC-6AC0389EACC0/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/65B7CAF4-E0DB-48D4-867E-EFB377E2EA67/65B7CAF4-E0DB-48D4-867E-EFB377E2EA67.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/65B7CAF4-E0DB-48D4-867E-EFB377E2EA67/65B7CAF4-E0DB-48D4-867E-EFB377E2EA67.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/65B7CAF4-E0DB-48D4-867E-EFB377E2EA67/assets/65B7CAF4-E0DB-48D4-867E-EFB377E2EA67.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/65B7CAF4-E0DB-48D4-867E-EFB377E2EA67/assets/65B7CAF4-E0DB-48D4-867E-EFB377E2EA67.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/65B7CAF4-E0DB-48D4-867E-EFB377E2EA67/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/67F27579-14AC-44D1-B219-23998FE86ABD/67F27579-14AC-44D1-B219-23998FE86ABD.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/67F27579-14AC-44D1-B219-23998FE86ABD/67F27579-14AC-44D1-B219-23998FE86ABD.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/67F27579-14AC-44D1-B219-23998FE86ABD/assets/67F27579-14AC-44D1-B219-23998FE86ABD.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/67F27579-14AC-44D1-B219-23998FE86ABD/assets/67F27579-14AC-44D1-B219-23998FE86ABD.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/67F27579-14AC-44D1-B219-23998FE86ABD/assets/68FB4B7B8E147CF26608E3F7EADD70DF.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/67F27579-14AC-44D1-B219-23998FE86ABD/assets/EAD7E86D7B1661A775C32FD54E962889.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/67F27579-14AC-44D1-B219-23998FE86ABD/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/696EACE7-ACC0-4566-ADB4-D9B503E1F1FA/696EACE7-ACC0-4566-ADB4-D9B503E1F1FA.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/696EACE7-ACC0-4566-ADB4-D9B503E1F1FA/696EACE7-ACC0-4566-ADB4-D9B503E1F1FA.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/696EACE7-ACC0-4566-ADB4-D9B503E1F1FA/assets/696EACE7-ACC0-4566-ADB4-D9B503E1F1FA.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/696EACE7-ACC0-4566-ADB4-D9B503E1F1FA/assets/696EACE7-ACC0-4566-ADB4-D9B503E1F1FA.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/696EACE7-ACC0-4566-ADB4-D9B503E1F1FA/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6A727A37-3CA7-4A7B-98DA-1D60604B9AE2/6A727A37-3CA7-4A7B-98DA-1D60604B9AE2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6A727A37-3CA7-4A7B-98DA-1D60604B9AE2/6A727A37-3CA7-4A7B-98DA-1D60604B9AE2.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6A727A37-3CA7-4A7B-98DA-1D60604B9AE2/assets/6A727A37-3CA7-4A7B-98DA-1D60604B9AE2.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6A727A37-3CA7-4A7B-98DA-1D60604B9AE2/assets/6A727A37-3CA7-4A7B-98DA-1D60604B9AE2.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/6A727A37-3CA7-4A7B-98DA-1D60604B9AE2/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/7A7885ED-9CFD-4579-909A-C3E2C2659D79/7A7885ED-9CFD-4579-909A-C3E2C2659D79.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/7A7885ED-9CFD-4579-909A-C3E2C2659D79/7A7885ED-9CFD-4579-909A-C3E2C2659D79.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/7A7885ED-9CFD-4579-909A-C3E2C2659D79/assets/7A7885ED-9CFD-4579-909A-C3E2C2659D79.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/7A7885ED-9CFD-4579-909A-C3E2C2659D79/assets/7A7885ED-9CFD-4579-909A-C3E2C2659D79.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/7A7885ED-9CFD-4579-909A-C3E2C2659D79/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/7AC250B8-D0F7-4A85-B909-3840E1A21EFD/7AC250B8-D0F7-4A85-B909-3840E1A21EFD.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/7AC250B8-D0F7-4A85-B909-3840E1A21EFD/7AC250B8-D0F7-4A85-B909-3840E1A21EFD.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/7AC250B8-D0F7-4A85-B909-3840E1A21EFD/assets/7AC250B8-D0F7-4A85-B909-3840E1A21EFD.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/7AC250B8-D0F7-4A85-B909-3840E1A21EFD/assets/7AC250B8-D0F7-4A85-B909-3840E1A21EFD.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/7AC250B8-D0F7-4A85-B909-3840E1A21EFD/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8015E8FC-F4EC-4C28-BFCD-34D673E685F5/8015E8FC-F4EC-4C28-BFCD-34D673E685F5.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8015E8FC-F4EC-4C28-BFCD-34D673E685F5/8015E8FC-F4EC-4C28-BFCD-34D673E685F5.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8015E8FC-F4EC-4C28-BFCD-34D673E685F5/assets/8015E8FC-F4EC-4C28-BFCD-34D673E685F5.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8015E8FC-F4EC-4C28-BFCD-34D673E685F5/assets/8015E8FC-F4EC-4C28-BFCD-34D673E685F5.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8015E8FC-F4EC-4C28-BFCD-34D673E685F5/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8A18FA65-C3CA-47CE-90C9-D7F6C9CDEB19/8A18FA65-C3CA-47CE-90C9-D7F6C9CDEB19.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8A18FA65-C3CA-47CE-90C9-D7F6C9CDEB19/8A18FA65-C3CA-47CE-90C9-D7F6C9CDEB19.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8A18FA65-C3CA-47CE-90C9-D7F6C9CDEB19/assets/8A18FA65-C3CA-47CE-90C9-D7F6C9CDEB19.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8A18FA65-C3CA-47CE-90C9-D7F6C9CDEB19/assets/8A18FA65-C3CA-47CE-90C9-D7F6C9CDEB19.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8A18FA65-C3CA-47CE-90C9-D7F6C9CDEB19/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8D33CE53-E7FA-46A6-81F6-65FF379F9B51/8D33CE53-E7FA-46A6-81F6-65FF379F9B51.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8D33CE53-E7FA-46A6-81F6-65FF379F9B51/8D33CE53-E7FA-46A6-81F6-65FF379F9B51.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8D33CE53-E7FA-46A6-81F6-65FF379F9B51/assets/8D33CE53-E7FA-46A6-81F6-65FF379F9B51.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8D33CE53-E7FA-46A6-81F6-65FF379F9B51/assets/8D33CE53-E7FA-46A6-81F6-65FF379F9B51.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8D33CE53-E7FA-46A6-81F6-65FF379F9B51/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8F90448D-A181-4D5E-BBC4-E7FA85BC18DE/8F90448D-A181-4D5E-BBC4-E7FA85BC18DE.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8F90448D-A181-4D5E-BBC4-E7FA85BC18DE/8F90448D-A181-4D5E-BBC4-E7FA85BC18DE.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8F90448D-A181-4D5E-BBC4-E7FA85BC18DE/assets/8F90448D-A181-4D5E-BBC4-E7FA85BC18DE.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8F90448D-A181-4D5E-BBC4-E7FA85BC18DE/assets/8F90448D-A181-4D5E-BBC4-E7FA85BC18DE.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/8F90448D-A181-4D5E-BBC4-E7FA85BC18DE/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/94D39FD6-9F7E-49E4-8449-C746D5EC2FB2/94D39FD6-9F7E-49E4-8449-C746D5EC2FB2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/94D39FD6-9F7E-49E4-8449-C746D5EC2FB2/94D39FD6-9F7E-49E4-8449-C746D5EC2FB2.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/94D39FD6-9F7E-49E4-8449-C746D5EC2FB2/assets/94D39FD6-9F7E-49E4-8449-C746D5EC2FB2.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/94D39FD6-9F7E-49E4-8449-C746D5EC2FB2/assets/94D39FD6-9F7E-49E4-8449-C746D5EC2FB2.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/94D39FD6-9F7E-49E4-8449-C746D5EC2FB2/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9972E2AB-C332-4297-8266-83CF880BF5BA/9972E2AB-C332-4297-8266-83CF880BF5BA.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9972E2AB-C332-4297-8266-83CF880BF5BA/9972E2AB-C332-4297-8266-83CF880BF5BA.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9972E2AB-C332-4297-8266-83CF880BF5BA/assets/9972E2AB-C332-4297-8266-83CF880BF5BA.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9972E2AB-C332-4297-8266-83CF880BF5BA/assets/9972E2AB-C332-4297-8266-83CF880BF5BA.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9972E2AB-C332-4297-8266-83CF880BF5BA/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9DED1E3E-84A8-4ADD-9CEA-42B6F5A516D9/9DED1E3E-84A8-4ADD-9CEA-42B6F5A516D9.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9DED1E3E-84A8-4ADD-9CEA-42B6F5A516D9/9DED1E3E-84A8-4ADD-9CEA-42B6F5A516D9.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9DED1E3E-84A8-4ADD-9CEA-42B6F5A516D9/assets/9DED1E3E-84A8-4ADD-9CEA-42B6F5A516D9.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9DED1E3E-84A8-4ADD-9CEA-42B6F5A516D9/assets/9DED1E3E-84A8-4ADD-9CEA-42B6F5A516D9.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9DED1E3E-84A8-4ADD-9CEA-42B6F5A516D9/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9FEC1DFE-1D74-4D49-BD05-2EE08BFB175D/9FEC1DFE-1D74-4D49-BD05-2EE08BFB175D.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9FEC1DFE-1D74-4D49-BD05-2EE08BFB175D/9FEC1DFE-1D74-4D49-BD05-2EE08BFB175D.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9FEC1DFE-1D74-4D49-BD05-2EE08BFB175D/assets/9BABD9C102E995611AC55BEB97066648.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9FEC1DFE-1D74-4D49-BD05-2EE08BFB175D/assets/9FEC1DFE-1D74-4D49-BD05-2EE08BFB175D.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9FEC1DFE-1D74-4D49-BD05-2EE08BFB175D/assets/9FEC1DFE-1D74-4D49-BD05-2EE08BFB175D.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/9FEC1DFE-1D74-4D49-BD05-2EE08BFB175D/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/A4D3F9C5-A4A8-4A73-B93B-CFBB78CCFA5D/A4D3F9C5-A4A8-4A73-B93B-CFBB78CCFA5D.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/A4D3F9C5-A4A8-4A73-B93B-CFBB78CCFA5D/A4D3F9C5-A4A8-4A73-B93B-CFBB78CCFA5D.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/A4D3F9C5-A4A8-4A73-B93B-CFBB78CCFA5D/assets/A4D3F9C5-A4A8-4A73-B93B-CFBB78CCFA5D.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/A4D3F9C5-A4A8-4A73-B93B-CFBB78CCFA5D/assets/A4D3F9C5-A4A8-4A73-B93B-CFBB78CCFA5D.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/A4D3F9C5-A4A8-4A73-B93B-CFBB78CCFA5D/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/AB2B8798-BC9B-4871-8B08-8C0BBEDF4C6E/AB2B8798-BC9B-4871-8B08-8C0BBEDF4C6E.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/AB2B8798-BC9B-4871-8B08-8C0BBEDF4C6E/AB2B8798-BC9B-4871-8B08-8C0BBEDF4C6E.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/AB2B8798-BC9B-4871-8B08-8C0BBEDF4C6E/assets/AB2B8798-BC9B-4871-8B08-8C0BBEDF4C6E.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/AB2B8798-BC9B-4871-8B08-8C0BBEDF4C6E/assets/AB2B8798-BC9B-4871-8B08-8C0BBEDF4C6E.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/AB2B8798-BC9B-4871-8B08-8C0BBEDF4C6E/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/AD20A295-FD7D-4B47-B2F3-7372F3C5B81B/AD20A295-FD7D-4B47-B2F3-7372F3C5B81B.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/AD20A295-FD7D-4B47-B2F3-7372F3C5B81B/AD20A295-FD7D-4B47-B2F3-7372F3C5B81B.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/AD20A295-FD7D-4B47-B2F3-7372F3C5B81B/assets/AD20A295-FD7D-4B47-B2F3-7372F3C5B81B.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/AD20A295-FD7D-4B47-B2F3-7372F3C5B81B/assets/AD20A295-FD7D-4B47-B2F3-7372F3C5B81B.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/AD20A295-FD7D-4B47-B2F3-7372F3C5B81B/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/ADDD496F-836F-40D6-8178-9C0D663F087E/ADDD496F-836F-40D6-8178-9C0D663F087E.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/ADDD496F-836F-40D6-8178-9C0D663F087E/ADDD496F-836F-40D6-8178-9C0D663F087E.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/ADDD496F-836F-40D6-8178-9C0D663F087E/assets/ADDD496F-836F-40D6-8178-9C0D663F087E.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/ADDD496F-836F-40D6-8178-9C0D663F087E/assets/ADDD496F-836F-40D6-8178-9C0D663F087E.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/ADDD496F-836F-40D6-8178-9C0D663F087E/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B02B6ED3-5745-41A9-B425-F92F2A968F5A/B02B6ED3-5745-41A9-B425-F92F2A968F5A.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B02B6ED3-5745-41A9-B425-F92F2A968F5A/B02B6ED3-5745-41A9-B425-F92F2A968F5A.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B02B6ED3-5745-41A9-B425-F92F2A968F5A/assets/B02B6ED3-5745-41A9-B425-F92F2A968F5A.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B02B6ED3-5745-41A9-B425-F92F2A968F5A/assets/B02B6ED3-5745-41A9-B425-F92F2A968F5A.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B02B6ED3-5745-41A9-B425-F92F2A968F5A/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B1F73478-DC86-4AEC-98E8-48C3EBC136AD/B1F73478-DC86-4AEC-98E8-48C3EBC136AD.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B1F73478-DC86-4AEC-98E8-48C3EBC136AD/B1F73478-DC86-4AEC-98E8-48C3EBC136AD.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B1F73478-DC86-4AEC-98E8-48C3EBC136AD/assets/B1F73478-DC86-4AEC-98E8-48C3EBC136AD.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B1F73478-DC86-4AEC-98E8-48C3EBC136AD/assets/B1F73478-DC86-4AEC-98E8-48C3EBC136AD.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B1F73478-DC86-4AEC-98E8-48C3EBC136AD/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B39233D3-BDE7-42BB-A652-EC15CCFA2713/B39233D3-BDE7-42BB-A652-EC15CCFA2713.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B39233D3-BDE7-42BB-A652-EC15CCFA2713/B39233D3-BDE7-42BB-A652-EC15CCFA2713.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B39233D3-BDE7-42BB-A652-EC15CCFA2713/assets/B39233D3-BDE7-42BB-A652-EC15CCFA2713.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B39233D3-BDE7-42BB-A652-EC15CCFA2713/assets/B39233D3-BDE7-42BB-A652-EC15CCFA2713.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B39233D3-BDE7-42BB-A652-EC15CCFA2713/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B805585F-3140-446B-81A0-93498ECE0696/B805585F-3140-446B-81A0-93498ECE0696.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B805585F-3140-446B-81A0-93498ECE0696/B805585F-3140-446B-81A0-93498ECE0696.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B805585F-3140-446B-81A0-93498ECE0696/assets/B805585F-3140-446B-81A0-93498ECE0696.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B805585F-3140-446B-81A0-93498ECE0696/assets/B805585F-3140-446B-81A0-93498ECE0696.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B805585F-3140-446B-81A0-93498ECE0696/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8/assets/0ADC972CB10F03E0AF3FA56E7882DE45.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8/assets/277A9D7934C27BF1EFC6E9E71D49760D.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8/assets/4AA9234B041C5877FB40F8FBA2D9F36E.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8/assets/5C0AD8F832A98F7B84A51F49CD0ED901.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8/assets/9501347757F6FF6CF4D843EDF137F9D7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8/assets/958A271AA8E28EB089C82B9DC2E3B647.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8/assets/9DD431A2F882281CF7C924A9461708C3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8/assets/EC5BE3B9674B0CCABD79E766972B5268.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/B93525F2-FC6F-40DE-96D2-5DDA46FCB6A8/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BA353D6A-1C5C-45DF-8A5A-5A92C068E9A2/BA353D6A-1C5C-45DF-8A5A-5A92C068E9A2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BA353D6A-1C5C-45DF-8A5A-5A92C068E9A2/BA353D6A-1C5C-45DF-8A5A-5A92C068E9A2.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BA353D6A-1C5C-45DF-8A5A-5A92C068E9A2/assets/BA353D6A-1C5C-45DF-8A5A-5A92C068E9A2.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BA353D6A-1C5C-45DF-8A5A-5A92C068E9A2/assets/BA353D6A-1C5C-45DF-8A5A-5A92C068E9A2.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BA353D6A-1C5C-45DF-8A5A-5A92C068E9A2/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BACC141D-E6BA-4382-AFDF-286325B2DA3E/BACC141D-E6BA-4382-AFDF-286325B2DA3E.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BACC141D-E6BA-4382-AFDF-286325B2DA3E/BACC141D-E6BA-4382-AFDF-286325B2DA3E.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BACC141D-E6BA-4382-AFDF-286325B2DA3E/assets/BACC141D-E6BA-4382-AFDF-286325B2DA3E.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BACC141D-E6BA-4382-AFDF-286325B2DA3E/assets/BACC141D-E6BA-4382-AFDF-286325B2DA3E.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BACC141D-E6BA-4382-AFDF-286325B2DA3E/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738/assets/502F6BF9021AEAD9FBBF4D9A9AF21C3F.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738/assets/69F3DBCFA948FFE0501D86F0E8056B11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738/assets/87808DF10389550C029A41C4C5E8D800.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738/assets/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738/assets/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738/assets/E9FC1591113BB081DD4A9B60D3C89E13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738/assets/FB86F30AE97EC1F056D2B1C9E923D5E0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/BC005BF2-FCC5-4CA7-8666-2DB2F7C29738/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D32AF7D2-6403-4E95-BBE6-D2180B40F0D4/D32AF7D2-6403-4E95-BBE6-D2180B40F0D4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D32AF7D2-6403-4E95-BBE6-D2180B40F0D4/D32AF7D2-6403-4E95-BBE6-D2180B40F0D4.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D32AF7D2-6403-4E95-BBE6-D2180B40F0D4/assets/2C009E0B2D422F48D027614515233504.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D32AF7D2-6403-4E95-BBE6-D2180B40F0D4/assets/5ADAEAB6F8BAA607F41D11ED1F97A7B1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D32AF7D2-6403-4E95-BBE6-D2180B40F0D4/assets/D32AF7D2-6403-4E95-BBE6-D2180B40F0D4.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D32AF7D2-6403-4E95-BBE6-D2180B40F0D4/assets/D32AF7D2-6403-4E95-BBE6-D2180B40F0D4.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D32AF7D2-6403-4E95-BBE6-D2180B40F0D4/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D800A4B6-BFDA-4770-A7B1-E9C930169BBE/D800A4B6-BFDA-4770-A7B1-E9C930169BBE.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D800A4B6-BFDA-4770-A7B1-E9C930169BBE/D800A4B6-BFDA-4770-A7B1-E9C930169BBE.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D800A4B6-BFDA-4770-A7B1-E9C930169BBE/assets/D800A4B6-BFDA-4770-A7B1-E9C930169BBE.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D800A4B6-BFDA-4770-A7B1-E9C930169BBE/assets/D800A4B6-BFDA-4770-A7B1-E9C930169BBE.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D800A4B6-BFDA-4770-A7B1-E9C930169BBE/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D8771056-F64E-4C43-8F2E-810B67B9A3C6/D8771056-F64E-4C43-8F2E-810B67B9A3C6.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D8771056-F64E-4C43-8F2E-810B67B9A3C6/D8771056-F64E-4C43-8F2E-810B67B9A3C6.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D8771056-F64E-4C43-8F2E-810B67B9A3C6/assets/D8771056-F64E-4C43-8F2E-810B67B9A3C6.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D8771056-F64E-4C43-8F2E-810B67B9A3C6/assets/D8771056-F64E-4C43-8F2E-810B67B9A3C6.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/D8771056-F64E-4C43-8F2E-810B67B9A3C6/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/DF4286CE-E81E-4CD1-B589-AD4613303C6A/DF4286CE-E81E-4CD1-B589-AD4613303C6A.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/DF4286CE-E81E-4CD1-B589-AD4613303C6A/DF4286CE-E81E-4CD1-B589-AD4613303C6A.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/DF4286CE-E81E-4CD1-B589-AD4613303C6A/assets/DF4286CE-E81E-4CD1-B589-AD4613303C6A.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/DF4286CE-E81E-4CD1-B589-AD4613303C6A/assets/DF4286CE-E81E-4CD1-B589-AD4613303C6A.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/DF4286CE-E81E-4CD1-B589-AD4613303C6A/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/E0B157AF-0E47-4885-9686-281F52480EFC/E0B157AF-0E47-4885-9686-281F52480EFC.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/E0B157AF-0E47-4885-9686-281F52480EFC/E0B157AF-0E47-4885-9686-281F52480EFC.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/E0B157AF-0E47-4885-9686-281F52480EFC/assets/E0B157AF-0E47-4885-9686-281F52480EFC.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/E0B157AF-0E47-4885-9686-281F52480EFC/assets/E0B157AF-0E47-4885-9686-281F52480EFC.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/E0B157AF-0E47-4885-9686-281F52480EFC/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/ED50D593-DEC1-42B4-8603-4B354F127505/ED50D593-DEC1-42B4-8603-4B354F127505.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/ED50D593-DEC1-42B4-8603-4B354F127505/ED50D593-DEC1-42B4-8603-4B354F127505.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/ED50D593-DEC1-42B4-8603-4B354F127505/assets/ED50D593-DEC1-42B4-8603-4B354F127505.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/ED50D593-DEC1-42B4-8603-4B354F127505/assets/ED50D593-DEC1-42B4-8603-4B354F127505.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/ED50D593-DEC1-42B4-8603-4B354F127505/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/FA589962-4CEE-496D-B223-B2E513A0C2F8/FA589962-4CEE-496D-B223-B2E513A0C2F8.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/FA589962-4CEE-496D-B223-B2E513A0C2F8/FA589962-4CEE-496D-B223-B2E513A0C2F8.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/FA589962-4CEE-496D-B223-B2E513A0C2F8/assets/FA589962-4CEE-496D-B223-B2E513A0C2F8.svgmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/FA589962-4CEE-496D-B223-B2E513A0C2F8/assets/FA589962-4CEE-496D-B223-B2E513A0C2F8.svgmapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/FA589962-4CEE-496D-B223-B2E513A0C2F8/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/header.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/header.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/AnimationManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/DebuggingSupport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/DisplayManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/Help.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/HelpPlacardController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/KNTransitionSlide_Black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/KNTransitionSwoosh_Shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/KPFObjects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/KeynoteDHTMLPlayer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/KeynoteDHTMLPlayer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/KeynoteDHTMLPlayer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/NarrationManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/NavigatorController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/OrientationController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/ScriptManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/ShowController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/SlideManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/SlideNumberController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/StageManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/TextureManager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/TouchController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/Utilities.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/close_hi@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/close_n@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/close_p@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/left_arrow_mobile_d-hd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/left_arrow_mobile_d.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/left_arrow_mobile_n-hd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/left_arrow_mobile_n.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/prototype.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/right_arrow_mobile_d-hd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/right_arrow_mobile_d.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/right_arrow_mobile_n-hd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/right_arrow_mobile_n.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/spinner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/player/waiting_bezel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/assets/thumbnail.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/cl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/hover.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/ionicons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/layout.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/plugin/YTPlayer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/plugin/animate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/plugin/colorbox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/plugin/flexslider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/plugin/jquery.fs.tipper.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/plugin/jquery.fullPage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/plugin/mediaelementplayer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/plugin/owl.carousel.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/plugin/sidebar-menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/plugin/smoothproducts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/Apostrophic Labs License.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/How_to_use_webfonts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-narrow_regular_macroman/LANENAR_-demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-narrow_regular_macroman/LANENAR_-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-narrow_regular_macroman/LANENAR_-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-narrow_regular_macroman/LANENAR_-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-narrow_regular_macroman/LANENAR_-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-narrow_regular_macroman/specimen_files/LANENAR_-cleartype.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-narrow_regular_macroman/specimen_files/easytabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-narrow_regular_macroman/specimen_files/grid_12-825-55-15.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-narrow_regular_macroman/specimen_files/specimen_stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-narrow_regular_macroman/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-posh_regular_macroman/LANEPOSH-demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-posh_regular_macroman/LANEPOSH-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-posh_regular_macroman/LANEPOSH-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-posh_regular_macroman/LANEPOSH-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-posh_regular_macroman/LANEPOSH-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-posh_regular_macroman/specimen_files/LANEPOSH-cleartype.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-posh_regular_macroman/specimen_files/easytabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-posh_regular_macroman/specimen_files/grid_12-825-55-15.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-posh_regular_macroman/specimen_files/specimen_stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-posh_regular_macroman/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-upper_regular_macroman/LANEUP__-demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-upper_regular_macroman/LANEUP__-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-upper_regular_macroman/LANEUP__-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-upper_regular_macroman/LANEUP__-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-upper_regular_macroman/LANEUP__-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-upper_regular_macroman/specimen_files/LANEUP__-cleartype.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-upper_regular_macroman/specimen_files/easytabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-upper_regular_macroman/specimen_files/grid_12-825-55-15.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-upper_regular_macroman/specimen_files/specimen_stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/Lane-fontfacekit/lane-upper_regular_macroman/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/ionicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/ionicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/ionicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/fonts/ionicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/about1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/cbox-controls.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/circuits/PC01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/circuits/circuit01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/circuits/circuit02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/circuits/circuit03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/circuits/circuit04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/circuits/circuit05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/circuits/circuit06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/circuits/circuit07.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/close-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/close-color.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/close-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-001-o-default.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-002-o-video.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-003-o-youtube.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-004-o-static.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-005-o-pattern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-006-o-fullwidthSlider.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-007-o-textRotator1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-008-o-textRotator2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-009-o-personal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-01-h-default.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-010-o-revslider1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-011-o-revslider2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-02-h-video.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-03-h-youtube.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-04-h-static.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-05-h-pattern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-06-h-fullwidthSlider.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-07-h-fullscreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-08-h-textRotator1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-09-h-textRotator2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-10-h-agency-grid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-11-h-agency-Masonry.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-12-h-personal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-13-h-pageSectionScroll.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-14-h-shop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-15-h-commingSoon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-16-h-revslider1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/demo/img-17-h-revslider2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/13.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/14.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/146435855886433.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/24.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/31.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/Assignment01.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/full/startup-photos.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/loading.GIF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/loading_gif_1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/logo-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/logo-color.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/logo-light-envy3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/logo-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/logo-white2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/logos/01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/logos/02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/logos/03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/logos/04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/logos/05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/logos/06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/logos/07.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/logos/08.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/map-marker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/moc-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/moc-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/moc-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/24.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/33.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/34.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/35.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/portfolio/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/product/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/product/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/product/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/product/04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/product/05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/product/06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/product/07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/product/08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/sidemenu-icon-color.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/sidemenu-icon-dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/sidemenu-icon-light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/team/people-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/team/people-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/team/people-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/team/people-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/tma1_x_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/img/user-av.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/FileSaver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/audio_history.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/contact-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/countdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/countdown_plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/html2canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/jquery-1.11.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/main07.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/navigation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/pdfmake.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/EasePack.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/TweenLite.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/imagesloaded.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/isotope.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/jquery.colorbox-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/jquery.downCount.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/jquery.easing.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/jquery.fitvids.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/jquery.flexslider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/jquery.fs.tipper.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/jquery.fullPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/jquery.mb.YTPlayer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/jquery.simple-text-rotator.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/jquery.singlePageNav.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/jquery.stellar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/jquery.validate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/jquery.viewportchecker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/masonry.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/mediaelement-and-player.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/owl.carousel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/pollyfill.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/sidebar-menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/smoothproducts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/plugin/wow.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/printThis-master.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/printThis-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/printThis-master/ISSUE_TEMPLATE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/printThis-master/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/printThis-master/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/printThis-master/changelog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/printThis-master/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/printThis-master/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/printThis-master/printThis.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/printThis-master/printThis.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/revolution-slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/theme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/js/vfs_fonts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/media/img/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/media/img/bigplay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/media/img/controls.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/media/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/media/img/skipback.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/media/track1.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/media/video1.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/media/video1.ogv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/media/video1.webm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/media/video1_poster.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/static/main/test.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/assignments.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/assignments_open.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/change_pass.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/change_schedule.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/create_assignment.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/create_lesson.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/edit_quiz.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/grade_assignments.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/grade_assignments_open.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/grade_assignments_sections.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/grade_assignments_students.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/home_in.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/master_page.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/master_page_in.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/my_questions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/sign_up.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/structure.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/templates/main/view_questions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/testReport.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/viewsOld.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/views_index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/main/views_save_question.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/manage.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/project/src/csci250/newDB.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/reports/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/reports/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/reports/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/reports/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/reports/reportPartOne.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/reports/testReport.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/scripts/os" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/scripts/runAllTests2.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/scripts/sys" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/temp/testCaseResults.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/testCaseExecutables/checkIfOverflow.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/testCases/testCase1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/testCases/testCase2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/testCases/testCase3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/testCases/testCase4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestAutomation/testCases/testCase5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myList.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/reports/testReport.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TestAutomation/docs/README.txt" afterPath="$PROJECT_DIR$/TestAutomation/testCaseExecutables/cofc_convert_decimal_to_unsigned_binary_with_length.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,23 +745,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="addTwoBinaries.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project/src/addTwoBinaries.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="checkIfOverflow.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestAutomation/testCaseExecutables/checkIfOverflow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testCase3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testCasesExecutables/testCase3.py">
+      <file leaf-file-name="cofc_convert_decimal_to_unsigned_binary_with_length.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestAutomation/testCaseExecutables/cofc_convert_decimal_to_unsigned_binary_with_length.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+            <state relative-caret-position="357">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestAutomation/project/src/csci250/main/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="234" column="0" lean-forward="false" selection-start-line="234" selection-start-column="0" selection-end-line="243" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,6 +799,7 @@
         <option value="$PROJECT_DIR$/testCasesExecutables/AnotherHello.py" />
         <option value="$PROJECT_DIR$/project/src/addTwoBinaries.py" />
         <option value="$PROJECT_DIR$/testCasesExecutables/testCase3.py" />
+        <option value="$PROJECT_DIR$/TestAutomation/testCaseExecutables/cofc_convert_decimal_to_unsigned_binary_with_length.py" />
       </list>
     </option>
   </component>
@@ -89,13 +829,49 @@
         <subPane>
           <expand>
             <path>
-              <item name="TestAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YEET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YEET" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YEET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YEET" type="462c0819:PsiDirectoryNode" />
               <item name="TestAutomation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TestAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YEET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YEET" type="462c0819:PsiDirectoryNode" />
               <item name="TestAutomation" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YEET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YEET" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YEET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YEET" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="csci250" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YEET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YEET" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="csci250" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YEET" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YEET" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="testCaseExecutables" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -104,6 +880,9 @@
       <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -160,21 +939,21 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32906765" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32906765" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -186,50 +965,34 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testCases/FirstTest.py">
+    <entry file="file://$PROJECT_DIR$/testCases/FirstTest.py" />
+    <entry file="file://$PROJECT_DIR$/testCasesExecutables/FirstTest.py" />
+    <entry file="file://$PROJECT_DIR$/testCasesExecutables/SecondTest.py" />
+    <entry file="file://$PROJECT_DIR$/testCasesExecutables/AnotherHello.py" />
+    <entry file="file://$PROJECT_DIR$/testCasesExecutables/testCase3.py" />
+    <entry file="file://$PROJECT_DIR$/project/src/addTwoBinaries.py" />
+    <entry file="file://$PROJECT_DIR$/TestAutomation/project/src/csci250/main/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="234" column="0" lean-forward="false" selection-start-line="234" selection-start-column="0" selection-end-line="243" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testCasesExecutables/FirstTest.py">
+    <entry file="file://$PROJECT_DIR$/TestAutomation/testCaseExecutables/checkIfOverflow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testCasesExecutables/SecondTest.py">
+    <entry file="file://$PROJECT_DIR$/TestAutomation/testCaseExecutables/cofc_convert_decimal_to_unsigned_binary_with_length.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCasesExecutables/AnotherHello.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCasesExecutables/testCase3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/src/addTwoBinaries.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
