@@ -1,12 +1,15 @@
 def convert_simple_line_c_to_mips(_one_line):
     # First we separate by spaces
-    #
+   
     my_comps = _one_line.split(' ')
 
     # We use [:-1] to get rid of the semi-colon
     #
     if my_comps[0] == 'int':
         return 'addi $' + my_comps[1] + ', $zero, ' + my_comps[3][:-1]
+         # int x = 5; 
+    	 # addi $x, $zero, 5 
+        
     elif my_comps[3] == '+' and my_comps[4][:-1].isdigit():
         return 'addi $' + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", " + my_comps[4][:-1]
     elif my_comps[3] == '-' and my_comps[4][:-1].isdigit():
@@ -20,7 +23,7 @@ def convert_simple_line_c_to_mips(_one_line):
 def main(argv): 
 	#values=sys.argv[1].split(",")
 	oracle = sys.argv[2]
-	assert convert_simple_line_c_to_mips(argv[1])==oracle,"Error: " + argv[1] + "did not return '" + oracle + "'"
+	assert convert_simple_line_c_to_mips(argv[1])==oracle,"Error: " + argv[1] + " did not return '" + oracle + "'"
 	print(oracle)	
 	
 if __name__ == '__main__':

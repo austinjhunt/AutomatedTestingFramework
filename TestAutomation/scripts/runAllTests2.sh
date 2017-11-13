@@ -27,34 +27,39 @@ for currentFile in *; do
 		if [ "$COUNTER" -eq 1 ]; then
 			testCaseNum=$line
 			echo TEST CASE $testCaseNum
-	
+		
 		fi	
 			
 		if [ "$COUNTER" -eq 2 ]; then
 			reqToTest=$line
 			echo $reqToTest
-		
+	
 		fi
 
 		if [ "$COUNTER" -eq 3 ]; then 
 
 			component=$line
-
+			echo $component
+	
 		fi
 
 		if [ "$COUNTER" -eq 4 ]; then
 
 			unit=$line
-
+			echo $unit
+		
 		fi
 			
 		if [ "$COUNTER" -eq 5 ]; then
 			
 			args=$line
+			echo "$args"
+			
+			
 		fi
-		
+			echo $COUNTER
 		if [ "$COUNTER" -eq 6 ]; then 
-		
+			
 			oracle=$line
 			echo Oracle: $oracle
 			
@@ -63,24 +68,25 @@ for currentFile in *; do
 
 			python $unit.py $args "$oracle" > $reportsPath/tempTestOutput.txt	
 			
+			echo Hello!
 			testOutput="$(cat $reportsPath/tempTestOutput.txt)"
 			echo Test Output: $testOutput
 			
 			echo "<tr>" >> $appendHTML
-			echo "<td style=\"width: 7%\">$testCaseNum</td>" >> $appendHTML
-			echo "<td style=\"width: 15%\">$reqToTest</td>" >> $appendHTML
-			echo "<td style=\"width: 15%\">$component</td>" >> $appendHTML
-			echo "<td style=\"width: 16%\">$unit</td>" >> $appendHTML
-			echo "<td style=\"width: 14%\">$args</td>" >> $appendHTML
-			echo "<td style=\"width: 9%\">$oracle</td>" >> $appendHTML
-			echo "<td style=\"width: 10%\">$testOutput</td>" >> $appendHTML
+			echo "<td>$testCaseNum</td>" >> $appendHTML
+			echo "<td>$reqToTest</td>" >> $appendHTML
+			echo "<td>$component</td>" >> $appendHTML
+			echo "<td>$unit</td>" >> $appendHTML
+			echo "<td>$args</td>" >> $appendHTML
+			echo "<td>$oracle</td>" >> $appendHTML
+			echo "<td>$testOutput</td>" >> $appendHTML
 			
 			if [ "$testOutput" = "$oracle" ]; then
-				echo "<td class=\"reallysmall\">Pass!</td>" >> $appendHTML
+				echo "<td>Pass!</td>" >> $appendHTML
 			fi
 			
 			if [ "$testOutput" != "$oracle" ]; then
-				echo "<td class=\"reallysmall\">Fail!</td>" >> $appendHTML
+				echo "<td>Fail!</td>" >> $appendHTML
 			fi
 			
 			
@@ -104,5 +110,5 @@ cd ../reports
 rm $appendHTML
 opSystem=$(eval 'uname')
 
-xdg-open $testReport
+open $testReport
 
