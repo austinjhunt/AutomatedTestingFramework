@@ -1,0 +1,950 @@
+﻿{% extends 'main/master_page_in.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+    <audio id="soundHandle_correct" style="display: none;">
+        <source src='/static/main/audio/correct_sound.mp3'>
+    </audio>
+
+    <audio id="soundHandle_incorrect" style="display: none;">
+        <source src='/static/main/audio/incorrect_sound.mp3'>
+    </audio>
+
+    <audio id="soundHandle_success" style="display: none;">
+        <source src='/static/main/audio/success_sound.mp3'>
+    </audio>
+
+
+    <!-- Preloader -->
+    <section id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img">
+                <a href="#">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="header">
+            <div class="container header-inner">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="#" style="font-weight: normal; font-family: 'Lane - Narrow'; font-size: 24px; line-height: 1; letter-spacing: 2px; text-transform: uppercase;">
+                        {{ full_name }}.
+                    </a>
+                </div>
+                <!-- End Logo -->
+
+                <!-- Rightside Menu (Search, Cart, Bart icon) -->
+                {% comment %}
+                <div class="side-menu-btn">
+                    <ul>
+                        <!-- Search Icon -->
+                        <li class="">
+                            <a class="search-overlay-menu-btn header-icon"><i class="fa fa-search"></i></a>
+                        </li>
+                        <!-- End Search Icon -->
+
+                        <!--Sidebar Menu Icon-->
+                        <li class="">
+                            <a id="menu-sidebar-list-icon" class="nav-bar-icon"><span></span></a>
+                        </li>
+                        <!-- End Sidebar Menu Icon-->
+                    </ul>
+                </div>
+{% endcomment %}
+                <!-- End Rightside Menu -->
+
+                <!-- Mobile Navbar Icon -->
+                {% comment %}
+                <div class="nav-mobile nav-bar-icon">
+                    <span></span>
+                </div>
+{% endcomment %}
+                <!-- End Mobile Navbar Icon -->
+
+                <!-- Navbar Navigation -->
+                <div class="nav-menu">
+                    <ul class="nav-menu-inner">
+
+                        <!--li>
+                            <a href="#top" style="font-family: 'Lane - Narrow'; font-weight: normal;">Home</a>
+                        </li-->
+
+                        <li>
+                            <a href="/" style="font-family: 'Lane - Narrow'; font-weight: normal;">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#top" style="font-family: 'Lane - Narrow'; font-weight: normal;" onclick="csci_logout();">Log out</a>
+                        </li>
+
+
+                        <!--li>
+                            <a >About the Professor</a>
+                        </li-->
+
+                        <!--li>
+                            <a href="login_professor.html">Tentative Schedule</a>
+                        </li-->
+
+                        <!--li>
+                            <a href="login_professor.html">Login</a>
+                        </li-->
+
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+        <!-- Intro Section -->
+        <section id="intro" class="dark-bg">
+
+            <!-- Hero Slider Section -->
+            <div class="owl-carousel fullwidth-slider white o-flow-hidden">
+                <!--Slide-->
+                <div class="item bg-img slide-bg-image parallax parallax-section1" data-background-img="{%  static 'main/img/full/startup-photos.jpg' %}">
+                    <!-- Content -->
+                    <div class="full-cap-wraper overlay-dark80 light-color">
+                        <div class="content-caption light-color">
+                            <div class="container">
+                                <h3 style="font-family: 'Lane - Narrow'; font-weight: normal;">Time to grade some assignments</h3>
+                                <br />
+                                <h2 style="font-family: 'Lane - Narrow'; font-weight: normal;">Ayman Hajja</h2>
+                                <br />
+                                <!--div><a class="btn btn-md btn-white-line xs-hidden">Tentative Schedule</a><span class="btn-space-10 xs-hidden"></span><a class="btn btn-md btn-white">Login</a></div-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Content -->
+                </div>
+            </div>
+            <!-- End Hero Slider Section -->
+        </section>
+        <!-- End Intro Section -->
+
+        <div class="clearfix"></div>
+
+        <!--About Section-->
+        {% comment %}
+        <section id="about_course" class="wow fadeIn ptb ptb-sm-80">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="h4">About The Course</h3>
+                        <div class="spacer-15"></div>
+                        <p class="lead" style="text-align: justify;">
+                            An introduction to an assembly language and its implementation in hardware. Topics
+                            include the binary and hexadecimal numbering systems, the fetch-execute cycle, the components of the
+                            central processing unit, floating point processing, memory, the assembler, and the linker.
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-80">
+                    <!-- Welcome Content -->
+                    <div class="col-md-7 mb-30">
+                        <h4>WE`RE CREATIVE.</h4>
+                        <div class="spacer-15"></div>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur?</p>
+                        <div class="spacer-15"></div>
+                        <a class="btn-link-a">More About</a>
+                    </div>
+                    <!-- End Welcome Content -->
+
+                    <!-- Skills -->
+                    <div class="col-md-5">
+                        <div class="skillbar" data-percent="55%">
+                            <div class="skillbar-title">Web design</div>
+                            <div class="skill-bar-percent">55%</div>
+                            <div class="skillbar-bar"></div>
+                        </div>
+
+                        <div class="skillbar" data-percent="80%">
+                            <div class="skillbar-title">development</div>
+                            <div class="skill-bar-percent">80%</div>
+                            <div class="skillbar-bar"></div>
+                        </div>
+
+                        <div class="skillbar" data-percent="40%">
+                            <div class="skillbar-title">Photography</div>
+                            <div class="skill-bar-percent">40%</div>
+                            <div class="skillbar-bar"></div>
+                        </div>
+
+                        <div class="skillbar" data-percent="70%">
+                            <div class="skillbar-title">branding</div>
+                            <div class="skill-bar-percent">70%</div>
+                            <div class="skillbar-bar"></div>
+                        </div>
+                    </div>
+                    <!-- End Skills -->
+                </div>
+            </div>
+        </section>
+{% endcomment %}
+        <!-- End About Section-->
+        <!--hr /-->
+        <!-- Service Section -->
+        {% comment %}
+        <section id="service" class="ptb ptb-sm-80">
+            <div class="wow fadeInLeft container text-center">
+                <h3>About the Professor</h3>
+                <div class="spacer-60"></div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mb-45">
+                        <div class="page-icon-top"><i class="ion ion-ios-compose-outline"></i></div>
+                        <h5>Web Design</h5>
+                        <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-45">
+                        <div class="page-icon-top"><i class="ion ion-ios-gear-outline"></i></div>
+                        <h5>Development</h5>
+                        <p>Donec sodales sagittis magna. hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus, augue velit cursus nunc.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-45">
+                        <div class="page-icon-top"><i class="ion ion-social-apple-outline"></i></div>
+                        <h5>Branding</h5>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-45">
+                        <div class="page-icon-top"><i class="ion ion-ios-compose-outline"></i></div>
+                        <h5>Photography</h5>
+                        <p>Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-45">
+                        <div class="page-icon-top"><i class="ion ion-ios-gear-outline"></i></div>
+                        <h5>Typography</h5>
+                        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-45">
+                        <div class="page-icon-top"><i class="ion ion-social-apple-outline"></i></div>
+                        <h5>Ui Design</h5>
+                        <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endcomment %}
+        <!-- End Service Section -->
+
+        <!-- Counter Section -->
+        {% comment %}
+        <section id="counter" class="overlay-dark80 light-color ptb-80" data-stellar-background-ratio="0.5">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-4 mb-sm-30">
+                        <h1 class="counter" data-count="3">3</h1>
+                        <h6>Exams</h6>
+                    </div>
+                    <div class="col-md-4 mb-sm-30">
+                        <h1 class="counter" data-count="10">10</h1>
+                        <h6>Assignments</h6>
+                    </div>
+                    <div class="col-md-4 mb-sm-30">
+                        <h1 class="counter" data-count="12">12</h1>
+                        <h6>Quizzes</h6>
+                    </div>
+                    <!--div class="col-md-3 mb-sm-30">
+                        <h1 class="counter" data-count="10">10</h1>
+                        <h6>Assignments</h6>
+                    </div-->
+                </div>
+            </div>
+        </section>
+{% endcomment %}
+        <!-- End Counter Section -->
+
+        <!-- Work Section -->
+        <section id="work" class="wow fadeInUp pt pt-sm-80 text-center">
+            <div class="container" style="padding-bottom: 30px;">
+
+                <h3 style="font-family: 'Lane - Narrow'; font-weight: normal;">Assignments</h3>
+
+                {% for assignment in all_assignments %}
+
+
+                    {% if assignment.assignment_date_tbd %}
+                        <div style="width: 100%; line-height: 1.4; margin: 0 auto; padding: 15px; font-family: 'Lane - Narrow'; font-size: x-large; text-align: left; border: solid lightgrey 1px; background-color: whitesmoke; margin-bottom: 15px; margin-top: 15px;">
+                            {{ assignment.assignment_title }}  <span style="float: right; color: indianred; "> TBD </span>
+                        </div>
+                    {% else %}
+                        <div style="width: 100%; line-height: 1.4; margin: 0 auto; padding: 15px; font-family: 'Lane - Narrow'; font-size: x-large; text-align: left; border: solid lightgrey 1px; background-color: whitesmoke; margin-bottom: 15px; margin-top: 15px; cursor: pointer;" onclick="window.location='../grade_assignment/{{ assignment.id }}';" >
+                            {{ assignment.assignment_title }}  <span style="float: right; color: indianred; "> Due {{ assignment.assignment_due_date_time }} </span>
+                        </div>
+                    {% endif %}
+
+                {% endfor %}
+
+
+                <!--div class="spacer-30"></div-->
+                <!-- work Filter -->
+                <!--div class="row">
+                    <ul class="container-filter categories-filter">
+                        <li><a class="categories active" data-filter="*">All</a></li>
+                        <li><a class="categories" data-filter=".branding">Branding</a></li>
+                        <li><a class="categories" data-filter=".design">Design</a></li>
+                        <li><a class="categories" data-filter=".photo">Week 1</a></li>
+                        <li><a class="categories" data-filter=".coffee">coffee</a></li>
+                    </ul>
+                </div-->
+                <!-- End work Filter -->
+            </div>
+            <!-- Work Gallary -->
+            <!--div class="container-fluid ">
+                <div class="row">
+                    <div class="container-grid nf-col-4">
+
+                        <div class="nf-item branding design coffee">
+                            <div class="item-box">
+                                <a class="cbox-gallary1" href="static/main/img/portfolio/1.jpg" title="Consequat massa quis">
+                                    <img class="item-container" src="static/main/img/portfolio/1.jpg" alt="1" />
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <h5 class="white">Consequat massa quis</h5>
+                                            <p class="white">Branding, Design, Coffee</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="nf-item photo">
+                            <div class="item-box">
+                                <a class="cbox-gallary1" href="static/main/img/portfolio/2.jpg" title="Vivamus elementum semper">
+                                    <img class="item-container" src="static/main/img/portfolio/2.jpg" alt="2" />
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <h5 class="white">Vivamus elementum semper</h5>
+                                            <p class="white">Photo</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="nf-item branding design coffee">
+                            <div class="item-box">
+                                <a class="cbox-gallary1" href="static/main/img/portfolio/3.jpg" title="Quisque rutrum">
+                                    <img class="item-container" src="static/main/img/portfolio/3.jpg" alt="4" />
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <h5 class="white">Quisque rutrum</h5>
+                                            <p class="white">Branding, Design, Coffee</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="nf-item branding design">
+                            <div class="item-box">
+                                <a class="cbox-gallary1" href="static/main/img/portfolio/4.jpg" title="Tellus eget condimentum">
+                                    <img class="item-container" src="static/main/img/portfolio/4.jpg" alt="4" />
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <h5 class="white">Tellus eget condimentum</h5>
+                                            <p class="white">Design</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="nf-item branding design">
+                            <div class="item-box">
+                                <a class="cbox-gallary1" href="static/main/img/portfolio/5.jpg" title="Nullam quis ant">
+                                    <img class="item-container" src="static/main/img/portfolio/5.jpg" alt="5" />
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <h5 class="white">Nullam quis ant</h5>
+                                            <p class="white">Branding, Design</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="nf-item photo">
+                            <div class="item-box">
+                                <a class="cbox-gallary1" href="static/main/img/portfolio/6.jpg" title="Sed fringilla mauris">
+                                    <img class="item-container" src="static/main/img/portfolio/6.jpg" alt="6" />
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <h5 class="white">Sed fringilla mauris</h5>
+                                            <p class="white">Photo</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="nf-item design">
+                            <div class="item-box">
+                                <a class="cbox-gallary1" href="static/main/img/portfolio/7.jpg" title="Augue velit cursus">
+                                    <img class="item-container" src="static/main/img/portfolio/7.jpg" alt="7" />
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <h5 class="white">Augue velit cursus</h5>
+                                            <p class="white">Design</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="nf-item coffee">
+                            <div class="item-box">
+                                <a class="cbox-gallary1" href="static/main/img/portfolio/8.jpg" title="Donec sodales sagittis">
+                                    <img class="item-container" src="static/main/img/portfolio/8.jpg" alt="8" />
+                                    <div class="item-mask">
+                                        <div class="item-caption">
+                                            <h5 class="white">Donec sodales sagittis</h5>
+                                            <p class="white">Coffee</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div-->
+            <!-- End Work Gallary -->
+        </section>
+        <!-- End Work Section -->
+
+        <!-- Action Box Section -->
+        <!--section id="action-box" class="dark-bg ptb-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8">
+                        <h4 class="">Penatibus magnis dis parturient?</h4>
+                        <p class="mb-0">Porttitor eu consequat vitae 9hasellus viverra nulla ut metus varius laoreet vitae.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <a class="btn btn-md btn-white float-right float-none-xs">See All Work</a>
+
+                    </div>
+                </div>
+            </div>
+        </section-->
+        <!-- End Action Box Section -->
+
+        <!-- Process -->
+        <!--section id="process" class="ptb ptb-sm-80">
+            <div class="wow fadeInLeft container text-center">
+                <h3>Easy Process</h3>
+                <div class="spacer-60"></div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div class="tipped" data-title="Step1 - Skype Interview" data-tipper-options='{"direction":"top"}'>
+                            <div class="page-icon-top"><i class="ion ion-ios-people-outline"></i></div>
+                            <h6>Interview</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div class="tipped" data-title="Step2 - Project Plan" data-tipper-options='{"direction":"top"}'>
+                            <div class="page-icon-top"><i class="ion ion-ios-paper-outline"></i></div>
+                            <h6>Plan</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div class="tipped" data-title="Step3 - Design" data-tipper-options='{"direction":"top"}'>
+                            <div class="page-icon-top"><i class="ion ion-ios-compose-outline"></i></div>
+                            <h6>Design</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div class="tipped" data-title="Step4 - Development" data-tipper-options='{"direction":"top"}'>
+                            <div class="page-icon-top"><i class="ion ion-ios-gear-outline"></i></div>
+                            <h6>Development</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div class="tipped" data-title="Step5 - Testing" data-tipper-options='{"direction":"top"}'>
+                            <div class="page-icon-top"><i class="ion ion-ios-pulse"></i></div>
+                            <h6>Testing</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6">
+                        <div class="tipped" data-title="Step6 - Delivery" data-tipper-options='{"direction":"top"}'>
+                            <div class="page-icon-top"><i class="ion ion-ios-clock-outline"></i></div>
+                            <h6>Delivery</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section-->
+        <!-- End Process -->
+
+        <hr />
+
+        <!-- Contant Slider Section -->
+        <!--section id="contant" class="wow fadeIn ptb ptb-sm-80">
+            <div class="owl-carousel content-carousel content-slider">
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 mb-sm-30">
+                                <img src="static/main/img/moc-1.png" alt="" />
+                            </div>
+                            <div class="col-md-5 col-md-offset-1">
+                                <h3>Flexible & Customizable</h3>
+                                <div class="spacer-15"></div>
+                                <p>Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean leo ligula, porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet.</p>
+                                <p>porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet</p>
+                                <div class="spacer-15"></div>
+                                <a class="btn btn-md btn-black">Buy this Theme</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 mb-sm-30">
+                                <h3>Multipages & Onepage</h3>
+                                <div class="spacer-15"></div>
+                                <p>Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean leo ligula, porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet.</p>
+                                <p>porttitor eu consequat vitae Phasellus viverra nulla.</p>
+                                <div class="spacer-15"></div>
+                                <a class="btn btn-md btn-black">Download Theme</a>
+                            </div>
+                            <div class="col-md-6 col-md-offset-1">
+                                <img src="static/main/img/moc-1.png" alt="" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 mb-sm-30">
+                                <img src="static/main/img/moc-2.png" alt="" />
+                            </div>
+                            <div class="col-md-5 col-md-offset-1">
+                                <h3>Fully Responsive</h3>
+                                <div class="spacer-15"></div>
+                                <p>Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean leo ligula, porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet.</p>
+                                <p>porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet</p>
+                                <div class="spacer-15"></div>
+                                <a class="btn btn-md btn-black">Buy this Theme</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section-->
+        <!-- End Contain Slider Section -->
+
+        <!-- Testimonials -->
+        <!--section id="testimonial" class="overlay-dark80 dark-bg ptb ptb-sm-80" style="background-image: url('static/main/img/full/22.jpg');" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="owl-carousel testimonial-carousel nf-carousel-theme white">
+                    <div class="item">
+                        <div class="testimonial text-center dark-color">
+                            <div class="container-icon"><i class="fa fa-quote-right"></i></div>
+                            <p class="lead">" I got a dummy for Christmas and started teaching myself. I got books and records and sat in front of the practising. I did my first show in the third grade and just kept going. "</p>
+                            <h6 class="quote-author">Jeff Dunham <span style="font-weight: 400;">( Appel Studio )</span></h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial text-center dark-color">
+                            <div class="container-icon"><i class="fa fa-quote-right"></i></div>
+                            <p class="lead">" It's true, you can never eat a pet you name. And anyway, I did my first show in the third grade it would be like a ventriloquist eating his dummy. "</p>
+                            <h6 class="quote-author">Alexander Theroux <span style="font-weight: 400;">( USA )</span></h6>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial text-center dark-color">
+                            <div class="container-icon"><i class="fa fa-quote-right"></i></div>
+                            <p class="lead">" We're not leaving here without Buster, man. Leave no crash-test dummy behind! "</p>
+                            <h6 class="quote-author">Adam Savage <span style="font-weight: 400;">( Artist )</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section-->
+        <!-- End Testimonials -->
+
+        <!-- Features -->
+        <!--section id="features" class="ptb ptb-sm-80">
+            <div class="container text-center">
+                <h3 class="mt-sm">Key Features</h3>
+                <p class="lead">Fully Responsive & Mobile Ready</p>
+                <div class="spacer-60"></div>
+                <div class="row">
+                    <div class="wow fadeInLeft col-md-4 pt-80 pt-sm-0">
+                        <div class="features-box-right">
+                            <div class="features-icon-right"><i class="ion ion-ios-monitor-outline"></i></div>
+                            <h5>bootstrap 3</h5>
+                            <p>Consectetuer Adipiscing elit Aenean commodo Ligula dolor.</p>
+                        </div>
+                        <div class="features-box-right">
+                            <div class="features-icon-right"><i class="ion ion-ios-videocam-outline"></i></div>
+                            <h5>html 5 video</h5>
+                            <p>Nullam dictum felis eu pede mollis pretium leo eget bibendum sodales augue velit cursus.</p>
+                        </div>
+                        <div class="features-box-right">
+                            <div class="features-icon-right"><i class="ion ion-ios-barcode-outline"></i></div>
+                            <h5>Clean code & design</h5>
+                            <p>tellus eget condimentum rhoncus sem quam semper libero.</p>
+                        </div>
+                        <div class="features-box-right">
+                            <div class="features-icon-right"><i class="ion ion-ios-albums-outline"></i></div>
+                            <h5>Unlimited layouts</h5>
+                            <p>Donec sodales sagittis magna. Sed consequat.</p>
+                        </div>
+
+                    </div>
+                    <div class="wow fadeIn col-md-4 hidden-sm hidden-xs text-center">
+                        <img src="static/main/img/moc-3.png" />
+                    </div>
+                    <div class="wow fadeInRight col-md-4 pt-80 pt-sm-0">
+                        <div class="features-box-left">
+                            <div class="features-icon-left"><i class="ion ion-ios-compose-outline"></i></div>
+                            <h5>Flexible & Customizable</h5>
+                            <p>Donec vitae sapien ut libero venenatis faucibus.</p>
+                        </div>
+                        <div class="features-box-left">
+                            <div class="features-icon-left"><i class="ion ion-ios-eye-outline"></i></div>
+                            <h5>Multi Concept & Mutli prapose Theme</h5>
+                            <p>Quisque rutrum. Aenean imperdiet Etiam ultricies nisi.</p>
+                        </div>
+                        <div class="features-box-left">
+                            <div class="features-icon-left"><i class="ion ion-ios-paper-outline"></i></div>
+                            <h5>Well Documented</h5>
+                            <p>Aenean vulputate eleifend tellus Aenean leo ligula porttitor.</p>
+                        </div>
+                        <div class="features-box-left">
+                            <div class="features-icon-left"><i class="ion ion-ios-chatbubble-outline"></i></div>
+                            <h5>Friendly Support</h5>
+                            <p>Phasellus viverra nulla ut metus laoreet Quisque rutrum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section-->
+        <!-- End Features -->
+
+        <hr />
+
+        <!-- Blog Section -->
+        {% comment %}
+        <section id="blog" class="wow fadeIn ptb ptb-sm-80">
+            <div class="container">
+                <h3 class="float-left float-none-xs">Latest Blog</h3>
+                <a class="btn-link-a float-right float-none-xs">View All</a>
+                <div class="clearfix"></div>
+                <div class="spacer-60"></div>
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-sm-30">
+                        <div class="blog-post">
+                            <div class="post-media">
+                                <video class="video" style="width: 100%;" width="" height="" preload="auto" controls="controls">
+                                    <!-- MP4 source must come first for iOS -->
+                                    <source type="video/mp4" src="static/main/media/video1.mp4" />
+                                    <!-- WebM for Firefox 4 and Opera -->
+                                    <source type="video/webm" src="static/main/media/video1.webm" />
+                                    <!-- OGG for Firefox 3 -->
+                                    <source type="video/ogg" src="static/main/media/video1.ogv" />
+                                </video>
+                            </div>
+                            <div class="post-meta"><span>by <a>John Doe</a>,</span> <span>Mar 16, 2015</span></div>
+                            <div class="post-header">
+                                <h5><a href="">Maecenas nec odio ante varcy</a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-sm-30">
+                        <div class="blog-post">
+                            <div class="post-media">
+                                <div class="owl-carousel item1-carousel nf-carousel-theme">
+                                    <div class="item">
+                                        <img src="static/main/img/full/26.jpg" alt="" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="static/main/img/full/04.jpg" alt="" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="static/main/img/full/27.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-meta"><span>by <a>John Doe</a>,</span> <span>Feb 24, 2015</span></div>
+                            <div class="post-header">
+                                <h5><a href="">onec pede justo, fringilla vel</a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-sm-30">
+                        <div class="blog-post">
+                            <div class="post-media">
+                                <img class="item-container" src="static/main/img/full/20.jpg" alt="" />
+                            </div>
+                            <div class="post-meta"><span>by <a>John Doe</a>,</span> <span>Jan 29, 2015</span></div>
+                            <div class="post-header">
+                                <h5><a href="">Augue velit cursus nunc</a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+{% endcomment %}
+        <!-- End Blog Section -->
+
+        <!-- Statement Section -->
+        {% comment %}
+        <section id="statement" class="bg-img19 overlay-dark80 dark-bg ptb ptb-sm-80">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <a class="cbox-iframe" href="http://www.youtube.com/embed/VOJyrQa_WR4?rel=0&amp;wmode=transparent">
+                            <div class="page-icon-top"><i class="ion ion-ios-film-outline"></i></div>
+                        </a>
+                        <h4>Pellentesque eu pretium quis adipiscing sem neque sem Nulla consequat massa quis enim?</h4>
+                        <div class="spacer-15"></div>
+                        <a class="cbox-iframe btn btn-md btn-white" href="http://www.youtube.com/embed/VOJyrQa_WR4?rel=0&amp;wmode=transparent">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endcomment %}
+        <!-- End Statement Section -->
+
+        <!-- Shop Item -->
+        {% comment %}
+        <section id="shop-item" class="pt pt-sm-80">
+            <div class="container text-center">
+                <h3>Latest Product</h3>
+                <div class="spacer-60"></div>
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item-box">
+                            <!-- Shop item images -->
+                            <div class="shop-item">
+                                <div class="item-img">
+                                    <img src="static/main/img/product/07.jpg" />
+                                </div>
+                                <div class="item-mask">
+                                    <div class="item-mask-detail">
+                                        <div class="item-mask-detail-ele">
+                                            <a class="btn btn-line-xs btn-white-line"><i class="fa fa-shopping-cart"></i>Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Shop item images -->
+
+                            <!-- Shop item info -->
+                            <div class="shop-item-info">
+                                <a href="shop-detail.html">
+                                    <h6 class="shop-item-name">Veritatis et quasi</h6>
+                                </a>
+                                <div class="shop-item-price"><span>$399.00</span></div>
+                            </div>
+                            <!-- Shop item info -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item-box">
+                            <!-- Shop item images -->
+                            <div class="shop-item">
+                                <div class="item-img">
+                                    <img src="static/main/img/product/01.jpg" />
+                                </div>
+                                <div class="item-mask">
+                                    <div class="item-mask-detail">
+                                        <div class="item-mask-detail-ele">
+                                            <a class="btn btn-line-xs btn-white-line"><i class="fa fa-shopping-cart"></i>Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Shop item images -->
+
+                            <!-- Shop item info -->
+                            <div class="shop-item-info">
+                                <a href="shop-detail.html">
+                                    <h6 class="shop-item-name">Sed fringilla mauris</h6>
+                                </a>
+                                <div class="shop-item-price"><span>$399.00</span></div>
+                            </div>
+                            <!-- Shop item info -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item-box">
+                            <!-- Shop item images -->
+                            <div class="shop-item">
+                                <div class="item-img">
+                                    <img src="static/main/img/product/02.jpg" />
+                                </div>
+                                <div class="item-mask">
+                                    <div class="item-mask-detail">
+                                        <div class="item-mask-detail-ele">
+                                            <a class="btn btn-line-xs btn-white-line"><i class="fa fa-shopping-cart"></i>Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Shop item images -->
+
+                            <!-- Shop item info -->
+                            <div class="shop-item-info">
+                                <a href="shop-detail.html">
+                                    <h6 class="shop-item-name">Beatae vitae dicta</h6>
+                                </a>
+                                <div class="shop-item-price"><span>$399.00</span></div>
+                            </div>
+                            <!-- Shop item info -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item-box">
+                            <!-- Shop item images -->
+                            <div class="shop-item">
+                                <div class="item-img">
+                                    <img src="static/main/img/product/03.jpg" />
+                                </div>
+                                <div class="item-mask">
+                                    <div class="item-mask-detail">
+                                        <div class="item-mask-detail-ele">
+                                            <a class="btn btn-line-xs btn-white-line"><i class="fa fa-shopping-cart"></i>Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Shop item images -->
+
+                            <!-- Shop item info -->
+                            <div class="shop-item-info">
+                                <a href="shop-detail.html">
+                                    <h6 class="shop-item-name">Voluptas nulla pariatur</h6>
+                                </a>
+                                <div class="shop-item-price"><span>$399.00</span></div>
+                            </div>
+                            <!-- Shop item info -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+{% endcomment %}
+        <!-- End Shop Item -->
+
+        <!-- Client Logos Section -->
+        {% comment %}
+        <section id="client-logos" class="wow fadeIn ptb ptb-sm-80">
+            <div class="container">
+                <div class="owl-carousel client-carousel nf-carousel-theme ">
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="static/main/img/logos/01.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="static/main/img/logos/02.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="static/main/img/logos/03.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="static/main/img/logos/04.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="static/main/img/logos/05.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="static/main/img/logos/06.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="static/main/img/logos/08.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="static/main/img/logos/01.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="static/main/img/logos/02.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="static/main/img/logos/03.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endcomment %}
+        <!-- End Client Logos Section -->
+
+        <!-- END CONTENT ---------------------------------------------------------------------------->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <!-- Copyright Bar -->
+            <section class="copyright ptb-60">
+                <div class="container">
+                    <p class="" style="font-family: 'Lane - Narrow'; font-size: 16px; text-transform: uppercase;">
+                        © 2017 <b>Crafted lovingly in Charleston SC</b>. All Rights Reserved.
+                        <br />
+                        Built  by <b>Ayman Hajja, PhD</b>
+                    </p>
+                </div>
+            </section>
+            <!-- End Copyright Bar -->
+
+        </footer>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+    <form>{% csrf_token %}</form>
+
+{% endblock %}
