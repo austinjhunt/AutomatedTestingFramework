@@ -44,7 +44,19 @@ for currentFile in *; do
 		fi
 
 		if [ "$COUNTER" -eq 4 ]; then
-
+			
+			if [ "$unit" != $line ]; then 
+				echo "<tr style =\"height:1; border: 4.5px solid black\">" >> $appendHTML
+				echo "<td></td>" >> $appendHTML
+				echo "<td></td>" >> $appendHTML
+				echo "<td></td>" >> $appendHTML
+				echo "<td style=\"font-weight: bold; font-size: 20px\">NEW METHOD:</td>" >> $appendHTML
+				echo "<td style=\"font-weight: bold; font-size: 20px; overflow-wrap: normal; overflow-x: scroll\">$line</td>" >> $appendHTML
+				echo "<td></td>" >> $appendHTML
+				echo "<td></td>" >> $appendHTML
+				echo "<td></td>" >> $appendHTML
+				echo "</tr>" >> $appendHTML
+			fi 
 			unit=$line
 			echo $unit
 		
@@ -66,7 +78,7 @@ for currentFile in *; do
 			cd ../testCaseExecutables
 
 
-			python $unit.py $args "$oracle" > $reportsPath/tempTestOutput.txt	
+			python $unit.py "$args" "$oracle" > $reportsPath/tempTestOutput.txt	
 			
 			echo Hello!
 			testOutput="$(cat $reportsPath/tempTestOutput.txt)"
@@ -82,11 +94,11 @@ for currentFile in *; do
 			echo "<td>$testOutput</td>" >> $appendHTML
 			
 			if [ "$testOutput" = "$oracle" ]; then
-				echo "<td>Pass!</td>" >> $appendHTML
+				echo "<td style=\"font-weight:bold\"><font color = \"green\" size = \"5\">PASS!</font></td>" >> $appendHTML
 			fi
 			
 			if [ "$testOutput" != "$oracle" ]; then
-				echo "<td>Fail!</td>" >> $appendHTML
+				echo "<td style=\"font-weight:bold\"><font color = \"red\" size = \"5\">FAIL!</font></td>" >> $appendHTML
 			fi
 			
 			

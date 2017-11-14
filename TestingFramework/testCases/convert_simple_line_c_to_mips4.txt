@@ -1,0 +1,6 @@
+29
+convert 'x = y + z;' to mips assembly 
+views
+convert_simple_line_c_to_mips
+x = y + z;
+add $x, $y, $z
