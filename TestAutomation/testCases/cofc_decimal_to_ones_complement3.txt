@@ -1,6 +1,0 @@
-16
-convert -255 to ones comp with 9 bits
-views
-cofc_decimal_to_ones_complement
--255,9
-0b100000000
