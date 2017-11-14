@@ -342,4 +342,64 @@
 <td>-7</td>
 <td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
 </tr>
+<tr style ="height:1; border: 4.5px solid black">
+<td></td>
+<td></td>
+<td></td>
+<td style="font-weight: bold; font-size: 20px">NEW METHOD:</td>
+<td style="font-weight: bold; font-size: 20px; overflow-wrap: normal; overflow-x: scroll">convert_simple_line_c_to_mips</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>26</td>
+<td>convert 'int x = 5;' to mips assembly </td>
+<td>views</td>
+<td>convert_simple_line_c_to_mips</td>
+<td>int x = 5;</td>
+<td>addi $x, $zero, 5</td>
+<td>addi $x, $zero, 5</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>27</td>
+<td>convert 'x = x + 3;' to mips assembly </td>
+<td>views</td>
+<td>convert_simple_line_c_to_mips</td>
+<td>x = x + 3;</td>
+<td>addi $x, $x, 3</td>
+<td>addi $x, $x, 3</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>28</td>
+<td>convert 'x = x - 3;' to mips assembly </td>
+<td>views</td>
+<td>convert_simple_line_c_to_mips</td>
+<td>x = x - 3;</td>
+<td>addi $x, $x, -3</td>
+<td>addi $x, $x, -3</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>29</td>
+<td>convert 'x = y + z;' to mips assembly </td>
+<td>views</td>
+<td>convert_simple_line_c_to_mips</td>
+<td>x = y + z;</td>
+<td>add $x, $y, $z</td>
+<td>add $x, $y, $z</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>30</td>
+<td>convert 'x = y - z;' to mips assembly </td>
+<td>views</td>
+<td>convert_simple_line_c_to_mips</td>
+<td>x = y - z;</td>
+<td>sub $x, $y, $z</td>
+<td>sub $x, $y, $z</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
 </tbody> </table> </div> </section> </body> </html>
