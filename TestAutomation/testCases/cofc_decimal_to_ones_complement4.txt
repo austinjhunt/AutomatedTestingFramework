@@ -1,6 +1,6 @@
-19
-convert negative 0 to ones comp with 4 bits
+17
+convert -255 to ones comp with 8 bits
 views
 cofc_decimal_to_ones_complement
--0
-0b11111111
+-255,8
+0b00000000

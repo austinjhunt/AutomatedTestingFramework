@@ -1,4 +1,4 @@
-15
+23
 convert only ones from complement to decimal
 views
 cofc_ones_complement_to_decimal

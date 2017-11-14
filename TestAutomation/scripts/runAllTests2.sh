@@ -50,8 +50,8 @@ for currentFile in *; do
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
-				echo "<td style=\"font-weight: bold; font-size: 20px\">NEW</td>" >> $appendHTML
-				echo "<td style=\"font-weight: bold; font-size: 20px;\">METHOD</td>" >> $appendHTML
+				echo "<td style=\"font-weight: bold; font-size: 20px\">NEW METHOD:</td>" >> $appendHTML
+				echo "<td style=\"font-weight: bold; font-size: 20px; overflow-wrap: normal; overflow-x: scroll\">$line</td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
@@ -94,11 +94,11 @@ for currentFile in *; do
 			echo "<td>$testOutput</td>" >> $appendHTML
 			
 			if [ "$testOutput" = "$oracle" ]; then
-				echo "<td>Pass!</td>" >> $appendHTML
+				echo "<td style=\"font-weight:bold\"><font color = \"green\" size = \"5\">PASS!</font></td>" >> $appendHTML
 			fi
 			
 			if [ "$testOutput" != "$oracle" ]; then
-				echo "<td>Fail!</td>" >> $appendHTML
+				echo "<td style=\"font-weight:bold\"><font color = \"red\" size = \"5\">FAIL!</font></td>" >> $appendHTML
 			fi
 			
 			

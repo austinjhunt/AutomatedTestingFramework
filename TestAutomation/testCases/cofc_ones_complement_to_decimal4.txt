@@ -1,4 +1,4 @@
-17
+25
 small string of x's convert from ones complement to decimal
 views
 cofc_ones_complement_to_decimal
