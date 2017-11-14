@@ -42,364 +42,304 @@
 					</thead>
 					<tbody>
 						
-<tr style ="height:1; border: 4.5px solid black">
-<td></td>
-<td></td>
-<td></td>
-<td style="font-weight: bold; font-size: 14px">NEW METHOD:</td>
-<td style="font-weight: bold; font-size: 14px; overflow-wrap: normal; overflow-x: scroll">checkIfOverflow</td>
-<td></td>
-<td></td>
-<td></td>
+<tr>
+<td style="width: 7%">1</td>
+<td style="width: 15%">check if adding 11111 and 00000 will overflow</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">checkIfOverflow</td>
+<td style="width: 14%">11111,00000</td>
+<td style="width: 9%">No overflow</td>
+<td style="width: 10%">No overflow</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>1</td>
-<td>check if adding 11111 and 00000 will overflow</td>
-<td>views</td>
-<td>checkIfOverflow</td>
-<td>11111,00000</td>
-<td>No overflow</td>
-<td>No overflow</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">2</td>
+<td style="width: 15%">check if adding 11110 and 00001 will overflow</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">checkIfOverflow</td>
+<td style="width: 14%">11110,00001</td>
+<td style="width: 9%">No overflow</td>
+<td style="width: 10%">No overflow</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>2</td>
-<td>check if adding 11110 and 00001 will overflow</td>
-<td>views</td>
-<td>checkIfOverflow</td>
-<td>11110,00001</td>
-<td>No overflow</td>
-<td>No overflow</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">3</td>
+<td style="width: 15%">check if adding 01111 and 1000 will overflow</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">checkIfOverflow</td>
+<td style="width: 14%">01111,01000</td>
+<td style="width: 9%">No overflow</td>
+<td style="width: 10%">No overflow</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>3</td>
-<td>check if adding 01111 and 1000 will overflow</td>
-<td>views</td>
-<td>checkIfOverflow</td>
-<td>01111,01000</td>
-<td>No overflow</td>
-<td>No overflow</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">4</td>
+<td style="width: 15%">check if adding 11111 and 11111 will overflow</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">checkIfOverflow</td>
+<td style="width: 14%">11111,11111</td>
+<td style="width: 9%">Yes (an overflow will occur)</td>
+<td style="width: 10%">Yes (an overflow will occur)</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>4</td>
-<td>check if adding 11111 and 11111 will overflow</td>
-<td>views</td>
-<td>checkIfOverflow</td>
-<td>11111,11111</td>
-<td>Yes (an overflow will occur)</td>
-<td>Yes (an overflow will occur)</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">5</td>
+<td style="width: 15%">check if adding 11111 and 00001 will overflow</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">checkIfOverflow</td>
+<td style="width: 14%">11111,00001</td>
+<td style="width: 9%">Yes (an overflow will occur)</td>
+<td style="width: 10%">Yes (an overflow will occur)</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>5</td>
-<td>check if adding 11111 and 00001 will overflow</td>
-<td>views</td>
-<td>checkIfOverflow</td>
-<td>11111,00001</td>
-<td>Yes (an overflow will occur)</td>
-<td>Yes (an overflow will occur)</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
-</tr>
-<tr style ="height:1; border: 4.5px solid black">
-<td></td>
-<td></td>
-<td></td>
-<td style="font-weight: bold; font-size: 14px">NEW METHOD:</td>
-<td style="font-weight: bold; font-size: 14px; overflow-wrap: normal; overflow-x: scroll">cofc_convert_decimal_to_sign_magnitude</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="width: 7%">6</td>
+<td style="width: 15%">convert -10 to sign magnitude with 5 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_convert_decimal_to_sign_magnitude</td>
+<td style="width: 14%">-10,5</td>
+<td style="width: 9%">0b11010</td>
+<td style="width: 10%">0b11010</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>6</td>
-<td>convert -10 to sign magnitude with 5 bits</td>
-<td>views</td>
-<td>cofc_convert_decimal_to_sign_magnitude</td>
-<td>-10,5</td>
-<td>0b11010</td>
-<td>0b11010</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">7</td>
+<td style="width: 15%">convert 10 to sign magnitude with 5 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_convert_decimal_to_sign_magnitude</td>
+<td style="width: 14%">10,5</td>
+<td style="width: 9%">0b01010</td>
+<td style="width: 10%">0b01010</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>7</td>
-<td>convert 10 to sign magnitude with 5 bits</td>
-<td>views</td>
-<td>cofc_convert_decimal_to_sign_magnitude</td>
-<td>10,5</td>
-<td>0b01010</td>
-<td>0b01010</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">8</td>
+<td style="width: 15%">convert positive 0 to sign magnitude with 5 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_convert_decimal_to_sign_magnitude</td>
+<td style="width: 14%">0,5</td>
+<td style="width: 9%">0b00000</td>
+<td style="width: 10%">0b00000</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>8</td>
-<td>convert positive 0 to sign magnitude with 5 bits</td>
-<td>views</td>
-<td>cofc_convert_decimal_to_sign_magnitude</td>
-<td>0,5</td>
-<td>0b00000</td>
-<td>0b00000</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">9</td>
+<td style="width: 15%">convert -0 to sign magnitude with 5 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_convert_decimal_to_sign_magnitude</td>
+<td style="width: 14%">-0,5</td>
+<td style="width: 9%">0b10000</td>
+<td style="width: 10%">0b00000</td>
+<td class="reallysmall">Fail!</td>
 </tr>
 <tr>
-<td>9</td>
-<td>convert -0 to sign magnitude with 5 bits</td>
-<td>views</td>
-<td>cofc_convert_decimal_to_sign_magnitude</td>
-<td>-0,5</td>
-<td>0b10000</td>
-<td>0b00000</td>
-<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+<td style="width: 7%">10</td>
+<td style="width: 15%">convert -10 to sign magnitude with 4 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_convert_decimal_to_sign_magnitude</td>
+<td style="width: 14%">-10,4</td>
+<td style="width: 9%">0b11010</td>
+<td style="width: 10%">0b1010</td>
+<td class="reallysmall">Fail!</td>
 </tr>
 <tr>
-<td>10</td>
-<td>convert -10 to sign magnitude with 4 bits</td>
-<td>views</td>
-<td>cofc_convert_decimal_to_sign_magnitude</td>
-<td>-10,4</td>
-<td>0b11010</td>
-<td>0b1010</td>
-<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
-</tr>
-<tr style ="height:1; border: 4.5px solid black">
-<td></td>
-<td></td>
-<td></td>
-<td style="font-weight: bold; font-size: 14px">NEW METHOD:</td>
-<td style="font-weight: bold; font-size: 14px; overflow-wrap: normal; overflow-x: scroll">cofc_convert_decimal_to_unsigned_binary_with_length</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="width: 7%">11</td>
+<td style="width: 15%">convert 255 to unsigned binary with 8 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_convert_decimal_to_unsigned_binary_with_length</td>
+<td style="width: 14%">255,8</td>
+<td style="width: 9%">0b11111111</td>
+<td style="width: 10%">0b11111111</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>11</td>
-<td>convert 255 to unsigned binary with 8 bits</td>
-<td>views</td>
-<td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
-<td>255,8</td>
-<td>0b11111111</td>
-<td>0b11111111</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">12</td>
+<td style="width: 15%">convert 256 to unsigned binary with 8 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_convert_decimal_to_unsigned_binary_with_length</td>
+<td style="width: 14%">256,8</td>
+<td style="width: 9%">0b00000000</td>
+<td style="width: 10%">0b00000000</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>12</td>
-<td>convert 256 to unsigned binary with 8 bits</td>
-<td>views</td>
-<td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
-<td>256,8</td>
-<td>0b00000000</td>
-<td>0b00000000</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">13</td>
+<td style="width: 15%">convert 0 to unsigned binary with 2 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_convert_decimal_to_unsigned_binary_with_length</td>
+<td style="width: 14%">0,2</td>
+<td style="width: 9%">0b00</td>
+<td style="width: 10%">0b00</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>13</td>
-<td>convert 0 to unsigned binary with 2 bits</td>
-<td>views</td>
-<td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
-<td>0,2</td>
-<td>0b00</td>
-<td>0b00</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
-</tr>
-<tr style ="height:1; border: 4.5px solid black">
-<td></td>
-<td></td>
-<td></td>
-<td style="font-weight: bold; font-size: 14px">NEW METHOD:</td>
-<td style="font-weight: bold; font-size: 14px; overflow-wrap: normal; overflow-x: scroll">cofc_decimal_to_ones_complement</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="width: 7%">14</td>
+<td style="width: 15%">convert positive 0 to ones comp with 8 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_decimal_to_ones_complement</td>
+<td style="width: 14%">0,8</td>
+<td style="width: 9%">0b00000000</td>
+<td style="width: 10%">0b00000000</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>14</td>
-<td>convert positive 0 to ones comp with 8 bits</td>
-<td>views</td>
-<td>cofc_decimal_to_ones_complement</td>
-<td>0,8</td>
-<td>0b00000000</td>
-<td>0b00000000</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">15</td>
+<td style="width: 15%">convert negative 0 to ones comp with 8 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_decimal_to_ones_complement</td>
+<td style="width: 14%">-0,8</td>
+<td style="width: 9%">0b11111111</td>
+<td style="width: 10%">0b00000000</td>
+<td class="reallysmall">Fail!</td>
 </tr>
 <tr>
-<td>15</td>
-<td>convert negative 0 to ones comp with 8 bits</td>
-<td>views</td>
-<td>cofc_decimal_to_ones_complement</td>
-<td>-0,8</td>
-<td>0b11111111</td>
-<td>0b00000000</td>
-<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+<td style="width: 7%">16</td>
+<td style="width: 15%">convert -255 to ones comp with 9 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_decimal_to_ones_complement</td>
+<td style="width: 14%">-255,9</td>
+<td style="width: 9%">0b100000000</td>
+<td style="width: 10%">0b100000000</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>16</td>
-<td>convert -255 to ones comp with 9 bits</td>
-<td>views</td>
-<td>cofc_decimal_to_ones_complement</td>
-<td>-255,9</td>
-<td>0b100000000</td>
-<td>0b100000000</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">17</td>
+<td style="width: 15%">convert -255 to ones comp with 8 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_decimal_to_ones_complement</td>
+<td style="width: 14%">-255,8</td>
+<td style="width: 9%">0b00000000</td>
+<td style="width: 10%">0b00000000</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>17</td>
-<td>convert -255 to ones comp with 8 bits</td>
-<td>views</td>
-<td>cofc_decimal_to_ones_complement</td>
-<td>-255,8</td>
-<td>0b00000000</td>
-<td>0b00000000</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">18</td>
+<td style="width: 15%">convert 255 to ones comp with 8 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_decimal_to_ones_complement</td>
+<td style="width: 14%">255,8</td>
+<td style="width: 9%">0b11111111</td>
+<td style="width: 10%">0b11111111</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>18</td>
-<td>convert 255 to ones comp with 8 bits</td>
-<td>views</td>
-<td>cofc_decimal_to_ones_complement</td>
-<td>255,8</td>
-<td>0b11111111</td>
-<td>0b11111111</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">19</td>
+<td style="width: 15%">convert -1 to ones comp with 2 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_decimal_to_ones_complement</td>
+<td style="width: 14%">-1,2</td>
+<td style="width: 9%">0b10</td>
+<td style="width: 10%">0b10</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>19</td>
-<td>convert -1 to ones comp with 2 bits</td>
-<td>views</td>
-<td>cofc_decimal_to_ones_complement</td>
-<td>-1,2</td>
-<td>0b10</td>
-<td>0b10</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">20</td>
+<td style="width: 15%">convert 1 to ones comp with 1 bit</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_decimal_to_ones_complement</td>
+<td style="width: 14%">1,1</td>
+<td style="width: 9%">0b1</td>
+<td style="width: 10%">0b1</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>20</td>
-<td>convert 1 to ones comp with 1 bit</td>
-<td>views</td>
-<td>cofc_decimal_to_ones_complement</td>
-<td>1,1</td>
-<td>0b1</td>
-<td>0b1</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">21</td>
+<td style="width: 15%">convert 7 to ones comp with 0 bits</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_decimal_to_ones_complement</td>
+<td style="width: 14%">7,0</td>
+<td style="width: 9%">Cannot represent any number with 0 bits</td>
+<td style="width: 10%">Cannot represent any number with 0 bits</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>21</td>
-<td>convert 7 to ones comp with 0 bits</td>
-<td>views</td>
-<td>cofc_decimal_to_ones_complement</td>
-<td>7,0</td>
-<td>Cannot represent any number with 0 bits</td>
-<td>Cannot represent any number with 0 bits</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
-</tr>
-<tr style ="height:1; border: 4.5px solid black">
-<td></td>
-<td></td>
-<td></td>
-<td style="font-weight: bold; font-size: 14px">NEW METHOD:</td>
-<td style="font-weight: bold; font-size: 14px; overflow-wrap: normal; overflow-x: scroll">cofc_ones_complement_to_decimal</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="width: 7%">22</td>
+<td style="width: 15%">convert extremely large ones complement number to decimal</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_ones_complement_to_decimal</td>
+<td style="width: 14%">0bxxxxxxxxxxxxxxxxxxxxxxx</td>
+<td style="width: 9%">-8388607</td>
+<td style="width: 10%">-8388607</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>22</td>
-<td>convert extremely large ones complement number to decimal</td>
-<td>views</td>
-<td>cofc_ones_complement_to_decimal</td>
-<td>0bxxxxxxxxxxxxxxxxxxxxxxx</td>
-<td>-8388607</td>
-<td>-8388607</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">23</td>
+<td style="width: 15%">convert only ones from complement to decimal</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_ones_complement_to_decimal</td>
+<td style="width: 14%">0b1111</td>
+<td style="width: 9%">0</td>
+<td style="width: 10%">0</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>23</td>
-<td>convert only ones from complement to decimal</td>
-<td>views</td>
-<td>cofc_ones_complement_to_decimal</td>
-<td>0b1111</td>
-<td>0</td>
-<td>0</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">24</td>
+<td style="width: 15%">convert only ones from complement to decimal</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_ones_complement_to_decimal</td>
+<td style="width: 14%">0b111111111111111111111111111111111111111111</td>
+<td style="width: 9%">0</td>
+<td style="width: 10%">0</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>24</td>
-<td>convert only ones from complement to decimal</td>
-<td>views</td>
-<td>cofc_ones_complement_to_decimal</td>
-<td>0b111111111111111111111111111111111111111111</td>
-<td>0</td>
-<td>0</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">25</td>
+<td style="width: 15%">small string of x's convert from ones complement to decimal</td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">cofc_ones_complement_to_decimal</td>
+<td style="width: 14%">0bxxx</td>
+<td style="width: 9%">-7</td>
+<td style="width: 10%">-7</td>
+<td class="reallysmall">Pass!</td>
 </tr>
 <tr>
-<td>25</td>
-<td>small string of x's convert from ones complement to decimal</td>
-<td>views</td>
-<td>cofc_ones_complement_to_decimal</td>
-<td>0bxxx</td>
-<td>-7</td>
-<td>-7</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
-</tr>
-<tr style ="height:1; border: 4.5px solid black">
-<td></td>
-<td></td>
-<td></td>
-<td style="font-weight: bold; font-size: 14px">NEW METHOD:</td>
-<td style="font-weight: bold; font-size: 14px; overflow-wrap: normal; overflow-x: scroll">convert_simple_line_c_to_mips</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="width: 7%">26</td>
+<td style="width: 15%">convert 'int x = 5;' to mips assembly </td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">convert_simple_line_c_to_mips</td>
+<td style="width: 14%">int x = 5;</td>
+<td style="width: 9%">addi $x, $zero, 5</td>
+<td style="width: 10%"></td>
+<td class="reallysmall">Fail!</td>
 </tr>
 <tr>
-<td>26</td>
-<td>convert 'int x = 5;' to mips assembly </td>
-<td>views</td>
-<td>convert_simple_line_c_to_mips</td>
-<td>int x = 5;</td>
-<td>addi $x, $zero, 5</td>
-<td>addi $x, $zero, 5</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">27</td>
+<td style="width: 15%">convert 'x = x + 3;' to mips assembly </td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">convert_simple_line_c_to_mips</td>
+<td style="width: 14%">x = x + 3;</td>
+<td style="width: 9%">addi $x, $x, 3</td>
+<td style="width: 10%"></td>
+<td class="reallysmall">Fail!</td>
 </tr>
 <tr>
-<td>27</td>
-<td>convert 'x = x + 3;' to mips assembly </td>
-<td>views</td>
-<td>convert_simple_line_c_to_mips</td>
-<td>x = x + 3;</td>
-<td>addi $x, $x, 3</td>
-<td>addi $x, $x, 3</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">28</td>
+<td style="width: 15%">convert 'x = x - 3;' to mips assembly </td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">convert_simple_line_c_to_mips</td>
+<td style="width: 14%">x = x - 3;</td>
+<td style="width: 9%">addi $x, $x, -3</td>
+<td style="width: 10%"></td>
+<td class="reallysmall">Fail!</td>
 </tr>
 <tr>
-<td>28</td>
-<td>convert 'x = x - 3;' to mips assembly </td>
-<td>views</td>
-<td>convert_simple_line_c_to_mips</td>
-<td>x = x - 3;</td>
-<td>addi $x, $x, -3</td>
-<td>addi $x, $x, -3</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">29</td>
+<td style="width: 15%">convert 'x = y + z;' to mips assembly </td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">convert_simple_line_c_to_mips</td>
+<td style="width: 14%">x = y + z;</td>
+<td style="width: 9%">add $x, $y, $z</td>
+<td style="width: 10%"></td>
+<td class="reallysmall">Fail!</td>
 </tr>
 <tr>
-<td>29</td>
-<td>convert 'x = y + z;' to mips assembly </td>
-<td>views</td>
-<td>convert_simple_line_c_to_mips</td>
-<td>x = y + z;</td>
-<td>add $x, $y, $z</td>
-<td>add $x, $y, $z</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
-</tr>
-<tr>
-<td>30</td>
-<td>convert 'x = y - z;' to mips assembly </td>
-<td>views</td>
-<td>convert_simple_line_c_to_mips</td>
-<td>x = y - z;</td>
-<td>sub $x, $y, $z</td>
-<td>sub $x, $y, $z</td>
-<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+<td style="width: 7%">30</td>
+<td style="width: 15%">convert 'x = y - z;' to mips assembly </td>
+<td style="width: 15%">views</td>
+<td style="width: 16%">convert_simple_line_c_to_mips</td>
+<td style="width: 14%">x = y - z;</td>
+<td style="width: 9%">sub $x, $y, $z</td>
+<td style="width: 10%"></td>
+<td class="reallysmall">Fail!</td>
 </tr>
 </tbody> </table> </div> </section> </body> </html>

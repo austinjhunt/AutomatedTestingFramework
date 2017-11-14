@@ -1,6 +1,0 @@
-26
-convert 'int x = 5;' to mips assembly 
-views
-convert_simple_line_c_to_mips
-int x = 5;
-addi $x, $zero, 5

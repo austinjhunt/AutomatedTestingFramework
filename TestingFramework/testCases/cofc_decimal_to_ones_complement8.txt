@@ -1,7 +1,0 @@
-21
-convert 7 to ones comp with 0 bits
-views
-cofc_decimal_to_ones_complement
-7,0
-Cannot represent any number with 0 bits
-
