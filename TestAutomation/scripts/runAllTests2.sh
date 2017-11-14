@@ -78,7 +78,7 @@ for currentFile in *; do
 			cd ../testCaseExecutables
 
 
-			python $unit.py $args "$oracle" > $reportsPath/tempTestOutput.txt	
+			python $unit.py "$args" "$oracle" > $reportsPath/tempTestOutput.txt	
 			
 			echo Hello!
 			testOutput="$(cat $reportsPath/tempTestOutput.txt)"
