@@ -44,7 +44,19 @@ for currentFile in *; do
 		fi
 
 		if [ "$COUNTER" -eq 4 ]; then
-
+			
+			if [ "$unit" != $line ]; then 
+				echo "<tr style =\"height:1; border: 6px solid black\">" >> $appendHTML
+				echo "<td></td>" >> $appendHTML
+				echo "<td></td>" >> $appendHTML
+				echo "<td></td>" >> $appendHTML
+				echo "<td>NEW</td>" >> $appendHTML
+				echo "<td>METHOD</td>" >> $appendHTML
+				echo "<td></td>" >> $appendHTML
+				echo "<td></td>" >> $appendHTML
+				echo "<td></td>" >> $appendHTML
+				echo "</tr>" >> $appendHTML
+			fi 
 			unit=$line
 			echo $unit
 		
