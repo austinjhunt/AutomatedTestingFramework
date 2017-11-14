@@ -1,0 +1,6 @@
+18
+convert positive 0 to ones comp with 8 bits
+views
+cofc_decimal_to_ones_complement
+0
+0b00000000

@@ -1,6 +1,7 @@
 def cofc_decimal_to_ones_complement(_decimal_value, _length_of_binary):
     # First we get the binary of the "positive" version of the number
     #
+    _decimal_value=int(_decimal_value)
     ans_binary = bin(int(abs(_decimal_value)))
     # Then we make it x number of bits where x is the 4th parameters in our list
     #

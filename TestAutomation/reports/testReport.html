@@ -42,12 +42,12 @@
 					</thead>
 					<tbody>
 						
-<tr style ="height:1; border: 6px solid black">
+<tr style ="height:1; border: 4.5px solid black">
 <td></td>
 <td></td>
 <td></td>
-<td>NEW</td>
-<td>METHOD</td>
+<td style="font-weight: bold; font-size: 20px">NEW</td>
+<td style="font-weight: bold; font-size: 20px;">METHOD</td>
 <td></td>
 <td></td>
 <td></td>
@@ -102,12 +102,12 @@
 <td>Yes (an overflow will occur)</td>
 <td>Pass!</td>
 </tr>
-<tr style ="height:1; border: 6px solid black">
+<tr style ="height:1; border: 4.5px solid black">
 <td></td>
 <td></td>
 <td></td>
-<td>NEW</td>
-<td>METHOD</td>
+<td style="font-weight: bold; font-size: 20px">NEW</td>
+<td style="font-weight: bold; font-size: 20px;">METHOD</td>
 <td></td>
 <td></td>
 <td></td>
@@ -162,19 +162,19 @@
 <td>0b1010</td>
 <td>Fail!</td>
 </tr>
-<tr>
-<td>11</td>
-<td>convert 255 to unsigned binary of length 8</td>
-<td>views</td>
-<td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
-<td>255,8</td>
-<td>0b11111111</td>
-<td>0b11111111</td>
-<td>Pass!</td>
+<tr style ="height:1; border: 4.5px solid black">
+<td></td>
+<td></td>
+<td></td>
+<td style="font-weight: bold; font-size: 20px">NEW</td>
+<td style="font-weight: bold; font-size: 20px;">METHOD</td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>11</td>
-<td>convert 255 to unsigned binary of length 8</td>
+<td>convert 255 to unsigned binary with 8 bits</td>
 <td>views</td>
 <td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
 <td>255,8</td>
@@ -184,17 +184,7 @@
 </tr>
 <tr>
 <td>12</td>
-<td>convert 256 to unsigned binary of length 8</td>
-<td>views</td>
-<td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
-<td>256,8</td>
-<td>0b00000000</td>
-<td>0b00000000</td>
-<td>Pass!</td>
-</tr>
-<tr>
-<td>11</td>
-<td>convert 256 to unsigned binary of length 8</td>
+<td>convert 256 to unsigned binary with 8 bits</td>
 <td>views</td>
 <td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
 <td>256,8</td>
@@ -204,7 +194,7 @@
 </tr>
 <tr>
 <td>13</td>
-<td>convert 0 to unsigned binary of length 2</td>
+<td>convert 0 to unsigned binary with 2 bits</td>
 <td>views</td>
 <td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
 <td>0,2</td>
@@ -212,114 +202,54 @@
 <td>0b00</td>
 <td>Pass!</td>
 </tr>
-<tr>
-<td>11</td>
-<td>convert 256 to unsigned binary of length 8</td>
-<td>views</td>
-<td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
-<td>256,8</td>
-<td>0b00000000</td>
-<td>0b00000000</td>
-<td>Pass!</td>
-</tr>
-<tr>
-<td>15</td>
-<td>convert extremely large ones complement number to decimal</td>
-<td>views</td>
-<td>cofc_ones_complement_to_decimal</td>
-<td>xxxxxxxxxxxxxxxxxxxxxxx</td>
-<td>-2097151</td>
+<tr style ="height:1; border: 4.5px solid black">
 <td></td>
-<td>Fail!</td>
-</tr>
-<tr>
-<td>15</td>
-<td>convert extremely large ones complement number to decimal</td>
-<td>views</td>
-<td>cofc_ones_complement_to_decimal</td>
-<td>'xxxxxxxxxxxxxxxxxxxxxxx'</td>
-<td>-2097151</td>
 <td></td>
-<td>Fail!</td>
-</tr>
-<tr>
-<td>16</td>
-<td>convert only ones from complement to decimal</td>
-<td>views</td>
-<td>cofc_ones_complement_to_decimal</td>
-<td>1111</td>
-<td>0</td>
 <td></td>
-<td>Fail!</td>
-</tr>
-<tr>
-<td>16</td>
-<td>convert only ones from complement to decimal</td>
-<td>views</td>
-<td>cofc_ones_complement_to_decimal</td>
-<td>1111</td>
-<td>0</td>
+<td style="font-weight: bold; font-size: 20px">NEW</td>
+<td style="font-weight: bold; font-size: 20px;">METHOD</td>
 <td></td>
-<td>Fail!</td>
-</tr>
-<tr>
-<td>17</td>
-<td>convert only ones from complement to decimal</td>
-<td>views</td>
-<td>cofc_ones_complement_to_decimal</td>
-<td>111111111111111111111111111111111111111111</td>
-<td>0</td>
 <td></td>
-<td>Fail!</td>
-</tr>
-<tr>
-<td>17</td>
-<td>convert only ones from complement to decimal</td>
-<td>views</td>
-<td>cofc_ones_complement_to_decimal</td>
-<td>'1111'</td>
-<td>0</td>
 <td></td>
-<td>Fail!</td>
-</tr>
-<tr>
-<td>18</td>
-<td>small string of x's convert from ones complement to decimal</td>
-<td>views</td>
-<td>cofc_ones_complement_to_decimal</td>
-<td>xxx</td>
-<td>1</td>
-<td></td>
-<td>Fail!</td>
-</tr>
-<tr>
-<td>18</td>
-<td>small string of x's convert from ones complement to decimal</td>
-<td>views</td>
-<td>cofc_ones_complement_to_decimal</td>
-<td>'xxx'</td>
-<td>1</td>
-<td></td>
-<td>Fail!</td>
 </tr>
 <tr>
 <td>14</td>
-<td>convert 1 to unsigned binary of length 0</td>
+<td>convert extremely large ones complement number to decimal</td>
 <td>views</td>
-<td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
-<td>1,0</td>
-<td>0b</td>
-<td>0b</td>
+<td>cofc_ones_complement_to_decimal</td>
+<td>0bxxxxxxxxxxxxxxxxxxxxxxx</td>
+<td>-8388607</td>
+<td>-8388607</td>
 <td>Pass!</td>
 </tr>
 <tr>
-<td>13</td>
-<td>convert 0 to unsigned binary of length 2</td>
+<td>15</td>
+<td>convert only ones from complement to decimal</td>
 <td>views</td>
-<td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
-<td>0,2</td>
-<td>0b00</td>
-<td>0b00</td>
+<td>cofc_ones_complement_to_decimal</td>
+<td>0b1111</td>
+<td>0</td>
+<td>0</td>
+<td>Pass!</td>
+</tr>
+<tr>
+<td>16</td>
+<td>convert only ones from complement to decimal</td>
+<td>views</td>
+<td>cofc_ones_complement_to_decimal</td>
+<td>0b111111111111111111111111111111111111111111</td>
+<td>0</td>
+<td>0</td>
+<td>Pass!</td>
+</tr>
+<tr>
+<td>17</td>
+<td>small string of x's convert from ones complement to decimal</td>
+<td>views</td>
+<td>cofc_ones_complement_to_decimal</td>
+<td>0bxxx</td>
+<td>-7</td>
+<td>-7</td>
 <td>Pass!</td>
 </tr>
 </tbody> </table> </div> </section> </body> </html>

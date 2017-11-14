@@ -46,12 +46,12 @@ for currentFile in *; do
 		if [ "$COUNTER" -eq 4 ]; then
 			
 			if [ "$unit" != $line ]; then 
-				echo "<tr style =\"height:1; border: 6px solid black\">" >> $appendHTML
+				echo "<tr style =\"height:1; border: 4.5px solid black\">" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
-				echo "<td>NEW</td>" >> $appendHTML
-				echo "<td>METHOD</td>" >> $appendHTML
+				echo "<td style=\"font-weight: bold; font-size: 20px\">NEW</td>" >> $appendHTML
+				echo "<td style=\"font-weight: bold; font-size: 20px;\">METHOD</td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML

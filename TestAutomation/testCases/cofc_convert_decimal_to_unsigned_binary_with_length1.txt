@@ -1,6 +1,6 @@
 11
-convert 256 to unsigned binary of length 8
+convert 255 to unsigned binary with 8 bits
 views
 cofc_convert_decimal_to_unsigned_binary_with_length
-256,8
-0b00000000
+255,8
+0b11111111
