@@ -46,12 +46,12 @@ for currentFile in *; do
 		if [ "$COUNTER" -eq 4 ]; then
 			
 			if [ "$unit" != $line ]; then 
-				echo "<tr style =\"height:1; border: 6px solid black\">" >> $appendHTML
+				echo "<tr style =\"height:1; border: 4.5px solid black\">" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
-				echo "<td>NEW</td>" >> $appendHTML
-				echo "<td>METHOD</td>" >> $appendHTML
+				echo "<td style=\"font-weight: bold; font-size: 20px\">NEW METHOD:</td>" >> $appendHTML
+				echo "<td style=\"font-weight: bold; font-size: 20px; overflow-wrap: normal; overflow-x: scroll\">$line</td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
@@ -94,11 +94,11 @@ for currentFile in *; do
 			echo "<td>$testOutput</td>" >> $appendHTML
 			
 			if [ "$testOutput" = "$oracle" ]; then
-				echo "<td>Pass!</td>" >> $appendHTML
+				echo "<td style=\"font-weight:bold\"><font color = \"green\" size = \"5\">PASS!</font></td>" >> $appendHTML
 			fi
 			
 			if [ "$testOutput" != "$oracle" ]; then
-				echo "<td>Fail!</td>" >> $appendHTML
+				echo "<td style=\"font-weight:bold\"><font color = \"red\" size = \"5\">FAIL!</font></td>" >> $appendHTML
 			fi
 			
 			

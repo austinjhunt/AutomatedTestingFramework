@@ -1,6 +1,6 @@
-17
+23
 convert only ones from complement to decimal
 views
 cofc_ones_complement_to_decimal
-111111111111111111111111111111111111111111
+0b1111
 0
