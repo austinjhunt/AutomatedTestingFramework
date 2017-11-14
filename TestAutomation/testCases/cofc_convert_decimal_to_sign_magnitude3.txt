@@ -1,0 +1,6 @@
+8
+convert positive 0 to sign magnitude with 5 bits
+views
+cofc_convert_decimal_to_sign_magnitude
+0,5
+0b00000

@@ -1,0 +1,236 @@
+﻿{% extends 'main/master_page_in.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+    <div id="modal_question_deleted" class="modal fade" tabindex="-1" role="dialog" style="margin-top: 40px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center; background-color: beige; padding: 10px;">
+                    <h2 style="text-transform: uppercase; padding: 10px; margin: 5px;">Question Deleted!</h2>
+                </div>
+            </div>
+        </div>
+</div>
+
+    <audio id="soundHandle_correct" style="display: none;">
+        <source src='/static/main/audio/correct_sound.mp3'>
+    </audio>
+
+    <audio id="soundHandle_incorrect" style="display: none;">
+        <source src='/static/main/audio/incorrect_sound.mp3'>
+    </audio>
+
+    <audio id="soundHandle_success" style="display: none;">
+        <source src='/static/main/audio/success_sound.mp3'>
+    </audio>
+
+    <section id="new_loader">
+        <div class="lad" id="lad">
+            <div class="loader-img">
+                <a href="#">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preloader -->
+    <section id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img">
+                <a href="#">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Preloader -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="header">
+            <div class="container header-inner">
+
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a id="logo_loading" href="#" style="font-weight: normal; font-family: 'Lane - Narrow'; font-size: 24px; line-height: 1; letter-spacing: 2px; text-transform: uppercase;">
+                        {{ full_name }}.
+                    </a>
+                </div>
+                <!-- End Logo -->
+
+                <!-- Rightside Menu (Search, Cart, Bart icon) -->
+                {% comment %}
+                <div class="side-menu-btn">
+                    <ul>
+                        <!-- Search Icon -->
+                        <li class="">
+                            <a class="search-overlay-menu-btn header-icon"><i class="fa fa-search"></i></a>
+                        </li>
+                        <!-- End Search Icon -->
+
+                        <!--Sidebar Menu Icon-->
+                        <li class="">
+                            <a id="menu-sidebar-list-icon" class="nav-bar-icon"><span></span></a>
+                        </li>
+                        <!-- End Sidebar Menu Icon-->
+                    </ul>
+                </div>
+{% endcomment %}
+                <!-- End Rightside Menu -->
+
+                <!-- Mobile Navbar Icon -->
+                {% comment %}
+                <div class="nav-mobile nav-bar-icon">
+                    <span></span>
+                </div>
+{% endcomment %}
+                <!-- End Mobile Navbar Icon -->
+
+                <!-- Navbar Navigation -->
+                <div class="nav-menu">
+                    <ul class="nav-menu-inner">
+
+                        <!--li>
+                            <a href="#top" style="font-family: 'Lane - Narrow'; font-weight: normal;">Home</a>
+                        </li-->
+
+                        <li>
+                            <a href="\my_questions">My Questions</a>
+                        </li>
+                        {% if user.is_superuser %}
+                            <li>
+                                <a href="\grade_assignments">Grade Assignments</a>
+                            </li>
+                        {% endif %}
+
+                        <li>
+                            <a href="\update_password">Change Password</a>
+                        </li>
+
+                        <li>
+                            <a href="\assignments">Assignments</a>
+                        </li>
+
+                        <li>
+                            <a style="font-family: 'Lane - Narrow'; font-weight: normal;" onclick="csci_logout();">Log out</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+        <!-- Intro Section -->
+        <section id="intro" class="dark-bg">
+
+            <!-- Hero Slider Section -->
+            <div class="owl-carousel fullwidth-slider white o-flow-hidden">
+                <!--Slide-->
+                <div class="item bg-img slide-bg-image parallax parallax-section1" data-background-img="{%  static 'main/img/full/22.jpg' %}">
+                    <!-- Content -->
+                    <div class="full-cap-wraper overlay-dark80 light-color">
+                        <div class="content-caption light-color">
+                            <div class="container">
+                                <h3 style="font-family: 'Lane - Narrow'; font-weight: normal;">Computer Organization and Assembly Language Programming</h3>
+                                <br />
+                                <h1 style="font-family: 'Lane - Narrow'; font-weight: normal;">College of Charleston</h1>
+                                <br />
+                                <!--div><a class="btn btn-md btn-white-line xs-hidden">Tentative Schedule</a><span class="btn-space-10 xs-hidden"></span><a class="btn btn-md btn-white">Login</a></div-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Content -->
+                </div>
+            </div>
+            <!-- End Hero Slider Section -->
+        </section>
+        <!-- End Intro Section -->
+
+        <div class="clearfix"></div>
+
+        <section id="work" class="wow fadeInUp pt pt-sm-80 text-center">
+            <div class="container">
+
+                <!--div id="pay_wait">
+                <img width="200px;" src="{% static 'main/img/loading_gif_1.gif' %}" />
+            </div-->
+
+                <div id = "id_take_screen" style="display: none; height: 500px; background-color: whitesmoke;">de hello div<br/>de hello<br/>de</div>
+
+                <h3 style="font-family: 'Lane - Narrow'; font-weight: normal;">Required Textbook</h3>
+
+                <div style="width: 90%; line-height: 1.4; margin: 0 auto; padding: 20px; font-family: 'Lane - Narrow'; font-size: x-large; text-align: left; border: solid lightgrey 1px; background-color: whitesmoke; margin-bottom: 40px; margin-top: 40px;">
+                    Patterson and Hennessy- Computer Organization and Design 5th (or 4th) ed. (Morgan Kaufmann ISBN-13: 978-0-12-407726-3
+                </div>
+
+                <h3 style="font-family: 'Lane - Narrow'; font-weight: normal;">Tentative Schedule</h3>
+
+                <!--div>
+                    <object data="static/main/test.pdf" type="application/pdf" width="100%" height="600px;">
+                        alt : <a href="static/main/test.pdf">test.pdf</a>
+                    </object>
+                </div>
+
+
+                <div class="scroll-wrapper" style="width: 100%;">
+                    <iframe src="static/main/cl/assets/player/KeynoteDHTMLPlayer.html#0" frameBorder="0" style="width: 100%; height: 600px;"></iframe>
+                </div-->
+
+                <div style="width: 90%; margin: 0 auto; text-align: left; border: solid lightgrey 1px; background-color: whitesmoke; margin-bottom: 40px; margin-top: 40px; padding: 20px;">
+                    {% for curr_question in all_questions %}
+                            <div  style="width: 95%; margin: 0 auto; background-color: antiquewhite; padding: 10px; margin-bottom: 10px; margin-top: 10px; border: 1px lightgrey solid;">
+
+                                <div data-parent="#accordion" data-toggle="collapse" data-target="#id_{{ curr_question.id }}" style="font-family: 'Lane - Narrow'; font-size: 18px; text-transform: uppercase; margin: 5px; background-color: whitesmoke; padding: 15px; border: 1px lightgrey solid; border-radius: 10px; cursor: pointer;">
+                                    {{ curr_question.time_stamp }}
+                                </div>
+
+                                <div id="id_{{ curr_question.id }}" class="collapse">
+                                    {{ curr_question.question_content | safe }}
+                                    <div style="text-align: center;">
+                                        <button class="btn-primary" style="background-color: #cd898c; border: 1px lightgrey solid; border-radius: 10px; margin: 10px; font-family: 'Lane - Narrow'; font-size: x-large; padding: 15px; color: black;" onclick="delete_saved_question_student({{ curr_question.id }})">Delete Question</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </section>
+
+    <hr />
+
+    <hr />
+
+    <div id="all_questions_pdf" style="padding: 15px;">
+
+    </div>
+
+    <footer class="footer">
+        <section class="copyright ptb-60">
+            <div class="container">
+                <p class="" style="font-family: 'Lane - Narrow'; font-size: 16px; text-transform: uppercase;">
+                    © 2017 <b>Crafted lovingly in Charleston SC</b>. All Rights Reserved.
+                    <br />
+                    Built  by <b>Ayman Hajja, PhD</b>
+                </p>
+            </div>
+        </section>
+    </footer>
+
+    <a class="scroll-top">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+    </div>
+
+    <form>{% csrf_token %}</form>
+
+{% endblock %}
