@@ -1,0 +1,6 @@
+17
+convert -255 to ones comp with 8 bits
+views
+cofc_decimal_to_ones_complement
+-255,8
+0b00000000
