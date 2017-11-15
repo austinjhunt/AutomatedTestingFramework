@@ -19,8 +19,11 @@ def cofc_convert_decimal_to_sign_magnitude(_decimal_value, _length_of_binary):
 def main(argv): 
 	values=sys.argv[1].split(",")
 	oracle = sys.argv[2]
-	assert cofc_convert_decimal_to_sign_magnitude(values[0],values[1])==oracle,"Error: " + values[0] + "," + values[1] + " did not return '" + oracle + "'"
-	print(oracle)
+	decToSign = cofc_convert_decimal_to_sign_magnitude(values[0],values[1])
+	print(decToSign)
+    #assert decToSign==oracle,"Error: " + values[0] + "," + values[1] + " did not return '" + oracle + "'"
+	
+	
 	
 if __name__ == '__main__':
 	import sys

@@ -1,5 +1,5 @@
 7
-convert 10 to sign magnitude
+convert 10 to sign magnitude with 5 bits
 views
 cofc_convert_decimal_to_sign_magnitude
 10,5

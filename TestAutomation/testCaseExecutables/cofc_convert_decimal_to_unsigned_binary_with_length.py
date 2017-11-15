@@ -2,6 +2,8 @@
 #!/bin/python
 
 def cofc_convert_decimal_to_unsigned_binary_with_length(_decimal_value, _length_of_binary):
+    _decimal_value = int(_decimal_value)
+    _length_of_binary = int(_length_of_binary)
     ans_binary = bin(_decimal_value)
     while len(ans_binary) < (_length_of_binary + 2):
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
@@ -16,8 +18,10 @@ def cofc_convert_decimal_to_unsigned_binary_with_length(_decimal_value, _length_
 def main(argv): 
 	values=sys.argv[1].split(",")
 	oracle = sys.argv[2]
-	assert cofc_convert_decimal_to_unsigned_binary_with_length(values[0],values[1])==oracle,"Error: " + values[0] + ", " + values[1] + " did not return '" + oracle + "'"
-	print(oracle)	
+	decToUnsigned = cofc_convert_decimal_to_unsigned_binary_with_length(values[0],values[1])
+	print(decToUnsigned)
+	#assert decToUnsigned==oracle,"Error: " + values[0] + ", " + values[1] + " did not return '" + oracle + "'"
+	
 	
 if __name__ == '__main__':
 	import sys

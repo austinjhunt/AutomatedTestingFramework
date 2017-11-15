@@ -1,6 +1,7 @@
 def cofc_ones_complement_to_decimal(_ones_complement_binary):
     # First we check if it's positive; if it is, we simply convert to decimal
     #
+    #_ones_complement_binary = int(_ones_complement_binary)
     if _ones_complement_binary[2] == '0':
         ans_decimal = int(_ones_complement_binary[2:], 2)
     else:
@@ -21,8 +22,10 @@ def cofc_ones_complement_to_decimal(_ones_complement_binary):
 def main(argv): 
 	#values=sys.argv[1].split(",")
 	oracle = sys.argv[2]
-	assert cofc_ones_complement_to_decimal(argv[1])==oracle,"Error: " + argv[1] + " did not return '" + oracle + "'"
-	print(oracle)	
+	onesCompToDec = cofc_ones_complement_to_decimal(sys.argv[1])
+	print(onesCompToDec) 
+	#assert onesComptToDec==oracle,"Error: " + argv[1] + " did not return '" + oracle + "'"
+	
 	
 if __name__ == '__main__':
 	import sys
