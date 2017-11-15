@@ -50,8 +50,8 @@ for currentFile in *; do
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
-				echo "<td style=\"font-weight: bold; font-size: 20px\">NEW METHOD:</td>" >> $appendHTML
-				echo "<td style=\"font-weight: bold; font-size: 20px; overflow-wrap: normal; overflow-x: scroll\">$line</td>" >> $appendHTML
+				echo "<td style=\"font-weight: bold; font-size: 14px\">NEW METHOD:</td>" >> $appendHTML
+				echo "<td style=\"font-weight: bold; font-size: 14px; overflow-wrap: normal; overflow-x: scroll\">$line</td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML
 				echo "<td></td>" >> $appendHTML

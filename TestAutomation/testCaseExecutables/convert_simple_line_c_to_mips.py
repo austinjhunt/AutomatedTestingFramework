@@ -6,9 +6,9 @@ def convert_simple_line_c_to_mips(_one_line):
     # We use [:-1] to get rid of the semi-colon
     #
     if my_comps[0] == 'int':
-        return "addi $" + my_comps[1] + ", $zero, " + my_comps[3][:-1]
-         # int x = 5; 
-    	 # addi $x, $zero, 5 
+    	return "addi $" + my_comps[1] + ", $zero, " + my_comps[3][:-1]
+        # int x = 5; 
+    	# addi $x, $zero, 5 
         
     elif my_comps[3] == '+' and my_comps[4][:-1].isdigit():
         return "addi $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", " + my_comps[4][:-1]
