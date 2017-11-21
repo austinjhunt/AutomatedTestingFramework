@@ -1,0 +1,338 @@
+﻿{% extends 'main/master_page_in.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+<audio id="soundHandle_correct" style="display: none;">
+    <source src='/static/main/audio/correct_sound.mp3'>
+</audio>
+
+<audio id="soundHandle_incorrect" style="display: none;">
+    <source src='/static/main/audio/incorrect_sound.mp3'>
+</audio>
+
+<audio id="soundHandle_success" style="display: none;">
+    <source src='/static/main/audio/success_sound.mp3'>
+</audio>
+
+<!-- Preloader -->
+<section id="preloader">
+    <div class="loader" id="loader">
+        <div class="loader-img"></div>
+    </div>
+</section>
+<!-- End Preloader -->
+
+
+<!-- Site Wraper -->
+<div class="wrapper">
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container header-inner">
+
+            <!-- Logo -->
+            <div class="logo">
+                <!--a href="http://www.amhajja.com" style="font-weight: normal; font-family: 'Lane - Narrow'; font-size: 24px; line-height: 1; letter-spacing: 2px; text-transform: uppercase;">
+                    For <span style="color: indianred;">Students</span>. By <span style="color: green;">Students</span>.
+                </a-->
+                <a href="#" style="font-weight: normal; font-family: 'Lane - Narrow'; font-size: 24px; line-height: 1; letter-spacing: 2px; text-transform: uppercase;">
+                    {{ user.first_name }} {{ user.last_name }}. Schedule.
+                </a>
+            </div>
+            <!-- End Logo -->
+
+            <!-- Navbar Navigation -->
+            <div class="nav-menu">
+                <ul class="nav-menu-inner">
+                    <li>
+                        <a href="#top" style="font-family: 'Lane - Narrow'; font-weight: normal;" onclick="csci_logout();">Log out</a>
+                    </li>
+
+                    {% if user.is_superuser %}
+                        <li>
+                            <a href="\" style="font-family: 'Lane - Narrow'; font-weight: normal;" onclick="window.location = '/schedule';">Change Schedule</a>
+                        </li>
+                    {% endif %}
+
+                    <li>
+                        <a href="#top" style="font-family: 'Lane - Narrow'; font-weight: normal;" onclick="window.location = '/admin';">Add a new Question</a>
+                    </li>
+
+                    <li>
+                        <a href="#top" style="font-family: 'Lane - Narrow'; font-weight: normal;" onclick="window.location = '/questions';">My Questions</a>
+                    </li>
+                    <li>
+                        <a href="#top" style="font-family: 'Lane - Narrow'; font-weight: normal;">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- CONTENT --------------------------------------------------------------------------------->
+    <!-- Intro Section -->
+    <section id="intro" class="dark-bg">
+
+        <!-- Hero Slider Section -->
+        <div >
+            <!--Slide-->
+            <!-- Content -->
+            <div class="container" style="color: #000; width: 80%; margin: 0 auto;">
+                <div class="row">
+                    <div >
+                        <div class="border-box" style="background-color: white; opacity: .9; border: 1px grey solid; margin-top: 100px; margin-bottom: 50px;">
+
+                            <div style="width: 90%; margin: 0 auto; text-align: left; border-top: solid lightgrey 1px; border-left: solid lightgrey 1px; border-right: solid lightgrey 1px; background-color: whitesmoke; margin-bottom: 40px; margin-top: 40px;">
+                                {% for el in data_sent_test %}
+                                    {% for e in el %}
+
+                                        {% if e.type == "Week" %}
+                                            <div class="my_item" style="padding-left: 30px; padding-top:30px; padding-bottom: 10px; width: 100%; font-size: xx-large; text-transform: uppercase;">id: {{ e.id }}. {{ e.value }}.</div>
+                                        {% endif %}
+
+                                        {% if e.type == "Topic" %}
+                                            <div class="my_item" style="padding-left: 30px; padding-top:15px; padding-bottom: 15px; width: 100%; font-size: 20px; text-transform: uppercase;">id: {{ e.id }}. {{ e.value }}</div>
+                                        {% endif %}
+
+                                        {% if e.type == "Item" %}
+                                            <div>
+                                                <div data-parent="#accordion" data-toggle="collapse" data-target="#item_id_{{ e.id }}" class="my_item" style="margin: 0 auto; font-size: 18px; text-transform: uppercase; margin-bottom: 10px; border: 1px lightgrey solid; background-color: lightgoldenrodyellow; padding-left: 15px; padding-top:15px; padding-bottom: 15px; cursor: pointer; width: 95%;">
+                                                    {{ e.id }}. {{ e.value }}
+                                                </div>
+
+                                                {% if e.subItems and e.expand %}
+                                                    <div id="item_id_{{ e.id }}" class="collapse" style="padding: 0;">
+                                                        <div  style="width: 95%; margin: 0 auto; background-color: antiquewhite; padding: 10px; margin-bottom: 10px; border: 1px lightgrey solid;">
+                                                            {% for subItem in e.subItems %}
+                                                                {% if subItem.category == 'Practice' and subItem.show %}
+                                                                    <div data-parent="#accordion" data-target="#id_{{ subItem.id }}" style="font-family: 'Lane - Narrow'; font-size: 18px; text-transform: uppercase; margin: 10px; margin-bottom: 0px; background-color: whitesmoke; padding: 15px; border: 1px lightgrey solid; border-radius: 10px; cursor: pointer;" onclick="getQuestions({{ subItem.id }});">
+                                                                        {{ subItem.id }}. {{ subItem.title }}
+                                                                        <div style="margin:10px;">
+                                                                            <input style="padding: 10px; font-size: 22px;" placeholder="item_id" value="{{ e.id }}" />
+                                                                        </div>
+                                                                    
+                                                                    </div>
+
+                                                                    <div id="id_{{ subItem.id }}" class="collapse">
+                                                                        <div style="background-color: whitesmoke; padding: 10px; padding-bottom: 15px; margin: 10px; padding-bottom: 5px; border: 1px lightgrey solid; border-radius: 10px;">
+                                                                            <div id="score_bar_wrapper_id_{{ subItem.id }}" style="width: 90%; border: 1px lightgrey dashed; height: 35px; margin: 0 auto; margin-top: 20px; border-radius: 10px;">
+                                                                                <div id="score_bar_id_{{ subItem.id }}" style="width: 0px; background-color: #b8e186; height: 100%; border-radius: 10px;"></div>
+                                                                            </div>
+                                                                            <div style="width: 100%; text-align: center;">
+                                                                                <div id="questionArea_id_{{ subItem.id }}" style="font-family: 'Lane - Narrow'; font-size: xx-large; padding: 10px; margin-top: 30px; padding-bottom: 20px; line-height: 120%;">Question goes here...</div>
+                                                                            </div>
+
+                                                                            <div style="width: 100%; margin-bottom: 20px;">
+                                                                                <div id="input1_area_id_{{ subItem.id }}" style="text-align: center; display: none;">
+                                                                                    <input id="answer_area_input_{{ subItem.id }}" style="font-size: xx-large; padding: 10px; width: 50%; font-family: 'Lane - Narrow'; text-align: center;" placeholder="Answer here..."/>
+                                                                                    <div>
+                                                                                        <button id="check_answer_button_{{ subItem.id }}" style="background-color: lightcyan; border: 1px lightgrey solid; border-radius: 10px; margin: 10px; font-family: 'Lane - Narrow'; font-size: x-large; padding: 15px;" onclick="checkAnswerInput1('{{ subItem.id }}', this);">Check Answer!</button>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div id="multiple4_area_1_id_{{ subItem.id }}" style="overflow: hidden;">
+                                                                                    <div style="width: 50%; float: left; text-align: right;">
+                                                                                        <button id="answer1Area_id_{{ subItem.id }}" style="width: 90%; background-color: lightcyan; border: 1px lightgrey solid; border-radius: 10px; margin: 10px; font-family: 'Lane - Narrow'; font-size: x-large; padding: 10px;" onclick="checkAnswer(this, '{{ subItem.id }}');">answer 1</button>
+                                                                                    </div>
+                                                                                    <div style="overflow: hidden;">
+                                                                                        <button id="answer2Area_id_{{ subItem.id }}" style="width: 90%; background-color: lightcyan; border: 1px lightgrey solid; border-radius: 10px; margin: 10px; font-family: 'Lane - Narrow'; font-size: x-large; padding: 10px;" onclick="checkAnswer(this, '{{ subItem.id }}');">answer 2</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div id="multiple4_area_2_id_{{ subItem.id }}" style="overflow: hidden;">
+                                                                                    <div style="width: 50%; float: left; text-align: right;">
+                                                                                        <button id="answer3Area_id_{{ subItem.id }}" style="width: 90%; background-color: lightcyan; border: 1px lightgrey solid; border-radius: 10px; margin: 10px; font-family: 'Lane - Narrow'; font-size: x-large; padding: 10px;" onclick="checkAnswer(this, '{{ subItem.id }}');">answer 3</button>
+                                                                                    </div>
+                                                                                    <div style="overflow: hidden;">
+                                                                                        <button id="answer4Area_id_{{ subItem.id }}" style="width: 90%; background-color: lightcyan; border: 1px lightgrey solid; border-radius: 10px; margin: 10px; font-family: 'Lane - Narrow'; font-size: x-large; padding: 10px;" onclick="checkAnswer(this, '{{ subItem.id }}');">answer 4</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <hr style="color: antiquewhite"/>
+
+                                                                            <div style="width: 100%; text-align: center; padding-top: 20px; margin-bottom: 20px; border-top: 1px lightgrey solid;">
+                                                                                <div id="correctAnsMessage_id_{{ subItem.id }}" style="font-family: 'Lane - Narrow'; font-size: x-large; padding: 20px; color: green; display: none;">Correct Answer</div>
+                                                                                <div id="incorrectAnsMessage_id_{{ subItem.id }}" style="font-family: 'Lane - Narrow'; font-size: x-large; padding: 20px; color: darkred; display: none;">Incorrect Answer. The correct answer is: <span id="corrAnswerPH_id_{{ subItem.id }}" style="color: blue;"></span></div>
+
+
+                                                                                <!--button style="font-family: 'Lane - Narrow'; margin: 20px; font-size: x-large; padding: 10px; background-color: #b8e186;  border-radius: 10px; border: 1px grey solid;">I don't understand!</button-->
+                                                                                <button id="goToNext_id_{{ subItem.id }}" style="font-family: 'Lane - Narrow'; margin: 20px; font-size: x-large; padding: 10px; background-color: #b8e186;  border-radius: 10px; border: 1px grey solid; display: none;" onclick="goToNextQuestion('{{ subItem.id }}');">Go to Next Question</button>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                {% else %}
+                                                                    {% if subItem.show %}
+                                                                        <div style="margin: 10px; text-transform: uppercase; font-size: 18px; font-family: 'Lane - Narrow'; background-color: lightcyan; padding: 15px; border: 1px lightgrey solid; border-radius: 10px; cursor: pointer;">{{ subItem.title }}</div>
+                                                                    {% endif %}
+                                                                {% endif %}
+                                                            {% endfor %}
+
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+
+                                    <hr style="border-color: lightgrey;"/>
+                                {% endfor %}
+                            </div>
+
+
+                            <div>
+                                <input name="question_id_input" spellcheck="false" style="width: 100%; padding: 10px; font-size: large;" disabled placeholder="Question ID will be automatically generated!" value="{{ curr_question.id }}" />
+                            </div>
+                            <textarea rows="30" id="python_code" spellcheck="false" style="font-size: larger; width: 100%;" placeholder="Pre-code to be executed goes here...">{{ curr_question.python_code }}</textarea>
+
+                            <textarea rows="30" id="question_text" spellcheck="false" style="font-size: larger; width: 100%;" placeholder="Question goes here...">{{ curr_question.questionText }}</textarea>
+
+                            {% if curr_question.id == none %}
+                                <div style="text-align: center;">
+                                    <button style="background-color: lightgoldenrodyellow; margin: 20px; margin-top: 0px; font-size: 24px; padding: 10px; border: 1px lightgrey solid;" onclick="add_question_multiple4();">Multiple 4</button>
+                                    <button style="background-color: lightgoldenrodyellow; margin: 20px; margin-top: 0px; font-size: 24px; padding: 10px; border: 1px lightgrey solid;" onclick="add_question_multiple2();">Multiple 2</button>
+                                    <button style="background-color: lightgoldenrodyellow; margin: 20px; margin-top: 0px; font-size: 24px; padding: 10px; border: 1px lightgrey solid;" onclick="add_question_input1();">Input 1</button>
+                                </div>
+                            {% endif %}
+
+                            <div id="div_multiple">
+
+                                <div id="firt_two_multiple">
+                                    <div>
+                                        <input name="ans1_input" spellcheck="false" style="width: 100%; padding: 10px; font-size: large;" placeholder="Answer 1" value="{{ curr_question.candidateAnswer1 }}" />
+                                    </div>
+                                    <div>
+                                        <input name="ans2_input" spellcheck="false" style="width: 100%; padding: 10px; font-size: large;" placeholder="Answer 2" value="{{ curr_question.candidateAnswer2 }}" />
+                                    </div>
+                                </div>
+                                <div id="second_two_multiple">
+                                    <div>
+                                        <input name="ans3_input" spellcheck="false" style="width: 100%; padding: 10px; font-size: large;" placeholder="Answer 3" value="{{ curr_question.candidateAnswer3 }}" />
+                                    </div>
+                                    <div>
+                                        <input name="ans4_input" spellcheck="false" style="width: 100%; padding: 10px; font-size: large;" placeholder="Answer 4" value="{{ curr_question.candidateAnswer4 }}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <input name="corr_ans_input" spellcheck="false" style="width: 100%; padding: 10px; font-size: large;" placeholder="Correct Answer" value="{{ curr_question.correctAnswer }}" />
+                            </div>
+
+                            <div>
+                                <input name="repeat_input" spellcheck="false" style="width: 100%; padding: 10px; font-size: large;" placeholder="Repeat Value" value="{{ curr_question.repeat }}" />
+                            </div>
+
+
+
+                            <div style="text-align: center;">
+                                <button class="btn btn-md btn-black" onclick="add_curr_question(this);">Save/Update Question</button>
+                                {% if curr_question.id != none %}
+                                    <!--button class="btn btn-md btn-black" onclick="preview_question();">Preview Question</button-->
+
+                                    <button class="btn btn-md btn-black" onclick="delete_question();">Delete Question</button>
+                                {% endif %}
+                            </div>
+
+                            {% if curr_question.id != none %}
+                                <div data-parent="#accordion" data-target="#id_{{ curr_question.id }}" style="font-family: 'Lane - Narrow'; font-size: 18px; color: #000; text-transform: uppercase; margin: 10px; margin-bottom: 0px; background-color: whitesmoke; padding: 15px; border: 1px lightgrey solid; border-radius: 10px; cursor: pointer;" onclick="getQuestions({{ curr_question.id }});">
+                                    Preview
+                                </div>
+                            {% endif %}
+
+
+                            <div id="id_{{ curr_question.id }}" class="collapse">
+                                <div style="background-color: whitesmoke; padding: 10px; padding-bottom: 15px; margin: 10px; padding-bottom: 5px; border: 1px lightgrey solid; border-radius: 10px;">
+                                    <div id="score_bar_wrapper_id_{{ curr_question.id }}" style="width: 90%; border: 1px lightgrey dashed; height: 35px; margin: 0 auto; margin-top: 20px; border-radius: 10px;">
+                                        <div id="score_bar_id_{{ curr_question.id }}" style="width: 0px; background-color: #b8e186; height: 100%; border-radius: 10px;"></div>
+                                    </div>
+                                    <div style="width: 100%; text-align: center;">
+                                        <div id="questionArea_id_{{ curr_question.id }}" style="font-family: 'Lane - Narrow'; font-size: xx-large; padding: 10px; margin-top: 30px; padding-bottom: 20px; line-height: 120%; color: black;">Question goes here...</div>
+                                    </div>
+
+                                    <div style="width: 100%; margin-bottom: 20px;">
+                                        <div id="input1_area_id_{{ curr_question.id }}" style="text-align: center; display: none;">
+                                            <input id="answer_area_input_{{ curr_question.id }}" style="font-size: xx-large; padding: 10px; width: 50%; font-family: 'Lane - Narrow'; text-align: center;" placeholder="Answer here..."/>
+                                            <div>
+                                                <button id="check_answer_button_{{ curr_question.id }}" style="background-color: lightcyan; border: 1px lightgrey solid; border-radius: 10px; margin: 10px; font-family: 'Lane - Narrow'; font-size: x-large; padding: 15px;" onclick="checkAnswerInput1('{{ curr_question.id }}', this);">Check Answer!</button>
+                                            </div>
+                                        </div>
+
+                                        <div id="multiple4_area_1_id_{{ curr_question.id }}" style="overflow: hidden;">
+                                            <div style="width: 50%; float: left; text-align: right;">
+                                                <button id="answer1Area_id_{{ curr_question.id }}" style="width: 90%; background-color: lightcyan; border: 1px lightgrey solid; border-radius: 10px; margin: 10px; font-family: 'Lane - Narrow'; font-size: x-large; padding: 10px;" onclick="checkAnswer(this, '{{ curr_question.id }}');">answer 1</button>
+                                            </div>
+                                            <div style="overflow: hidden;">
+                                                <button id="answer2Area_id_{{ curr_question.id }}" style="width: 90%; background-color: lightcyan; border: 1px lightgrey solid; border-radius: 10px; margin: 10px; font-family: 'Lane - Narrow'; font-size: x-large; padding: 10px;" onclick="checkAnswer(this, '{{ curr_question.id }}');">answer 2</button>
+                                            </div>
+                                        </div>
+                                        <div id="multiple4_area_2_id_{{ curr_question.id }}" style="overflow: hidden;">
+                                            <div style="width: 50%; float: left; text-align: right;">
+                                                <button id="answer3Area_id_{{ curr_question.id }}" style="width: 90%; background-color: lightcyan; border: 1px lightgrey solid; border-radius: 10px; margin: 10px; font-family: 'Lane - Narrow'; font-size: x-large; padding: 10px;" onclick="checkAnswer(this, '{{ curr_question.id }}');">answer 3</button>
+                                            </div>
+                                            <div style="overflow: hidden;">
+                                                <button id="answer4Area_id_{{ curr_question.id }}" style="width: 90%; background-color: lightcyan; border: 1px lightgrey solid; border-radius: 10px; margin: 10px; font-family: 'Lane - Narrow'; font-size: x-large; padding: 10px;" onclick="checkAnswer(this, '{{ curr_question.id }}');">answer 4</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr style="color: antiquewhite"/>
+
+                                    <div style="width: 100%; text-align: center; padding-top: 20px; margin-bottom: 20px; border-top: 1px lightgrey solid;">
+                                        <div id="correctAnsMessage_id_{{ curr_question.id }}" style="font-family: 'Lane - Narrow'; font-size: x-large; padding: 20px; color: green; display: none;">Correct Answer</div>
+                                        <div id="incorrectAnsMessage_id_{{ curr_question.id }}" style="font-family: 'Lane - Narrow'; font-size: x-large; padding: 20px; color: darkred; display: none;">Incorrect Answer. The correct answer is: <span id="corrAnswerPH_id_{{ curr_question.id }}" style="color: blue;"></span></div>
+
+
+                                        <!--button style="font-family: 'Lane - Narrow'; margin: 20px; font-size: x-large; padding: 10px; background-color: #b8e186;  border-radius: 10px; border: 1px grey solid;">I don't understand!</button-->
+                                        <button id="goToNext_id_{{ curr_question.id }}" style="font-family: 'Lane - Narrow'; margin: 20px; font-size: x-large; padding: 10px; background-color: #b8e186;  border-radius: 10px; border: 1px grey solid; display: none;" onclick="goToNextQuestion('{{ curr_question.id }}');">Go to Next Question</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!--div data-parent="#accordion" data-target="#id_{{ curr_question.id }}" style="font-family: 'Lane - Narrow'; font-size: 18px; text-transform: uppercase; margin: 10px; margin-bottom: 0px; background-color: whitesmoke; color: black; padding: 15px; border: 1px lightgrey solid; border-radius: 10px; cursor: pointer;" onclick="getQuestions({{ curr_question.id }});">
+                                Question Title...
+                            </div-->
+
+                            <!--a class="float-right">Forgot password?</a-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Content -->
+
+        </div>
+        <!-- End Hero Slider Section -->
+    </section>
+    <!-- End Intro Section -->
+
+    <!-- End CONTENT ------------------------------------------------------------------------------>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <!-- Copyright Bar -->
+        <section class="copyright ptb-60">
+            <div class="container">
+                <p class="" style="font-family: 'Lane - Narrow'; font-size: 16px; text-transform: uppercase;">
+                    © 2017 <b>Crafted lovingly in Charleston SC</b>. All Rights Reserved.
+                    <br />
+                    Built  by <b>Ayman Hajja, PhD</b>
+                </p>
+            </div>
+        </section>
+        <!-- End Copyright Bar -->
+
+    </footer>
+
+    <a class="scroll-top">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+</div>
+
+<form>{% csrf_token %}</form>
+
+{% endblock %}
