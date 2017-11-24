@@ -1,4 +1,4 @@
-#!/bin/python
+#TESTMETHOD
 
 def cofc_convert_decimal_to_sign_magnitude(_decimal_value, _length_of_binary):
     decVal = int(_decimal_value)
@@ -6,7 +6,7 @@ def cofc_convert_decimal_to_sign_magnitude(_decimal_value, _length_of_binary):
     ans_binary = bin(int(abs(decVal)))
     # Then we make it x number of bits where x is the 4th parameters in our list
     #
-    while len(ans_binary) != (intLength + 2):
+    while len(ans_binary) <= (intLength + 2): #Fault injection: was != 
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
         # Finally, we make the MSB 1 if the number is negative, otherwise do nothing
         #
@@ -16,6 +16,7 @@ def cofc_convert_decimal_to_sign_magnitude(_decimal_value, _length_of_binary):
     return ans_binary
 
 
+#MAIN
 def main(argv): 
 	values=sys.argv[1].split(",")
 	oracle = sys.argv[2]

@@ -1,3 +1,5 @@
+#TESTMETHOD
+
 def cofc_ones_complement_to_decimal(_ones_complement_binary):
     # First we check if it's positive; if it is, we simply convert to decimal
     #
@@ -7,16 +9,18 @@ def cofc_ones_complement_to_decimal(_ones_complement_binary):
     else:
         # First we swap the 0s with 1s and vice versa
         #
-        _ones_complement_binary = _ones_complement_binary.replace('0', 'x')
         _ones_complement_binary = _ones_complement_binary.replace('1', '0')
+        _ones_complement_binary = _ones_complement_binary.replace('0', 'x') #Fault injection: switched order of first two statements      
         _ones_complement_binary = _ones_complement_binary.replace('x', '1')
 
         # Now we convert to decimal
         #
-        ans_decimal = int(_ones_complement_binary[2:], 2) * -1
+        ans_decimal = int(_ones_complement_binary[2:], 2) * -1  #was * -1
 
     return ans_decimal
     
+    
+#MAIN
     
     #this one may give a problem, only one param
 def main(argv): 
