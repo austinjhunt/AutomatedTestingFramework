@@ -1,5 +1,4 @@
-
-#!/bin/python
+#TESTMETHOD
 
 def cofc_convert_decimal_to_unsigned_binary_with_length(_decimal_value, _length_of_binary):
     _decimal_value = int(_decimal_value)
@@ -14,7 +13,8 @@ def cofc_convert_decimal_to_unsigned_binary_with_length(_decimal_value, _length_
 
     return ans_binary
 
-    
+
+#MAIN    
 def main(argv): 
 	values=sys.argv[1].split(",")
 	oracle = sys.argv[2]

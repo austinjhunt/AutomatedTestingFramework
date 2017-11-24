@@ -1,3 +1,5 @@
+#TESTMETHOD
+
 def cofc_ones_complement_to_decimal(_ones_complement_binary):
     # First we check if it's positive; if it is, we simply convert to decimal
     #
@@ -17,6 +19,8 @@ def cofc_ones_complement_to_decimal(_ones_complement_binary):
 
     return ans_decimal
     
+    
+#MAIN
     
     #this one may give a problem, only one param
 def main(argv): 
