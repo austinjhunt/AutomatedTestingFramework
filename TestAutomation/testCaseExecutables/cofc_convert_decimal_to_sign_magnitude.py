@@ -1,4 +1,4 @@
-#!/bin/python
+#TESTMETHOD
 
 def cofc_convert_decimal_to_sign_magnitude(_decimal_value, _length_of_binary):
     decVal = int(_decimal_value)
@@ -16,6 +16,7 @@ def cofc_convert_decimal_to_sign_magnitude(_decimal_value, _length_of_binary):
     return ans_binary
 
 
+#MAIN
 def main(argv): 
 	values=sys.argv[1].split(",")
 	oracle = sys.argv[2]

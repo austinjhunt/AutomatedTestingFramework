@@ -1,4 +1,4 @@
-#!/bin/python
+#TESTMETHOD
 
 def checkIfOverflow(value1,value2):
     
@@ -10,6 +10,7 @@ def checkIfOverflow(value1,value2):
 
 
 
+#MAIN
 def main(argv): 
 	values=sys.argv[1].split(",")
 	oracle = sys.argv[2]
