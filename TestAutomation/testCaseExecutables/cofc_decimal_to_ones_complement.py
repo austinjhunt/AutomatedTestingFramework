@@ -1,5 +1,4 @@
 #TESTMETHOD
-
 def cofc_decimal_to_ones_complement(_decimal_value, _length_of_binary):
     # First we get the binary of the "positive" version of the number
     #
@@ -10,7 +9,7 @@ def cofc_decimal_to_ones_complement(_decimal_value, _length_of_binary):
     ans_binary = bin(int(abs(_decimal_value)))
     # Then we make it x number of bits where x is the 4th parameters in our list
     #
-    while len(ans_binary) > (_length_of_binary + 2): #Fault injection: was !=
+    while len(ans_binary) != (_length_of_binary + 2): #Fault injection: was !=
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
         # If the number is negative, we flip all bits
         #
@@ -22,7 +21,7 @@ def cofc_decimal_to_ones_complement(_decimal_value, _length_of_binary):
 
     return ans_binary
   
-  
+
 #MAIN  
 def main(argv): 
 	values=sys.argv[1].split(",")
