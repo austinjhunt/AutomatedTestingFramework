@@ -211,34 +211,43 @@ def returnCorrectValues(_specialText, _placeholderValues):
 
         _placeholderValues[currSplit[0]] = functionsFromDB.binaryTwosComplementFromDecimal(_decimal_value=decimal_value, _bitstring_length=int(currSplit[3]))
 #NEW_FUNCTION
-def convert_simple_line_c_to_mips(_one_line):
-    # First we separate by spaces
-    #
-    my_comps = _one_line.split(' ')
 
+def convert_simple_line_c_to_mips(_one_line):
+	# First we separate by spaces
+   
+    my_comps = _one_line.split(' ')
+    
     # We use [:-1] to get rid of the semi-colon
     #
     if my_comps[0] == 'int':
-        return 'addi $' + my_comps[1] + ', $zero, ' + my_comps[3][:-1]
+    	return "addi $" + my_comps[1] + ", $zero, " + my_comps[3][:-1]
+        # int x = 5; 
+    	# addi $x, $zero, 5 
+        
     elif my_comps[3] == '+' and my_comps[4][:-1].isdigit():
-        return 'addi $' + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", " + my_comps[4][:-1]
+        return "addi $" + my_comps[1].replace('\t', '') + ", $" + my_comps[2] + ", " + my_comps[4][:-1]
+    		#Fault injection: above was my_comps[0].replace....
     elif my_comps[3] == '-' and my_comps[4][:-1].isdigit():
-        return 'addi $' + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", -" + my_comps[4][:-1]
+        return "addi $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", -" + my_comps[4][:-1]
     elif my_comps[3] == '+' and not my_comps[4][:-1].isdigit():
-        return 'add $' + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", $" + my_comps[4][:-1]
+        return "add $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", $" + my_comps[4][:-1]
     elif my_comps[3] == '-' and not my_comps[4][:-1].isdigit():
-        return 'sub $' + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", $" + my_comps[4][:-1]
+        return "sub $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", $" + my_comps[4][:-1]
+
+
 #NEW_FUNCTION
 def cofc_convert_binary_to_hex(_binary_value):
     return hex(int(_binary_value, 2))
 #NEW_FUNCTION
 def cofc_convert_decimal_to_unsigned_binary_with_length(_decimal_value, _length_of_binary):
+    _decimal_value = int(_decimal_value)
+    _length_of_binary = int(_length_of_binary)
     ans_binary = bin(_decimal_value)
     while len(ans_binary) < (_length_of_binary + 2):
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
 
     # Remove MSB
-    if len(ans_binary) > (_length_of_binary + 2):
+    if len(ans_binary) < (_length_of_binary + 2): 			#Fault injection: was > 
         ans_binary = ans_binary[0:2] + ans_binary[3:]
 
     return ans_binary
@@ -285,21 +294,26 @@ def cofc_generate_random_hexadecimal(_starting_value, _ending_value):
 #NEW_FUNCTION
 def cofc_decimal_to_ones_complement(_decimal_value, _length_of_binary):
     # First we get the binary of the "positive" version of the number
+    #
     _decimal_value=int(_decimal_value)
+    _length_of_binary=int(_length_of_binary)
+    if (_length_of_binary == 0):
+    	return ("Cannot represent any number with 0 bits")
     ans_binary = bin(int(abs(_decimal_value)))
     # Then we make it x number of bits where x is the 4th parameters in our list
     #
-    while len(ans_binary) != (_length_of_binary + 2):
+    while len(ans_binary) > (_length_of_binary + 2): #Fault injection: was !=
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
         # If the number is negative, we flip all bits
         #
-    if _decimal_value < 0:
+    if _decimal_value < 0: #was  
         ans_binary = ans_binary.replace('0', 'x')
         ans_binary = ans_binary.replace('1', '0')
         ans_binary = ans_binary.replace('x', '1')
-        ans_binary = '0' + ans_binary[1:]
+        ans_binary = '0' + ans_binary[1:]  
 
     return ans_binary
+  
 #NEW_FUNCTION
 def cofc_decimal_to_twos_complement(_decimal_value, _length_of_binary):
     return functionsFromDB.binaryTwosComplementFromDecimal(_decimal_value=_decimal_value, _bitstring_length=_length_of_binary)
@@ -307,20 +321,22 @@ def cofc_decimal_to_twos_complement(_decimal_value, _length_of_binary):
 def cofc_ones_complement_to_decimal(_ones_complement_binary):
     # First we check if it's positive; if it is, we simply convert to decimal
     #
+    #_ones_complement_binary = int(_ones_complement_binary)
     if _ones_complement_binary[2] == '0':
         ans_decimal = int(_ones_complement_binary[2:], 2)
     else:
         # First we swap the 0s with 1s and vice versa
         #
-        _ones_complement_binary = _ones_complement_binary.replace('0', 'x')
         _ones_complement_binary = _ones_complement_binary.replace('1', '0')
+        _ones_complement_binary = _ones_complement_binary.replace('0', 'x') #Fault injection: switched order of first two statements      
         _ones_complement_binary = _ones_complement_binary.replace('x', '1')
 
         # Now we convert to decimal
         #
-        ans_decimal = int(_ones_complement_binary[2:], 2) * -1
+        ans_decimal = int(_ones_complement_binary[2:], 2) * -1  #was * -1
 
     return ans_decimal
+    
 #NEW_FUNCTION
 def cofc_twos_complement_to_decimal(_tows_complement_binary):
     return twos_comp(int(_tows_complement_binary[2:], 2), len(_tows_complement_binary) - 2)
