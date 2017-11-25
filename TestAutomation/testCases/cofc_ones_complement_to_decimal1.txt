@@ -1,5 +1,5 @@
 22
-convert extremely large ones complement number to decimal
+convert ones complement to decimal
 views
 cofc_ones_complement_to_decimal
 0bxxxxxxxxxxxxxxxxxxxxxxx

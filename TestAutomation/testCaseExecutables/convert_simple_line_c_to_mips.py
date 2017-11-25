@@ -1,5 +1,4 @@
 #TESTMETHOD
-
 def convert_simple_line_c_to_mips(_one_line):
 	# First we separate by spaces
    
@@ -13,7 +12,7 @@ def convert_simple_line_c_to_mips(_one_line):
     	# addi $x, $zero, 5 
         
     elif my_comps[3] == '+' and my_comps[4][:-1].isdigit():
-        return "addi $" + my_comps[1].replace('\t', '') + ", $" + my_comps[2] + ", " + my_comps[4][:-1]
+        return "addi $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", " + my_comps[4][:-1]
     		#Fault injection: above was my_comps[0].replace....
     elif my_comps[3] == '-' and my_comps[4][:-1].isdigit():
         return "addi $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", -" + my_comps[4][:-1]
@@ -21,6 +20,7 @@ def convert_simple_line_c_to_mips(_one_line):
         return "add $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", $" + my_comps[4][:-1]
     elif my_comps[3] == '-' and not my_comps[4][:-1].isdigit():
         return "sub $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", $" + my_comps[4][:-1]
+
 
 
 #MAIN

@@ -225,7 +225,7 @@ def convert_simple_line_c_to_mips(_one_line):
     	# addi $x, $zero, 5 
         
     elif my_comps[3] == '+' and my_comps[4][:-1].isdigit():
-        return "addi $" + my_comps[1].replace('\t', '') + ", $" + my_comps[2] + ", " + my_comps[4][:-1]
+        return "addi $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", " + my_comps[4][:-1]
     		#Fault injection: above was my_comps[0].replace....
     elif my_comps[3] == '-' and my_comps[4][:-1].isdigit():
         return "addi $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", -" + my_comps[4][:-1]
@@ -247,7 +247,7 @@ def cofc_convert_decimal_to_unsigned_binary_with_length(_decimal_value, _length_
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
 
     # Remove MSB
-    if len(ans_binary) < (_length_of_binary + 2): 			#Fault injection: was > 
+    if len(ans_binary) > (_length_of_binary + 2): 			#Fault injection: was > 
         ans_binary = ans_binary[0:2] + ans_binary[3:]
 
     return ans_binary
@@ -275,7 +275,7 @@ def cofc_convert_decimal_to_sign_magnitude(_decimal_value, _length_of_binary):
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
         # Finally, we make the MSB 1 if the number is negative, otherwise do nothing
         #
-    if _decimal_value < 0:
+    if decimal_value < 0:
         ans_binary = ans_binary[0:2] + '1' + ans_binary[3:]
 
     return ans_binary
@@ -302,7 +302,7 @@ def cofc_decimal_to_ones_complement(_decimal_value, _length_of_binary):
     ans_binary = bin(int(abs(_decimal_value)))
     # Then we make it x number of bits where x is the 4th parameters in our list
     #
-    while len(ans_binary) > (_length_of_binary + 2): #Fault injection: was !=
+    while len(ans_binary) != (_length_of_binary + 2): #Fault injection: was !=
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
         # If the number is negative, we flip all bits
         #
@@ -327,8 +327,9 @@ def cofc_ones_complement_to_decimal(_ones_complement_binary):
     else:
         # First we swap the 0s with 1s and vice versa
         #
+	_ones_complement_binary = _ones_complement_binary.replace('0', 'x')
         _ones_complement_binary = _ones_complement_binary.replace('1', '0')
-        _ones_complement_binary = _ones_complement_binary.replace('0', 'x') #Fault injection: switched order of first two statements      
+           
         _ones_complement_binary = _ones_complement_binary.replace('x', '1')
 
         # Now we convert to decimal

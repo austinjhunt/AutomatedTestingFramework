@@ -1,5 +1,5 @@
 14
-convert positive 0 to ones comp with 8 bits
+convert decimal to ones complement
 views
 cofc_decimal_to_ones_complement
 0,8
