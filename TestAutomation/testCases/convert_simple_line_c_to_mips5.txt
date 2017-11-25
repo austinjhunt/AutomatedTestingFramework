@@ -1,5 +1,5 @@
 30
-convert 'x = y - z;' to mips assembly 
+convert c string to mips assembly
 views
 convert_simple_line_c_to_mips
 x = y - z;

@@ -1,5 +1,5 @@
 21
-convert 7 to ones comp with 0 bits
+convert decimal to ones complement
 views
 cofc_decimal_to_ones_complement
 7,0
