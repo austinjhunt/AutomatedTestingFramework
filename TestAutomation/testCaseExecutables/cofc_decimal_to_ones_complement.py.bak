@@ -21,7 +21,7 @@ def cofc_decimal_to_ones_complement(_decimal_value, _length_of_binary):
 
     return ans_binary
   
-
+#NEW_FUNCTION
 #MAIN  
 def main(argv): 
 	values=sys.argv[1].split(",")

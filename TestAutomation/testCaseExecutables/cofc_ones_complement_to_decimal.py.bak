@@ -20,7 +20,7 @@ def cofc_ones_complement_to_decimal(_ones_complement_binary):
 
     return ans_decimal
     
-
+#NEW_FUNCTION
 #MAIN
     
     #this one may give a problem, only one param
