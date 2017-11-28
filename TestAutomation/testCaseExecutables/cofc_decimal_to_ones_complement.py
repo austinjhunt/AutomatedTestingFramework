@@ -9,11 +9,11 @@ def cofc_decimal_to_ones_complement(_decimal_value, _length_of_binary):
     ans_binary = bin(int(abs(_decimal_value)))
     # Then we make it x number of bits where x is the 4th parameters in our list
     #
-    while len(ans_binary) != (_length_of_binary + 2): #Fault injection: was !=
-        ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
+    while len(ans_binary)  < (_length_of_binary + 2): 
+        ans_binary = ans_binary[0:2] + '1' + ans_binary[2:] #was '0'
         # If the number is negative, we flip all bits
         #
-    if _decimal_value < 0: #was  
+    if _decimal_value <= 0: #was <   
         ans_binary = ans_binary.replace('0', 'x')
         ans_binary = ans_binary.replace('1', '0')
         ans_binary = ans_binary.replace('x', '1')

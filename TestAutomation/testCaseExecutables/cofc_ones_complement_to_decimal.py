@@ -8,8 +8,9 @@ def cofc_ones_complement_to_decimal(_ones_complement_binary):
     else:
         # First we swap the 0s with 1s and vice versa
         #
-	_ones_complement_binary = _ones_complement_binary.replace('0', 'x')
-        _ones_complement_binary = _ones_complement_binary.replace('1', '0')
+	_ones_complement_binary = _ones_complement_binary.replace('1', '0')
+	_ones_complement_binary = _ones_complement_binary.replace('0', 'x') #order of first two assignments was swapped
+        
            
         _ones_complement_binary = _ones_complement_binary.replace('x', '1')
 
