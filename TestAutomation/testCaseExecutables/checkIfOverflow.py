@@ -1,7 +1,7 @@
 #TESTMETHOD
 def checkIfOverflow(value1, value2):
     ans = int(value1, 2) + int(value2, 2)
-    if ans > 31:
+    if ans >= 31: #was > 
         return 'Yes (an overflow will occur)'
     else:
         return 'No overflow'

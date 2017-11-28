@@ -9,7 +9,7 @@ def cofc_convert_decimal_to_sign_magnitude(_decimal_value, _length_of_binary):
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
         # Finally, we make the MSB 1 if the number is negative, otherwise do nothing
         #
-    if decimal_value < 0:
+    if decimal_value <= 0: #was < 
         ans_binary = ans_binary[0:2] + '1' + ans_binary[3:]
 
     return ans_binary
