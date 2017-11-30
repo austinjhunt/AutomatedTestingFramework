@@ -17,11 +17,11 @@ cd TestAutomation/testCaseExecutables
 pattern1="#TESTMETHOD"
 pattern2="#MAIN"
 #Empty the current method body from the executable file
-sed -i .bak "/$pattern1/,/$pattern2/{//!d;}" $executableFile
+sed -i "/$pattern1/,/$pattern2/{//!d;}" $executableFile
 #Now insert contents of $methodBodyFile between the #TESTMETHOD and #MAIN tags of the $executableFile
-sed -i .bak "/$pattern1/r $methodBodyFile" $executableFile
+sed -i "/$pattern1/r $methodBodyFile" $executableFile
 #Now get rid of unnecessary #NEW_FUNCTION tag 
-sed -i .bak "s/#NEW_FUNCTION//g" $executableFile
+sed -i "s/#NEW_FUNCTION//g" $executableFile
 #METHOD BODY HAS BEEN OVERWRITTEN WITH WHAT IS IN VIEWS.PY FILE!!! CONGRATULATIONS
 
 
