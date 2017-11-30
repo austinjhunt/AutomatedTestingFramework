@@ -1,5 +1,5 @@
 19
-convert -1 to ones comp with 2 bits
+convert decimal to ones complement
 views
 cofc_decimal_to_ones_complement
 -1,2

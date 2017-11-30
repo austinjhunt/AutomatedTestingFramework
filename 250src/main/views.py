@@ -65,13 +65,14 @@ class MyItem:
         self.subItems = []
         self.expand = None
 
-
+#NEW_FUNCTION
 @csrf_exempt
 def page_not_found(request):
     template = loader.get_template('main/home.html')
     context = RequestContext(request, {})
     return HttpResponse(template.render(context))
 
+#NEW_FUNCTION
 def twos_comp(val, bits):
     """compute the 2's compliment of int value val"""
 
@@ -79,7 +80,7 @@ def twos_comp(val, bits):
         val = val - (1 << bits)        # compute negative value
     return val                         # return positive value as is
 
-
+#NEW_FUNCTION
 def addTwoBinaries(binary1, binary2, result_length):
     value1_int = int(binary1[2:], 2)
     value2_int = int(binary2[2:], 2)
@@ -92,14 +93,14 @@ def addTwoBinaries(binary1, binary2, result_length):
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
 
     return ans_binary
-
+#NEW_FUNCTION
 def checkIfOverflow(value1, value2):
     ans = int(value1, 2) + int(value2, 2)
-    if ans > 31:
+    if ans >= 31: #was > 
         return 'Yes (an overflow will occur)'
     else:
         return 'No overflow'
-
+#NEW_FUNCTION
 def returnCorrectValues(_specialText, _placeholderValues):
 
     currSplit = _specialText.split(',')
@@ -209,51 +210,61 @@ def returnCorrectValues(_specialText, _placeholderValues):
             decimal_value = currSplit[2]
 
         _placeholderValues[currSplit[0]] = functionsFromDB.binaryTwosComplementFromDecimal(_decimal_value=decimal_value, _bitstring_length=int(currSplit[3]))
+#NEW_FUNCTION
 
 def convert_simple_line_c_to_mips(_one_line):
-    # First we separate by spaces
-    #
+	# First we separate by spaces
+   
     my_comps = _one_line.split(' ')
-
+    
     # We use [:-1] to get rid of the semi-colon
     #
     if my_comps[0] == 'int':
-        return 'addi $' + my_comps[1] + ', $zero, ' + my_comps[3][:-1]
+    	return "addi $" + my_comps[1] + ", $zero, " + my_comps[3][:-1]
+        # int x = 5; 
+    	# addi $x, $zero, 5 
+        
     elif my_comps[3] == '+' and my_comps[4][:-1].isdigit():
-        return 'addi $' + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", " + my_comps[4][:-1]
+        return "addi $" + my_comps[1].replace('\t', '') + ", $" + my_comps[2] + ", " + my_comps[4][:-1]
+    		#Fault injection: above was my_comps[0].replace....
     elif my_comps[3] == '-' and my_comps[4][:-1].isdigit():
-        return 'addi $' + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", -" + my_comps[4][:-1]
+        return "addi $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", -" + my_comps[4][:-1]
     elif my_comps[3] == '+' and not my_comps[4][:-1].isdigit():
-        return 'add $' + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", $" + my_comps[4][:-1]
+        return "add $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", $" + my_comps[4][:-1]
     elif my_comps[3] == '-' and not my_comps[4][:-1].isdigit():
-        return 'sub $' + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", $" + my_comps[4][:-1]
+        return "sub $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", $" + my_comps[4][:-1]
 
+
+#NEW_FUNCTION
 def cofc_convert_binary_to_hex(_binary_value):
     return hex(int(_binary_value, 2))
-
+#NEW_FUNCTION
 def cofc_convert_decimal_to_unsigned_binary_with_length(_decimal_value, _length_of_binary):
+    _decimal_value = int(_decimal_value)
+    _length_of_binary = int(_length_of_binary)
     ans_binary = bin(_decimal_value)
     while len(ans_binary) < (_length_of_binary + 2):
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
 
     # Remove MSB
-    if len(ans_binary) > (_length_of_binary + 2):
+    if len(ans_binary) < (_length_of_binary + 2): 			#Fault injection: was > 
         ans_binary = ans_binary[0:2] + ans_binary[3:]
 
     return ans_binary
-
+#NEW_FUNCTION
 def cofc_convert_decimal_to_unsigned_binary(_decimal_value):
     return bin(_decimal_value)
 
+#NEW_FUNCTION
 def cofc_convert_binary_to_decimal(_binary_value):
     return int(_binary_value[2:], 2)
-
+#NEW_FUNCTION
 def cofc_convert_hexadecimal_to_decimal(_hexadecimal_value):
     return int(_hexadecimal_value, 16)
-
+#NEW_FUNCTION
 def cofc_convert_hexadecimal_to_binary(_hexadecimal_value):
     return bin(int(_hexadecimal_value, 16))
-
+#NEW_FUNCTION
 def cofc_convert_decimal_to_sign_magnitude(_decimal_value, _length_of_binary):
     decimal_value = int(_decimal_value)
     intLength = int(_length_of_binary)
@@ -264,66 +275,75 @@ def cofc_convert_decimal_to_sign_magnitude(_decimal_value, _length_of_binary):
         ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
         # Finally, we make the MSB 1 if the number is negative, otherwise do nothing
         #
-    if _decimal_value < 0:
+    if decimal_value <= 0: #was < 
         ans_binary = ans_binary[0:2] + '1' + ans_binary[3:]
 
     return ans_binary
-
+#NEW_FUNCTION
 def cofc_generate_random_decimal(_starting_value, _ending_value):
     return randint(int(_starting_value), int(_ending_value))
-
+#NEW_FUNCTION
 def cofc_generate_random_binary(_starting_value, _ending_value, _length_of_binary):
     binarySequence = bin(randint(_starting_value, _ending_value))
     while len(binarySequence) != (_length_of_binary + 2) and _length_of_binary != 0:
         binarySequence = binarySequence[0:2] + '0' + binarySequence[2:]
     return binarySequence
-
+#NEW_FUNCTION
 def cofc_generate_random_hexadecimal(_starting_value, _ending_value):
     return hex(randint(_starting_value, _ending_value))
-
+#NEW_FUNCTION
 def cofc_decimal_to_ones_complement(_decimal_value, _length_of_binary):
     # First we get the binary of the "positive" version of the number
+    #
     _decimal_value=int(_decimal_value)
+    _length_of_binary=int(_length_of_binary)
+    if (_length_of_binary == 0):
+    	return ("Cannot represent any number with 0 bits")
     ans_binary = bin(int(abs(_decimal_value)))
     # Then we make it x number of bits where x is the 4th parameters in our list
     #
-    while len(ans_binary) != (_length_of_binary + 2):
-        ans_binary = ans_binary[0:2] + '0' + ans_binary[2:]
+    while len(ans_binary)  < (_length_of_binary + 2): 
+        ans_binary = ans_binary[0:2] + '1' + ans_binary[2:] #was '0'
         # If the number is negative, we flip all bits
         #
-    if _decimal_value < 0:
+    if _decimal_value <= 0: #was <   
         ans_binary = ans_binary.replace('0', 'x')
         ans_binary = ans_binary.replace('1', '0')
         ans_binary = ans_binary.replace('x', '1')
-        ans_binary = '0' + ans_binary[1:]
+        ans_binary = '0' + ans_binary[1:]  
 
     return ans_binary
-
+  
+#NEW_FUNCTION
 def cofc_decimal_to_twos_complement(_decimal_value, _length_of_binary):
     return functionsFromDB.binaryTwosComplementFromDecimal(_decimal_value=_decimal_value, _bitstring_length=_length_of_binary)
-
+#NEW_FUNCTION
 def cofc_ones_complement_to_decimal(_ones_complement_binary):
     # First we check if it's positive; if it is, we simply convert to decimal
     #
+    #_ones_complement_binary = int(_ones_complement_binary)
     if _ones_complement_binary[2] == '0':
         ans_decimal = int(_ones_complement_binary[2:], 2)
     else:
         # First we swap the 0s with 1s and vice versa
         #
-        _ones_complement_binary = _ones_complement_binary.replace('0', 'x')
-        _ones_complement_binary = _ones_complement_binary.replace('1', '0')
+	_ones_complement_binary = _ones_complement_binary.replace('1', '0')
+	_ones_complement_binary = _ones_complement_binary.replace('0', 'x') #order of first two assignments was swapped
+        
+           
         _ones_complement_binary = _ones_complement_binary.replace('x', '1')
 
         # Now we convert to decimal
         #
-        ans_decimal = int(_ones_complement_binary[2:], 2) * -1
+        ans_decimal = int(_ones_complement_binary[2:], 2) * -1  #was * -1
 
     return ans_decimal
-
+    
+#NEW_FUNCTION
 def cofc_twos_complement_to_decimal(_tows_complement_binary):
     return twos_comp(int(_tows_complement_binary[2:], 2), len(_tows_complement_binary) - 2)
 
-
+#NEW_FUNCTION
 def execute_function(_function_name, _list_of_arguments):
     if _function_name == 'twosComplementToDecimal':
         return cofc_twos_complement_to_decimal(_list_of_arguments[0])
@@ -413,7 +433,7 @@ all_instructions = [Mips_instruction("add", "000000", "100000", "R"),
                     Mips_instruction("slti", "001010", "", "I"),
                     Mips_instruction("lw", "100011", "", "I"),
                     Mips_instruction("sw", "101011", "", "I")]
-
+#NEW_FUNCTION
 @csrf_exempt
 def my_questions(request):
 
@@ -443,7 +463,7 @@ def my_questions(request):
         "all_questions": all_questions,
     }
     return HttpResponse(template.render(context))
-
+#NEW_FUNCTION
 @csrf_exempt
 def structure(request):
     if request.is_ajax() and (request.POST.get('btnType') == 'get_topics'):
@@ -523,6 +543,7 @@ class Question_Class:
         self.element_style = _element_style
         self.id = _id
 
+#NEW_FUNCTION
 @csrf_exempt
 def update_password(request):
     if not request.user.is_authenticated():
@@ -539,7 +560,7 @@ def update_password(request):
         "full_name": request.session['full_name'],
     }
     return HttpResponse(template.render(context))
-
+#NEW_FUNCTION
 @csrf_exempt
 def assigment_id_method(request, assignment_id):
 
@@ -680,7 +701,7 @@ def assigment_id_method(request, assignment_id):
         "all_questions_answers_array": all_questions_answers_array,
     }
     return HttpResponse(template.render(context))
-
+#NEW_FUNCTION
 def index(request, _year = '2017', _semester = 'spring'):
 
     if request.is_ajax() and (request.POST.get('btnType') == 'save_question_student'):
@@ -1042,7 +1063,7 @@ def index(request, _year = '2017', _semester = 'spring'):
 
     return HttpResponse(template.render(context, request))
 
-
+#NEW_FUNCTION
 @csrf_exempt
 def grade_assignment_open(request, ass_id, section_id, student_id):
 
@@ -1143,6 +1164,7 @@ def grade_assignment_open(request, ass_id, section_id, student_id):
         return csci250_login(request)
 
 
+#NEW_FUNCTION
     #defined function to list sections
 def grade_assignments_sections(request, ass_id):
     if request.user.is_superuser: #why does this conditional need to be here? if the user isn't superuser, then they
@@ -1160,6 +1182,7 @@ def grade_assignments_sections(request, ass_id):
 
         return HttpResponse(template.render(context))
 
+#NEW_FUNCTION
 @csrf_exempt
 def grade_assignments_students(request, ass_id, section_id):
     if request.user.is_superuser:
@@ -1197,7 +1220,7 @@ def grade_assignments_students(request, ass_id, section_id):
         return HttpResponse(template.render(context))
     else:
         return csci250_login(request)
-
+#NEW_FUNCTION
 @csrf_exempt
 def grade_assignments(request):
     if request.user.is_superuser:
@@ -1211,7 +1234,7 @@ def grade_assignments(request):
         return HttpResponse(template.render(context))
     else:
         return csci250_login(request)
-
+#NEW_FUNCTION
 @csrf_exempt
 def assignments(request):
     if not request.user.is_authenticated():
@@ -1235,9 +1258,8 @@ def assignments(request):
     else:
         return csci250_login(request)
 
-
+#NEW_FUNCTION
 @csrf_exempt
-
 def create_ass(request):
     if request.is_ajax() and (request.POST.get('btnType') == 'update_assignment'):
         # Check if title exists
@@ -1299,7 +1321,7 @@ def create_ass(request):
     }
     return HttpResponse(template.render(context, request))
 
-
+#NEW_FUNCTION
 def create_lesson(request):
     all_lesson_items_sent = []
     all_lesson_items = Lesson_items.objects.all()
@@ -1320,7 +1342,7 @@ def create_lesson(request):
     #
     # fetch the assignment content from the database, using the variable _assignment_id
 
-
+#NEW_FUNCTION
 @csrf_exempt
 def csci250_edit_quiz(request, _question_id):
     if request.is_ajax() and request.user.is_authenticated() and (request.POST.get('btnType') == 'csci_logout'):
@@ -1574,7 +1596,7 @@ def csci250_edit_quiz(request, _question_id):
     }
     return HttpResponse(template.render(context, request))
 
-
+#NEW_FUNCTION
 @csrf_exempt
 def csci250_schedule(request):
     all_weeks = Week.objects.all()
@@ -1640,7 +1662,7 @@ def csci250_schedule(request):
     return HttpResponse(template.render(context, request))
 
 
-
+#NEW_FUNCTION
 @csrf_exempt
 def csci250_sign_up(request):
     if request.is_ajax() and (request.POST.get('btnType') == 'csci_sign_up'):
@@ -1664,7 +1686,7 @@ def csci250_sign_up(request):
     template = loader.get_template('main/sign_up.html')
     context = {}
     return HttpResponse(template.render(context))
-
+#NEW_FUNCTION
 @csrf_exempt
 def csci250_login(request):
     if request.is_ajax() and request.user.is_authenticated() and (request.POST.get('btnType') == 'csci_logout'):
@@ -1753,7 +1775,7 @@ def csci250_login(request):
     }
     return HttpResponse(template.render(context))
 
-
+#NEW_FUNCTION
 @csrf_exempt
 def csci250_view_questions(request):
     if request.is_ajax() and request.user.is_authenticated() and (request.POST.get('btnType') == 'csci_logout'):
@@ -1810,7 +1832,7 @@ def csci250_view_questions(request):
         return redirect(index)
 
 
-
+#NEW_FUNCTION
 def render_to_json_response(context, **response_kwargs):
     data = json.dumps(context)
     response_kwargs['content_type'] = 'application/json'

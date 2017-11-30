@@ -1,15 +1,12 @@
-#!/bin/python
-
-def checkIfOverflow(value1,value2):
-    
-    ans = int(value1, 2) + int(value2, 2) 
-    if ans >= 31: 
-		return ("Yes (an overflow will occur)")
+#TESTMETHOD
+def checkIfOverflow(value1, value2):
+    ans = int(value1, 2) + int(value2, 2)
+    if ans >= 31: #was > 
+        return 'Yes (an overflow will occur)'
     else:
-		return ("No overflow")
+        return 'No overflow'
 
-
-
+#MAIN
 def main(argv): 
 	values=sys.argv[1].split(",")
 	oracle = sys.argv[2]

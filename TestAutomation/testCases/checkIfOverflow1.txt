@@ -1,5 +1,5 @@
 1
-check if adding 11111 and 00000 will overflow
+check if adding two binaries creates overflow
 views
 checkIfOverflow
 11111,00000

@@ -1,3 +1,4 @@
+#TESTMETHOD
 def convert_simple_line_c_to_mips(_one_line):
 	# First we separate by spaces
    
@@ -21,6 +22,8 @@ def convert_simple_line_c_to_mips(_one_line):
         return "sub $" + my_comps[0].replace('\t', '') + ", $" + my_comps[2] + ", $" + my_comps[4][:-1]
 
 
+
+#MAIN
 def main(argv): 
 	#values=sys.argv[1].split(",")
 	#oracle = sys.argv[2]

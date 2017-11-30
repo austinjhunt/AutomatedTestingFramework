@@ -74,10 +74,13 @@ for currentFile in *; do
 			
 			oracle=$line
 			echo Oracle: $oracle
+			#need to be in scripts, run getmethodbody.sh to put the updated methodbody into its corresponding executable!
 			
+			cd ../scripts
+			#pass in arguments 1 = $component and 2 = method name aka $unit
+			sh getMethodBody.sh $component $unit
 			cd ../testCaseExecutables
-
-
+			#NOW execute driver
 			python $unit.py "$args" "$oracle" > $reportsPath/tempTestOutput.txt	
 			
 			echo Hello!
@@ -122,5 +125,6 @@ cd ../reports
 rm $appendHTML
 opSystem=$(eval 'uname')
 
-open $testReport
+xdg-open $testReport 
+#open $testReport
 
