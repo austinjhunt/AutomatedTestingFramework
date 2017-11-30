@@ -1,0 +1,6 @@
+8
+convert decimal to sign magnitude
+views
+cofc_convert_decimal_to_sign_magnitude
+0,5
+0b00000

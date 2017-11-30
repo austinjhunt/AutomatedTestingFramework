@@ -1,0 +1,6 @@
+23
+convert ones complement to decimal
+views
+cofc_ones_complement_to_decimal
+0b1111
+0

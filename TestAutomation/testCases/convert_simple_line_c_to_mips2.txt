@@ -1,0 +1,6 @@
+27
+convert c string to mips assembly
+views
+convert_simple_line_c_to_mips
+x = x + 3;
+addi $x, $x, 3

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>YEET: THE FINAL REPORT</title>
+
+		<meta name="author" content="YEET" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<span class="right"><a style = "font-size: 14px" href="https://github.com/CSCI-362-02-2017/YEET" target="_blank"><span>Check out our Github Repo!</span></a></span>
+			</div>
+			<div class="codrops-top clearfix">
+				<span class="right"><a style = "font-size: 14px" href="https://drive.google.com/open?id=1_YJToR3pnUe42dfcwnMpNBZjsAt0gv_5" target="_blank"><span>Final Project Report</span></a></span>
+			</div>
+			<header>
+				<h1>YEET: <em>The Final Test Report</em> <span>Testing an Interactive Web Platform for Enhancing CSCI Education</span></h1>	
+				
+			</header>
+			<div class="component" style = "overflow:auto">
+			
+				<table>
+					
+					<thead> 
+						<tr>
+							<th>Test ID</th>
+							<th>Requirement</th>
+							<th>Component Tested</th>
+							<th>Method Tested</th>
+							<th>Test Inputs</th>
+							<th>Oracle</th>
+							<th>Actual Outcome</th>
+							<th>Test Results</th>
+						</tr>
+					</thead>
+	
+					<tbody>
+						
+<tr style ="height:1; border: 4.5px solid black">
+<td></td>
+<td></td>
+<td></td>
+<td style="font-weight: bold; font-size: 14px">NEW METHOD:</td>
+<td style="font-weight: bold; font-size: 14px; overflow-wrap: normal; overflow-x: scroll">checkIfOverflow</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>check if adding two binaries creates overflow</td>
+<td>views</td>
+<td>checkIfOverflow</td>
+<td>11111,00000</td>
+<td>No overflow</td>
+<td>Yes (an overflow will occur)</td>
+<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+</tr>
+<tr>
+<td>2</td>
+<td>check if adding two binaries creates overflow</td>
+<td>views</td>
+<td>checkIfOverflow</td>
+<td>11110,00001</td>
+<td>No overflow</td>
+<td>Yes (an overflow will occur)</td>
+<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+</tr>
+<tr>
+<td>3</td>
+<td>check if adding two binaries creates overflow</td>
+<td>views</td>
+<td>checkIfOverflow</td>
+<td>01111,01000</td>
+<td>No overflow</td>
+<td>No overflow</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>4</td>
+<td>check if adding two binaries creates overflow</td>
+<td>views</td>
+<td>checkIfOverflow</td>
+<td>11111,11111</td>
+<td>Yes (an overflow will occur)</td>
+<td>Yes (an overflow will occur)</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>5</td>
+<td>check if adding two binaries creates overflow</td>
+<td>views</td>
+<td>checkIfOverflow</td>
+<td>11111,00001</td>
+<td>Yes (an overflow will occur)</td>
+<td>Yes (an overflow will occur)</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr style ="height:1; border: 4.5px solid black">
+<td></td>
+<td></td>
+<td></td>
+<td style="font-weight: bold; font-size: 14px">NEW METHOD:</td>
+<td style="font-weight: bold; font-size: 14px; overflow-wrap: normal; overflow-x: scroll">cofc_convert_decimal_to_sign_magnitude</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>convert decimal to sign magnitude </td>
+<td>views</td>
+<td>cofc_convert_decimal_to_sign_magnitude</td>
+<td>-10,5</td>
+<td>0b11010</td>
+<td>0b11010</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>7</td>
+<td>convert decimal to sign magnitude</td>
+<td>views</td>
+<td>cofc_convert_decimal_to_sign_magnitude</td>
+<td>10,5</td>
+<td>0b01010</td>
+<td>0b01010</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>8</td>
+<td>convert decimal to sign magnitude</td>
+<td>views</td>
+<td>cofc_convert_decimal_to_sign_magnitude</td>
+<td>0,5</td>
+<td>0b00000</td>
+<td>0b10000</td>
+<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+</tr>
+<tr>
+<td>9</td>
+<td>convert decimal to sign magnitude</td>
+<td>views</td>
+<td>cofc_convert_decimal_to_sign_magnitude</td>
+<td>-0,5</td>
+<td>0b10000</td>
+<td>0b10000</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>10</td>
+<td>convert decimal to sign magnitude</td>
+<td>views</td>
+<td>cofc_convert_decimal_to_sign_magnitude</td>
+<td>-10,4</td>
+<td>0b11010</td>
+<td>0b1010</td>
+<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+</tr>
+<tr style ="height:1; border: 4.5px solid black">
+<td></td>
+<td></td>
+<td></td>
+<td style="font-weight: bold; font-size: 14px">NEW METHOD:</td>
+<td style="font-weight: bold; font-size: 14px; overflow-wrap: normal; overflow-x: scroll">cofc_convert_decimal_to_unsigned_binary_with_length</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>convert decimal to unsigned binary</td>
+<td>views</td>
+<td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
+<td>255,8</td>
+<td>0b11111111</td>
+<td>0b11111111</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>12</td>
+<td>convert decimal to unsigned binary</td>
+<td>views</td>
+<td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
+<td>256,8</td>
+<td>0b00000000</td>
+<td>0b100000000</td>
+<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+</tr>
+<tr>
+<td>13</td>
+<td>convert decimal to unsigned binary</td>
+<td>views</td>
+<td>cofc_convert_decimal_to_unsigned_binary_with_length</td>
+<td>0,2</td>
+<td>0b00</td>
+<td>0b00</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr style ="height:1; border: 4.5px solid black">
+<td></td>
+<td></td>
+<td></td>
+<td style="font-weight: bold; font-size: 14px">NEW METHOD:</td>
+<td style="font-weight: bold; font-size: 14px; overflow-wrap: normal; overflow-x: scroll">cofc_decimal_to_ones_complement</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>convert decimal to ones complement</td>
+<td>views</td>
+<td>cofc_decimal_to_ones_complement</td>
+<td>0,8</td>
+<td>0b00000000</td>
+<td>0b00000001</td>
+<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+</tr>
+<tr>
+<td>15</td>
+<td>convert decimal to ones complement</td>
+<td>views</td>
+<td>cofc_decimal_to_ones_complement</td>
+<td>-0,8</td>
+<td>0b11111111</td>
+<td>0b00000001</td>
+<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+</tr>
+<tr>
+<td>16</td>
+<td>convert decimal to ones complement</td>
+<td>views</td>
+<td>cofc_decimal_to_ones_complement</td>
+<td>-255,9</td>
+<td>0b100000000</td>
+<td>0b000000000</td>
+<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+</tr>
+<tr>
+<td>17</td>
+<td>convert decimal to ones complement</td>
+<td>views</td>
+<td>cofc_decimal_to_ones_complement</td>
+<td>-255,8</td>
+<td>0b00000000</td>
+<td>0b00000000</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>18</td>
+<td>convert decimal to ones complement</td>
+<td>views</td>
+<td>cofc_decimal_to_ones_complement</td>
+<td>255,8</td>
+<td>0b11111111</td>
+<td>0b11111111</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>19</td>
+<td>convert decimal to ones complement</td>
+<td>views</td>
+<td>cofc_decimal_to_ones_complement</td>
+<td>-1,2</td>
+<td>0b10</td>
+<td>0b00</td>
+<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+</tr>
+<tr>
+<td>20</td>
+<td>convert decimal to ones complement</td>
+<td>views</td>
+<td>cofc_decimal_to_ones_complement</td>
+<td>1,1</td>
+<td>0b1</td>
+<td>0b1</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>21</td>
+<td>convert decimal to ones complement</td>
+<td>views</td>
+<td>cofc_decimal_to_ones_complement</td>
+<td>7,0</td>
+<td>Cannot represent any number with 0 bits</td>
+<td>Cannot represent any number with 0 bits</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr style ="height:1; border: 4.5px solid black">
+<td></td>
+<td></td>
+<td></td>
+<td style="font-weight: bold; font-size: 14px">NEW METHOD:</td>
+<td style="font-weight: bold; font-size: 14px; overflow-wrap: normal; overflow-x: scroll">cofc_ones_complement_to_decimal</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>22</td>
+<td>convert ones complement to decimal</td>
+<td>views</td>
+<td>cofc_ones_complement_to_decimal</td>
+<td>0bxxxxxxxxxxxxxxxxxxxxxxx</td>
+<td>-8388607</td>
+<td>-8388607</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>23</td>
+<td>convert ones complement to decimal</td>
+<td>views</td>
+<td>cofc_ones_complement_to_decimal</td>
+<td>0b1111</td>
+<td>0</td>
+<td>-15</td>
+<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+</tr>
+<tr>
+<td>24</td>
+<td>convert ones complement to decimal</td>
+<td>views</td>
+<td>cofc_ones_complement_to_decimal</td>
+<td>0b111111111111111111111111111111111111111111</td>
+<td>0</td>
+<td>-4398046511103</td>
+<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+</tr>
+<tr>
+<td>25</td>
+<td>convert ones complement to decimal </td>
+<td>views</td>
+<td>cofc_ones_complement_to_decimal</td>
+<td>0bxxx</td>
+<td>-7</td>
+<td>-7</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr style ="height:1; border: 4.5px solid black">
+<td></td>
+<td></td>
+<td></td>
+<td style="font-weight: bold; font-size: 14px">NEW METHOD:</td>
+<td style="font-weight: bold; font-size: 14px; overflow-wrap: normal; overflow-x: scroll">convert_simple_line_c_to_mips</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>26</td>
+<td>convert c string to mips assembly</td>
+<td>views</td>
+<td>convert_simple_line_c_to_mips</td>
+<td>int x = 5;</td>
+<td>addi $x, $zero, 5</td>
+<td>addi $x, $zero, 5</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>27</td>
+<td>convert c string to mips assembly</td>
+<td>views</td>
+<td>convert_simple_line_c_to_mips</td>
+<td>x = x + 3;</td>
+<td>addi $x, $x, 3</td>
+<td>addi $=, $x, 3</td>
+<td style="font-weight:bold"><font color = "red" size = "5">FAIL!</font></td>
+</tr>
+<tr>
+<td>28</td>
+<td>convert c string to mips assembly </td>
+<td>views</td>
+<td>convert_simple_line_c_to_mips</td>
+<td>x = x - 3;</td>
+<td>addi $x, $x, -3</td>
+<td>addi $x, $x, -3</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>29</td>
+<td>convert c string to mips assembly </td>
+<td>views</td>
+<td>convert_simple_line_c_to_mips</td>
+<td>x = y + z;</td>
+<td>add $x, $y, $z</td>
+<td>add $x, $y, $z</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+<tr>
+<td>30</td>
+<td>convert c string to mips assembly</td>
+<td>views</td>
+<td>convert_simple_line_c_to_mips</td>
+<td>x = y - z;</td>
+<td>sub $x, $y, $z</td>
+<td>sub $x, $y, $z</td>
+<td style="font-weight:bold"><font color = "green" size = "5">PASS!</font></td>
+</tr>
+</tbody> </table> </div> </section> </body> </html>
