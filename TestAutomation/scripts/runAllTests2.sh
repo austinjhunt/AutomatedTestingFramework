@@ -125,6 +125,6 @@ cd ../reports
 rm $appendHTML
 opSystem=$(eval 'uname')
 
-#xdg-open $testReport (Linux) 
-open $testReport
+xdg-open $testReport 
+#open $testReport
 
